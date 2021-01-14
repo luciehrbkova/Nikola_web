@@ -1,18 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
 
 // ************** VARIABLES ******************
 // COLORS
-$blue: #6598C7
+$white: #ffffff
+$black: #2c2c2c
+$pink: #E3C5B7
+$lightgreen: #B8BAAD
+$darkgreen: #586863
 
-// colors
-.color_db
-    color: $darkblue
-.color_w
-    color: $white
+$blue: #6598C7
+$darkblue: #003152
+$grey: #D7DEE1
+$green: #89B700
+$white: #ffffff
+$light: #F4F4F4
+$black: #000000
 
 // BACKGROUNDS
-.white
-    background: $white
+.bg_pink
+    background: $pink
+.bg_darkgreen
+    background: $darkgreen
 .blue
     background-image: url('img/bg_blue.jpg')
 
@@ -30,8 +38,7 @@ body
     margin: 0
     padding: 0
     overflow-x: hidden
-    color: $black
-    font-family: Barlow
+    font-family: Montserrat
 img
     max-width: 100%
 a
@@ -46,53 +53,44 @@ h1
 h2
     margin: 0
     padding: 0
-    font-family: Frank Ruhl Libre
-    color: $darkblue
-    font-weight: 700
-    font-size: 1rem
-    text-align: right
-    letter-spacing: .3px
-    white-space: nowrap
-    transform: rotate(-90deg)
-    margin-top: 2.5rem 
-    margin-left: 1rem
+    font-family: Lora
+    color: $black
+    -webkit-text-stroke: 1px $black
+    -webkit-text-fill-color: $white
+    font-weight: 600
+    font-size: 4.5rem
 h3
     margin: 0
     padding: 0
-    font-family: Barlow
-    font-weight: 600
-    font-size: 1.25rem
-    letter-spacing: .35px
-h4
-    margin: 0
-    padding: 0
-    font-family: Frank Ruhl Libre
-    color: $darkblue
-    font-weight: 700
-    font-size: 1.25rem
-    text-align: center
-    letter-spacing: .15px
+    font-family: Lora
+    color: $black
+    font-weight: 400
+    font-size: 1rem
+
 p
     margin: 0
     padding: 0
-    font-family: Barlow
+    font-family: Montserrat
     font-weight: 300
-    letter-spacing: .28px
+    letter-spacing: .9px
+    font-size: 0.875rem
+    font-height: 22px
+
 .green_button
     color: $white
-    background: $green
-    border: 0px
-    padding: 0.9rem 0
-    font-weight: 500
-    font-size: 1.125rem
-    letter-spacing: 0.45px
-    border-radius: 7px
-    width: 200px
-    margin-left: calc( 50% - 100px )
+    background: $black
+    border: 1px solid $black
+    padding: 18px 0
+    font-weight: 300
+    font-size: 1rem
+    text-transform: uppercase
+    width: 240px
+    margin-left: calc( 50% - 120px )
     outline: none
     transition: 0.5s
     &:hover
-        background: $darkblue
+        background: $white
+        color: $black
 .sidenav 
     width: 100vw
     position: fixed //* Stay in place */
@@ -128,19 +126,30 @@ p
 
 // *************** GENERAL GRID *************
 .container
-    width: 100%
-    max-width: 1440px
+    width: 100vw
+    // max-width: 1900px
     display: flex
     margin: 0 auto
 .fringe
-    width: 8.5%
-    background: $white
-.pin-spacer
-    margin: 30px 0 0 0!important
+    // background: $darkgreen
+    width: 30px
+    @media screen and ( min-width: 600px)
+        width: 45px
+    @media screen and ( min-width: 1200px)
+        min-width: 138px
 .main
-    min-width: 83%
+    width: 100%
+    // background: $lightgreen
 .row
     display: flex
+
+.row_from_tablet
+    display: flex
+    flex-direction: column
+    @media screen and ( min-width: 600px)
+        flex-direction: row
+
+
 .pc_only
     display: none
     @media screen and ( min-width: 1200px)
@@ -155,19 +164,65 @@ p
     @media screen and ( min-width: 600px)
         display: flex
 
+// *************** hero *************
+#hero
+    width: 100vw
+    height: 100vh
+    background-image: url('img/temporary.jpg')
+    // background-position: center
+    // background-repeat: no-repeat
+    background-size: cover
 
-
+// *************** SERVICES *************
+.services_container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.box_services
+    width: calc( 50% - 5px )
+    background: $pink
+    padding: 14px
+    @media screen and ( min-width: 600px)
+        width: calc( 25% - 7.5px )
+    @media screen and ( min-width: 1200px)
+        width: calc( 25% - 15px )
+    .services_box_bg
+        height: 90px
+        background: $white
+    .services_header
+        height: 50px
+    .services_number
+        font-family: Lora
+        color: $black
+        -webkit-text-stroke: 1px $black
+        -webkit-text-fill-color: transparent
+        font-weight: 600
+        font-size: 3.125rem
+        text-align: right
+        position: relative
+        margin-top: -2rem
 
 // *************** ABOUT *************
+.portrait
+    // height: 100%
+    @media screen and ( min-width: 600px)
+        width: calc( 50% - 20px )
+.textabout
+    @media screen and ( min-width: 600px)
+        width: calc( 50% - 20px )
+        padding: 30px 10px
+
+.values
+    background: $lightgreen
+    width: 120%
+    height: 30px
 
 // *************** REFERENCE *************
 
 // *************** CONTACT *************
 .contact
-    width: 100%
     margin-top: 100px
     .main
-        width: 83%
         @media screen and ( min-width: 1200px )
             display: flex
             flex-direction: row-reverse
@@ -255,16 +310,16 @@ p
 
 // *************** FOOTER *************
 .footer
-    width: 100%
-    margin-top: 100px
-    .container
-        width: 100%
-        background: $blue
-    .main
-        width: 83%
-        background: $blue
-    .fringe
-        background: $blue
+    background: $darkgreen
+//     width: 100%
+//     margin-top: 100px
+//     .container
+//         width: 100%
+//     .main
+//         width: 83%
+//         background: $darkgreen
+//     .fringe
+//         background: $darkgreen
 .footer_container
     width: 100%
     padding: 20% 10%
@@ -302,7 +357,6 @@ p
     @media screen and ( min-width: 600px )
         width: 50%
     .footer_line
-        background: $blue
         display: none
         @media screen and ( min-width: 600px )
             display: block
