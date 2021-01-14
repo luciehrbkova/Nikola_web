@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+     <!-- MENU -->
+     <div id="mySidenav" class="sidenav">
+        <div class="footer">
+            <div class="container">
+                <div class="fringe"></div>
+                <div class="main">
+                    
+                    <div class="footer_container">
+    
+                        <div class="footer_box">
+                            <div class="footer_line"></div>
+                            <span class="footer_header">MENU</span>
+                            <ul>
+                                <li onclick="closeNav()"><a href="index.html">Domů</a></li>
+                                <li onclick="closeNav()"><a href="index.html#services">Služby</a></li>
+                                <!-- <li onclick="closeNav()"><a href="index.html#news">Aktuality</a></li> -->
+                                <li onclick="closeNav()"><a href="index.html#about">O mně</a></li>
+                                <li onclick="closeNav()"><a href="index.html#reference">Reference</a></li>
+                                <li onclick="closeNav()"><a href="index.html#contact">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_box list2">
+                            <div class="footer_line"></div>
+                            <span class="footer_header">SLUŽBY</span>
+                            <ul>
+                                <li><a href="hypoteky.html">Hypotéky</a></li>
+                                <li><a href="investice.html">Investice</a></li>
+                                <li><a href="pojisteni.html">Pojištění</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_box list3">
+                            <div class="footer_line"></div>
+                            <span class="footer_header"><br></span>
+                            <ul>
+                                <li><a href="cookies.html">Cookies</a></li>
+                                <li><a href="gdpr.html">Ochrana osobních údajů (GDPR)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fringe">
+                    <div class="menu_div">
+                        <span onclick="closeNav()"><img src="img/cross.png" alt="" class="cross_icon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--*********************** HERO PAGE *************************-->
+
+    <!--*********************** SERVICES *************************-->
+
+    <!--*********************** NEWS *************************-->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="fringe"></div>
+            <div class="main">
+                <h1 class="hero__title">Aktuality!!</h1>
+                <div class="fb_container">
+                    <div class="fb_post"></div>
+                    <div class="fb_post"></div>
+                </div>
+                <div class="button_div">
+                    <button class="green_button">CHCI VÍCE INFO</button>
+                </div>
+            </div>
+            <div class="fringe"></div>
+        </div>
+
+    </section>
+    <!--*********************** ABOUT *************************-->
+ 
+    <!--*********************** REFERENCE *************************-->
+   
+    <!--*********************** CONTACT *************************-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="fringe"></div>
+            <div class="main">
+                <div class="contact_container aniContact">
+                    <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
+                        <label for="jmeno">Jméno</label><br>
+                        <input type="text" id="jmeno" name="name" required><div class="required"></div>
+                        <label for="cislo">Mobil</label><br>
+                        <input type="number" id="cislo" name="mobil" required><div class="required"></div>
+                        <label for="eadresa">Email</label><br>
+                        <input type="email" id="adresa"  name="mail" required><div class="required"></div>
+                        <label for="zprava">Text zprávy</label><br>
+                        <textarea name="zprava" id="" rows="10"></textarea>
+                        <br>
+                        <input type="submit" value="ODESLAT" class="submit">
+                    </form>
+                </div>
+                <div class="map_contactdata aniContact">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.655259546002!2d14.
+                    440297115609647!3d50.092741020955835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470
+                    b94bc6a8b5901%3A0xe6bfb36220f7bd9f!2zUG9ixZllxb5uw60gMjAsIDE4NiAwMCBLYXJsw61uLCDEjGVza28!5e0
+                    !3m2!1scs!2suk!4v1589711147314!5m2!1scs!2suk" title="Adresa kanceláře" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="contact_container_data contact_data">
+                        <div class="adress_sm">
+                            <p>Pobřežní 20 <br>Praha 8, 186 00</p>
+                            <div class="socialmedia">
+                                <img src="img/fb.png" alt="" class="sm_img">
+                                <img src="img/wsap.png" alt="" class="sm_img">
+                            </div>
+                        </div>
+                        <div class="email_box">
+                            <div class="email_item">
+                                <img src="img/icon_t.png" alt="" class="icon_phone">
+                                <p>+420 775 564 612</p>
+                            </div>
+                            <div class="email_item">
+                                <img src="img/icon_e.png" alt="" class="icon_phone">
+                                <p>jaroslav.bezouska@4fin.cz</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fringe"></div>
+        </div>
+
+    </section>
+    <!--*********************** FOOTER *************************-->
+    <section class="footer">
+        <div class="container">
+            <div class="fringe"></div>
+            <div class="main">
+                
+                <div class="footer_container">
+
+                    <div class="footer_box">
+                        <div class="footer_line"></div>
+                        <span class="footer_header">MENU</span>
+                        <ul>
+                            <li><a href="index.html">Domů</a></li>
+                            <li><a href="index.html#services">Služby</a></li>
+                            <!-- <li><a href="index.html#news">Aktuality</a></li> -->
+                            <li><a href="index.html#about">O mně</a></li>
+                            <li><a href="index.html#reference">Reference</a></li>
+                            <li><a href="index.html#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_box list2">
+                        <div class="footer_line"></div>
+                        <span class="footer_header">SLUŽBY</span>
+                        <ul>
+                            <li><a href="hypoteky.html">Hypotéky</a></li>
+                            <li><a href="investice.html">Investice</a></li>
+                            <li><a href="pojisteni.html">Pojištění</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_box list3">
+                        <div class="footer_line"></div>
+                        <span class="footer_header"><br></span>
+                        <ul>
+                            <li><a href="cookies.html">Cookies</a></li>
+                            <li><a href="gdpr.html">Ochrana osobních údajů (GDPR)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fringe"></div>
+        </div>
+
+    </section>
+    <!-- js -->
+    <script src="myScript.js"></script>
+    <!-- or jquery online version -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+    <script>
+    </script>
+
+</body>
+</html>
