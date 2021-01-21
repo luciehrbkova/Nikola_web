@@ -16,9 +16,15 @@ $white: #ffffff
 $light: #F4F4F4
 $black: #000000
 
+// COLORS
+.white
+    color: $white    
+
 // BACKGROUNDS
 .bg_pink
     background: $pink
+.bg_lightgreen
+    background: $lightgreen
 .bg_darkgreen
     background: $darkgreen
 .blue
@@ -59,6 +65,12 @@ h2
     -webkit-text-fill-color: $white
     font-weight: 600
     font-size: 4.5rem
+    margin: 100px 0px 30px 0px
+    @media screen and ( min-width: 600px)
+        -webkit-text-stroke: 2px $black
+        font-size: 6.25rem
+    @media screen and ( min-width: 1200px)
+        font-size: 9.375rem
 h3
     margin: 0
     padding: 0
@@ -66,16 +78,21 @@ h3
     color: $black
     font-weight: 400
     font-size: 1rem
-
 p
     margin: 0
     padding: 0
     font-family: Montserrat
     font-weight: 300
-    letter-spacing: .9px
+    line-height: 1.375rem
+    letter-spacing: 0.9px
     font-size: 0.875rem
-    font-height: 22px
+    font-height: 1.375rem
+    @media screen and ( min-width: 1200px)
+        font-size: 1rem
+        line-height: 1.625rem
 
+.text_right
+    text-align: right
 .green_button
     color: $white
     background: $black
@@ -142,23 +159,41 @@ p
     // background: $lightgreen
 .row
     display: flex
-
 .row_from_tablet
     display: flex
     flex-direction: column
     @media screen and ( min-width: 600px)
         flex-direction: row
+        justify-content: space-between
+.margin_left_0
+    margin-left: 0
 
-
-.pc_only
+//****************** HIDE / SHOW *************
+.pc_tab_only_bl
+    display: none
+    @media screen and ( min-width: 600px)
+        display: block
+.pc_mob_only_bl
+    @media screen and ( min-width: 600px) 
+        display: none
+    @media screen and ( min-width: 1200px)
+        display: block
+.pc_only_bl
     display: none
     @media screen and ( min-width: 1200px)
         display: block
-.mobile_only
+.tab_only_bl
+    @media screen and ( min-width: 600px)
+        display: block
+    @media screen and ( min-width: 1200px)
+        display: none
+.mobile_only_fl
     display: flex
     @media screen and ( min-width: 600px)
         display: none
-
+.mobile_only_bl
+    @media screen and ( min-width: 600px)
+        display: none
 .mobile_hide
     display: none
     @media screen and ( min-width: 600px)
@@ -174,48 +209,103 @@ p
     background-size: cover
 
 // *************** SERVICES *************
+#services
+    height: 100vh
+    background-image: url('img/bg1.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
 .services_container
     display: flex
     flex-wrap: wrap
     justify-content: space-between
 .box_services
     width: calc( 50% - 5px )
-    background: $pink
     padding: 14px
+    margin-bottom: 10px
     @media screen and ( min-width: 600px)
         width: calc( 25% - 7.5px )
     @media screen and ( min-width: 1200px)
         width: calc( 25% - 15px )
+        padding: 29px
     .services_box_bg
         height: 90px
-        background: $white
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        @media screen and ( min-width: 1200px)
+            height: 160px
+    .s_bg1
+        background-image: url('img/sluzby1.jpg')
+    .s_bg3
+        background-image: url('img/sluzby3.jpg')
+    .s_bg4
+        background-image: url('img/sluzby4.jpg')
     .services_header
         height: 50px
+        @media screen and ( min-width: 1200px)
+            font-size: 1.875rem
+            height: 110px
     .services_number
         font-family: Lora
         color: $black
-        -webkit-text-stroke: 1px $black
+        -webkit-text-stroke: 1.5px $black
         -webkit-text-fill-color: transparent
         font-weight: 600
         font-size: 3.125rem
         text-align: right
         position: relative
         margin-top: -2rem
+        @media screen and ( min-width: 1200px)
+            -webkit-text-stroke: 3px $black
+            font-size: 5.25rem
+            margin-top: -3.4rem
+    .whiteNumber
+        -webkit-text-stroke: 1.5px $white
+
 
 // *************** ABOUT *************
 .portrait
     // height: 100%
     @media screen and ( min-width: 600px)
         width: calc( 50% - 20px )
+// header tab+pc
+.duo_header
+    margin: 0px
+    position: relative
+    margin-left: -114px
+    @media screen and ( min-width: 1200px)
+        margin: 20px 0px 60px -160px
+.white_duo_part
+    font-size: 6.25rem
+    -webkit-text-stroke: 2px $white
+    -webkit-text-fill-color: transparent
+    @media screen and ( min-width: 1200px)
+        font-size: 9.375rem
 .textabout
+    width: 100%
+    padding: 50px 0px
     @media screen and ( min-width: 600px)
-        width: calc( 50% - 20px )
+        width: 50%
         padding: 30px 10px
+    .button_div
+        margin-top: 50px
+
 
 .values
     background: $lightgreen
     width: 120%
     height: 30px
+    background-image: url('img/kkkk.jpg')
+    background-position: center
+    background-repeat: repeat
+    background-size: cover
+    @media screen and ( min-width: 600px)
+        height: 46px
+    @media screen and ( min-width: 1200px)
+        height: 58px
+    
 
 // *************** REFERENCE *************
 
