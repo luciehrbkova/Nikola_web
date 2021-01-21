@@ -371,6 +371,10 @@ p {
   background-image: url("img/sluzby1.jpg");
 }
 
+.box_services .s_bg2 {
+  background-image: url("img/sluzby2.jpg");
+}
+
 .box_services .s_bg3 {
   background-image: url("img/sluzby3.jpg");
 }
