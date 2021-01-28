@@ -8,10 +8,10 @@ $pink: #E3C5B7
 $lightgreen: #B8BAAD
 $darkgreen: #586863
 
-$blue: #6598C7
-$darkblue: #003152
-$grey: #D7DEE1
-$green: #89B700
+// $blue: #6598C7
+// $darkblue: #003152
+// $grey: #D7DEE1
+// $green: #89B700
 $white: #ffffff
 $light: #F4F4F4
 $black: #000000
@@ -118,6 +118,19 @@ p
     overflow-x: hidden //* Disable horizontal scroll */
     overflow: hidden
     transition: 0.5s //* 0.5 second transition effect to slide in the sidenav */
+    .cross_icon
+        position: absolute
+        width: 18px
+        height: 17px
+        top: 20px
+        right: calc( 12.5% - 5px )
+        cursor: pointer
+        @media screen and ( min-width: 600px)
+            right: 40px
+        @media screen and ( min-width: 1200px)
+            right: 54px
+            top: 32px
+
     .menuSluzby
         padding-left: 30px
     .footer
@@ -214,10 +227,116 @@ p
 #hero
     width: 100vw
     height: 100vh
-    background-image: url('img/temporary.jpg')
-    // background-position: center
-    // background-repeat: no-repeat
+    background-position: center
+    background-repeat: no-repeat
     background-size: cover
+    .hero_top
+        width: 100%
+        height: 62px
+        display: flex
+        justify-content: flex-start
+        @media screen and ( min-width: 600px)
+            height: 84px
+    .logo
+        width: calc( 25% - 7.5px )
+        height: auto
+        padding-top: 20px
+        max-width: 160px
+        @media screen and ( min-width: 1200px)
+            position: absolute
+            left: 40px
+            padding-top: 30px
+    .hero_img
+        width: 100%
+        height: auto
+        @media screen and ( min-width: 1200px)
+            width: calc( 50% - 10px )
+            height: 100vh
+            position: relative
+            left: calc( 50% + 10px )
+            // crazy! calculated with hero_cont_pc
+            margin-top: calc( -40vh - 196px  )
+            background-image: url('img/hero_pc.jpg')
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+    .pink_cover
+        width: calc( 25% + 7.5px )
+        height: 180px
+        position: absolute
+        top: 0
+        right: 0
+        display: flex
+        justify-content: center
+        @media screen and ( min-width: 600px)
+            width: 102px
+            height: 400px
+        @media screen and ( min-width: 1200px)
+            height: 100vh
+            min-width: 138px
+    .hmbg
+        width: 34px
+        height: 13px
+        padding-top: 20px
+        @media screen and ( min-width: 1200px)
+            padding-top: 30px
+    .hero_cont
+        width: calc( 100% - 60px )
+        position: absolute
+        margin-left: auto
+        bottom: 50px
+        display: flex
+        flex-direction: column
+        align-content: space-between
+        @media screen and ( min-width: 600px)
+            bottom: 40px
+        @media screen and ( min-width: 1200px)
+            display: none
+    .hero_cont_pc
+        display: none
+        @media screen and ( min-width: 1200px)
+            display: flex
+            flex-direction: column
+            width: 50%
+            height: 196px
+            margin-top: calc( 40vh - 84px )
+    .topkonzul
+        font-size: 1.125rem
+        font-weight: 500
+        letter-spacing: 0.14px
+        padding-left: 20px
+        @media screen and ( max-width: 320px)
+            font-size: 0.9rem
+        @media screen and ( min-width: 600px)
+            font-size: 1.5rem
+        @media screen and ( min-width: 1200px)
+            padding-left: 0px
+    .okrok
+        font-size: 0.8rem
+        font-weight: 300
+        font-style: italic
+        padding: 5px 0px 30px 20px
+        @media screen and ( min-width: 600px)
+            font-size: 1.125rem
+            padding: 5px 0px 50px 20px
+        @media screen and ( min-width: 1200px)
+            padding: 10px 0px 50px 0px
+    .signature
+        width: 270px
+        height: 74px
+        position: absolute
+        bottom: 130px
+        right: 45px
+        @media screen and ( min-width: 1200px)
+            right: 52%
+            bottom: 40px
+      
+        
+    // .green_button
+    //     align-self: flex-end
+        
+
+
 
 // *************** SERVICES *************
 #services
@@ -674,10 +793,13 @@ p
     width: 100%
     display: flex
     justify-content: space-around
-    p,a
+    p
         color: $white
         font-size: 0.875rem
-        text-decoration: underline
+    a
+        &:hover
+            color: $pink
+            text-decoration: underline
 
 
         

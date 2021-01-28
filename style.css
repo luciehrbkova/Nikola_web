@@ -144,6 +144,28 @@ p {
   transition: 0.5s;
 }
 
+.sidenav .cross_icon {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  top: 20px;
+  right: calc( 12.5% - 5px);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .sidenav .cross_icon {
+    right: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sidenav .cross_icon {
+    right: 54px;
+    top: 32px;
+  }
+}
+
 .sidenav .menuSluzby {
   padding-left: 30px;
 }
@@ -338,8 +360,207 @@ p {
 #hero {
   width: 100vw;
   height: 100vh;
-  background-image: url("img/temporary.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+#hero .hero_top {
+  width: 100%;
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (min-width: 600px) {
+  #hero .hero_top {
+    height: 84px;
+  }
+}
+
+#hero .logo {
+  width: calc( 25% - 7.5px);
+  height: auto;
+  padding-top: 20px;
+  max-width: 160px;
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .logo {
+    position: absolute;
+    left: 40px;
+    padding-top: 30px;
+  }
+}
+
+#hero .hero_img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .hero_img {
+    width: calc( 50% - 10px);
+    height: 100vh;
+    position: relative;
+    left: calc( 50% + 10px);
+    margin-top: calc( -40vh - 196px);
+    background-image: url("img/hero_pc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+#hero .pink_cover {
+  width: calc( 25% + 7.5px);
+  height: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  #hero .pink_cover {
+    width: 102px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .pink_cover {
+    height: 100vh;
+    min-width: 138px;
+  }
+}
+
+#hero .hmbg {
+  width: 34px;
+  height: 13px;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .hmbg {
+    padding-top: 30px;
+  }
+}
+
+#hero .hero_cont {
+  width: calc( 100% - 60px);
+  position: absolute;
+  margin-left: auto;
+  bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+@media screen and (min-width: 600px) {
+  #hero .hero_cont {
+    bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .hero_cont {
+    display: none;
+  }
+}
+
+#hero .hero_cont_pc {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .hero_cont_pc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    height: 196px;
+    margin-top: calc( 40vh - 84px);
+  }
+}
+
+#hero .topkonzul {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 320px) {
+  #hero .topkonzul {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #hero .topkonzul {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .topkonzul {
+    padding-left: 0px;
+  }
+}
+
+#hero .okrok {
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
+  padding: 5px 0px 30px 20px;
+}
+
+@media screen and (min-width: 600px) {
+  #hero .okrok {
+    font-size: 1.125rem;
+    padding: 5px 0px 50px 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .okrok {
+    padding: 10px 0px 50px 0px;
+  }
+}
+
+#hero .signature {
+  width: 270px;
+  height: 74px;
+  position: absolute;
+  bottom: 130px;
+  right: 45px;
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .signature {
+    right: 52%;
+    bottom: 40px;
+  }
 }
 
 #services {
@@ -1145,9 +1366,13 @@ p {
       justify-content: space-around;
 }
 
-.madeby p, .madeby a {
+.madeby p {
   color: #ffffff;
   font-size: 0.875rem;
+}
+
+.madeby a:hover {
+  color: #E3C5B7;
   text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
