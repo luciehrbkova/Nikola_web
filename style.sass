@@ -98,8 +98,9 @@ p
 .green_button
     color: $white
     background: $black
-    border: 1px solid $black
+    border: 2px solid $black
     padding: 18px 0
+    font-family: Montserrat
     font-weight: 300
     font-size: 1rem
     text-transform: uppercase
@@ -230,22 +231,6 @@ p
     background-position: center
     background-repeat: no-repeat
     background-size: cover
-    .hero_top
-        width: 100%
-        height: 62px
-        display: flex
-        justify-content: flex-start
-        @media screen and ( min-width: 600px)
-            height: 84px
-    .logo
-        width: calc( 25% - 7.5px )
-        height: auto
-        padding-top: 20px
-        max-width: 160px
-        @media screen and ( min-width: 1200px)
-            position: absolute
-            left: 40px
-            padding-top: 30px
     .hero_img
         width: 100%
         height: auto
@@ -260,26 +245,6 @@ p
             background-position: center
             background-repeat: no-repeat
             background-size: cover
-    .pink_cover
-        width: calc( 25% + 7.5px )
-        height: 180px
-        position: absolute
-        top: 0
-        right: 0
-        display: flex
-        justify-content: center
-        @media screen and ( min-width: 600px)
-            width: 102px
-            height: 400px
-        @media screen and ( min-width: 1200px)
-            height: 100vh
-            min-width: 138px
-    .hmbg
-        width: 34px
-        height: 13px
-        padding-top: 20px
-        @media screen and ( min-width: 1200px)
-            padding-top: 30px
     .hero_cont
         width: calc( 100% - 60px )
         position: absolute
@@ -330,6 +295,42 @@ p
         @media screen and ( min-width: 1200px)
             right: 52%
             bottom: 40px
+.hero_top
+        width: 100%
+        height: 62px
+        display: flex
+        justify-content: flex-start
+        @media screen and ( min-width: 600px)
+            height: 84px
+.logo
+    width: calc( 25% - 7.5px )
+    height: auto
+    padding-top: 20px
+    max-width: 160px
+    @media screen and ( min-width: 1200px)
+        position: absolute
+        left: 40px
+        padding-top: 30px
+.pink_cover
+        width: calc( 25% + 7.5px )
+        height: 180px
+        position: absolute
+        top: 0
+        right: 0
+        display: flex
+        justify-content: center
+        @media screen and ( min-width: 600px)
+            width: 102px
+            height: 400px
+        @media screen and ( min-width: 1200px)
+            height: 100vh
+            min-width: 138px
+.hmbg
+    width: 34px
+    height: 13px
+    padding-top: 20px
+    @media screen and ( min-width: 1200px)
+        padding-top: 30px
       
         
     // .green_button
@@ -801,5 +802,302 @@ p
             color: $pink
             text-decoration: underline
 
+// hypoteky
+#hypoteky
+    background-image: url('img/bg3.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+.sekce
+    .hypo_part1
+        @media screen and ( min-width: 600px)
+            align-items: center
+            padding-bottom: 70px
+        @media screen and ( min-width: 1200px)
+            padding-bottom: 120px
+    .sekce_from_tablet_half
+        width: 100%
+        @media screen and ( min-width: 600px)
+            width: calc( 50% - 5px )
+        @media screen and ( min-width: 1200px)
+            // background: red
+            width: calc( 50% - 10px )
+    .pink_cover
+        height: 62px
+        @media screen and ( min-width: 600px)
+            height: 84px
+    .h2_header
+        font-size: 4rem
+        @media screen and ( min-width: 600px)
+            font-size: 6.25rem
+        @media screen and ( min-width: 1200px)
+            font-size: 9.375rem
+    // sekce header box
+    .sekce_header_box
+        display: flex
+        align-items: center
+        padding: 0px 30px
+        @media screen and ( min-width: 1200px)
+            padding: 0px 80px
+        h3
+            font-size: 1.25rem
+            font-weight: 600
+            letter-spacing: 0.25px
+            @media screen and ( min-width: 600px)
+                font-size: 1.75rem
+            @media screen and ( min-width: 1200px)
+                font-size: 2.25rem
+    .hypo_pink_box
+        height: 101px
+        background-image: url('img/pink_quest.jpg')
+        background-position: right
+        background-repeat: no-repeat
+        background-size: cover
+        @media screen and ( min-width: 600px)
+            height: 200px
+        @media screen and ( min-width: 1200px)
+            height: 320px
+    ul
+        // background: pink
+        margin: 0px
+        padding-left: 18px
+        list-style-image: url('img/li.svg')
+        li
+            padding: 7.5px 0px
+            line-height: 22px
+    .sekce_ul
+        margin: 20px 0px 30px 0px
+        @media screen and ( min-width: 600px)
+            padding-left: 38px
+        @media screen and ( min-width: 1200px)
+            padding-left: 58px
+    // hypo part 2
+.hypo_part2
+    padding: 30px 0px 50px 0px
+    @media screen and ( min-width: 600px)
+        padding: 70px 0px
+    @media screen and ( min-width: 1200px)
+        padding: 90px 0px
+    .hypo_green_box
+        height: 101px
+        margin-bottom: 20px
+        @media screen and ( min-width: 600px)
+            width: 100% !important
+            height: 117px
+            position: relative
+            margin-left: calc( 50% + 10px )
+            margin-top: 20px
+            margin-bottom: 80px
+        @media screen and ( min-width: 1200px)
+            margin-top: 50px
+            height: 185px
+    .part2_text
+        padding: 20px 0px
+        @media screen and ( min-width: 600px)
+            padding: 0px
+    .hypo_img_1
+        width: 100%
+        height: auto  
+    .A_Z
+        font-weight: 700
+        text-align: center
+        padding-top: 20px
+        @media screen and ( min-width: 600px)
+            text-align: right
+        @media screen and ( min-width: 1200px)
+            text-align: left
+    .part2_button
+        margin-top: 20px
+        @media screen and ( min-width: 600px)
+            margin-top: 50px
+        @media screen and ( min-width: 1200px)
+            margin-top: 60px
+    .aligncont_spbetw
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+// 4  kroky for general use
+.kroky4_header_box
+    display: flex
+    align-items: center
+    padding: 36px
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+    @media screen and ( min-width: 1200px)
+        padding-left: 85px
+        padding-right: 85px
+    h3
+        line-height: 1.375rem
+        @media screen and ( min-width: 1200px)
+            font-size: 1.3rem
+            line-height: 2rem
+    .kroky4
+        font-size: 1.25rem
+        font-weight: 400
+        letter-spacing: 0.33px
+        @media screen and ( min-width: 600px)
+            font-size: 1.75rem
+        @media screen and ( min-width: 1200px)
+            font-size: 2.25rem
+.kroky4_text_box_cont
+    width: 100%
+    display: flex
+    flex-direction: column
+    @media screen and ( min-width: 600px)
+        flex-direction: column-reverse
+        width: calc( 50% + 5px )
+    @media screen and ( min-width: 1200px)
+        // background: red
+        width: calc( 50% + 10px )
+.kroky4_text_box
+    padding: 36px 20px
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+    @media screen and ( min-width: 1200px)
+        padding: 36px
+// kroky slider
+.kroky_slider_box
+    width: 100%
+    height: 67px
+    display: flex
+    justify-content: space-between
+    @media screen and ( min-width: 600px)
+        width: 314px
+        align-self: flex-end
+.kroky_slider
+    width: calc( 25% - 0.75px ) //for 6 (16.6% - 0.83px)
+    height: 100%
+    border: 1px $pink solid
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .slider_number
+        font-family: Lora
+        font-size: 1.875rem
+        font-weight: 500
+        color: $pink
+.kroky_slider_selected
+    background: $pink
+    .slider_number
+        color: $black
+.pdf_button
+    background: transparent
+    color: $black
+    margin-top: 30px
+    &:hover
+        background: $black
+        color: $white
+.button_box
+    display: none
+    @media screen and ( min-width: 600px)
+        display: flex
+        justify-content: space-between
+        width: 370px
+        margin-left: calc( 50% - 195px )
+        margin-top: 30px
+        .pdf_button
+            margin-top: 0px
+.hypo_part3
+    background-image: url('img/bg3.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 50px 0px
+    @media screen and ( min-width: 600px)
+        padding: 70px 0px
+    @media screen and ( min-width: 1200px)
+        padding: 120px 0px
+    .kroky4_header_box
+        @media screen and ( min-width: 600px)
+            margin-top: 67px
+    .A_Z
+        font-weight: 700
+        text-align: center
+        padding-top: 20px
+        @media screen and ( min-width: 600px)
+            text-align: left
+            margin-left: calc( 50% + 30px)
+        @media screen and ( min-width: 1200px)
+            text-align: left
+
+
+// hypo part 4 -  caste otazky
+.hypo_part4
+    .align_fl_end
+        align-items: flex-end
+    .hypo_otazky_box
+        width: 100%
+        background: $pink
+        height: 130px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        margin-bottom: 20px
+        h3
+            color: $white
+            font-weight: 300 !important
+            padding-bottom: 20px
+            @media screen and ( min-width: 600px)
+                padding-bottom: 25px
+            @media screen and ( min-width: 1200px)
+                padding-bottom: 37px
+        @media screen and ( min-width: 600px)
+            height: 150px
+        @media screen and ( min-width: 1200px)
+            height: 185px
+    .hypo_otazky_bg1
+        background-image: url('img/bg_otazky_1.jpg')
+    .hypo_otazky_bg2
+        background-image: url('img/bg_otazky_2.jpg')
+    .hypo_otazky_bg3
+        background-image: url('img/bg_otazky_3.jpg')
+    .sekce_ul
+        margin: 0px
+    .hypo_odpoved_container
+        padding: 10px 0px 50px 0px
+        @media screen and ( min-width: 1200px)
+            padding: 30px 0px 90px 0px
+        p
+            padding: 0px 20px
+            @media screen and ( min-width: 600px)
+                padding: 0px 30px
+            @media screen and ( min-width: 1200px)
+                padding: 0px 80px
+    .box_7rad
+        margin-bottom: 20px
+        p, li
+            font-weight: 200 !important
+        
+    .bold
+        font-weight: 600
+    .bg_rada
+        background-size: 76px
+        background-repeat: no-repeat
+        background-position: 95% 101%
+        @media screen and ( min-width: 600px)
+            background-size: 155px
+    .bg_rada1
+        background-image: url('img/rada1.png')
+    .bg_rada2
+        background-image: url('img/rada2.png')
+    .bg_rada3
+        background-image: url('img/rada3.png')
+    .bg_rada4
+        background-image: url('img/rada4.png')
+    .bg_rada5
+        background-image: url('img/rada5.png')
+    .bg_rada6
+        background-image: url('img/rada6.png')
+    .bg_rada7
+        background-image: url('img/rada7.png')
+    
+
+
+
+
+    
 
         
+
+    
+        
+
