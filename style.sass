@@ -186,6 +186,9 @@ p
     @media screen and ( min-width: 600px)
         flex-direction: row
         justify-content: space-between
+.pc_reverse_row
+    @media screen and ( min-width: 1200px)
+        flex-direction: row-reverse
 .margin_left_0
     margin-left: 0
 
@@ -891,10 +894,6 @@ p
         @media screen and ( min-width: 1200px)
             margin-top: 50px
             height: 185px
-    .part2_text
-        padding: 20px 0px
-        @media screen and ( min-width: 600px)
-            padding: 0px
     .hypo_img_1
         width: 100%
         height: auto  
@@ -916,6 +915,10 @@ p
         display: flex
         flex-direction: column
         justify-content: space-between
+.part2_text
+        padding: 20px 0px
+        @media screen and ( min-width: 600px)
+            padding: 0px
 
 // 4  kroky for general use
 .kroky4_header_box
@@ -1089,7 +1092,30 @@ p
         background-image: url('img/rada6.png')
     .bg_rada7
         background-image: url('img/rada7.png')
-    
+
+// pujcky
+#pujcky
+    background-image: url('img/bg4.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    padding-bottom: 106px
+    @media screen and ( min-width: 600px)
+        padding-bottom: 132px
+    @media screen and ( min-width: 1200px)
+        padding-bottom: 120px
+.h2_puj
+    font-size: 3rem
+    @media screen and ( min-width: 600px)
+        font-size: 6.25rem
+    @media screen and ( min-width: 1200px)
+        font-size: 6.375rem
+    @media screen and ( min-width: 1900px)
+        font-size: 9.375rem
+    @media screen and ( max-width: 320px)
+        font-size: 2.8rem
+
+
 
 
 

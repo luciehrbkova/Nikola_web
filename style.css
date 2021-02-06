@@ -270,6 +270,15 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .pc_reverse_row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .margin_left_0 {
   margin-left: 0;
 }
@@ -1561,16 +1570,6 @@ p {
   }
 }
 
-.hypo_part2 .part2_text {
-  padding: 20px 0px;
-}
-
-@media screen and (min-width: 600px) {
-  .hypo_part2 .part2_text {
-    padding: 0px;
-  }
-}
-
 .hypo_part2 .hypo_img_1 {
   width: 100%;
   height: auto;
@@ -1621,6 +1620,16 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.part2_text {
+  padding: 20px 0px;
+}
+
+@media screen and (min-width: 600px) {
+  .part2_text {
+    padding: 0px;
+  }
 }
 
 .kroky4_header_box {
@@ -1973,5 +1982,53 @@ p {
 
 .hypo_part4 .bg_rada7 {
   background-image: url("img/rada7.png");
+}
+
+#pujcky {
+  background-image: url("img/bg4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 106px;
+}
+
+@media screen and (min-width: 600px) {
+  #pujcky {
+    padding-bottom: 132px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #pujcky {
+    padding-bottom: 120px;
+  }
+}
+
+.h2_puj {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 600px) {
+  .h2_puj {
+    font-size: 6.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .h2_puj {
+    font-size: 6.375rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .h2_puj {
+    font-size: 9.375rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .h2_puj {
+    font-size: 2.8rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
