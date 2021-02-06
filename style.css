@@ -1630,6 +1630,18 @@ p {
   padding: 50px 0px;
 }
 
+@media screen and (min-width: 600px) {
+  .hypo_part3 {
+    padding: 70px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hypo_part3 {
+    padding: 120px 0px;
+  }
+}
+
 .hypo_part3 .kroky4_header_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1771,13 +1783,13 @@ p {
   color: #000000;
 }
 
-.hypo_part3 #pdf_button {
+.hypo_part3 .pdf_button {
   background: transparent;
   color: #000000;
   margin-top: 30px;
 }
 
-.hypo_part3 #pdf_button:hover {
+.hypo_part3 .pdf_button:hover {
   background: #000000;
   color: #ffffff;
 }
@@ -1791,11 +1803,15 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: red;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 490px;
+    width: 370px;
+    margin-left: calc( 50% - 195px);
+    margin-top: 30px;
+  }
+  .hypo_part3 .button_box .pdf_button {
+    margin-top: 0px;
   }
 }
 

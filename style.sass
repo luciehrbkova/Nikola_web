@@ -921,6 +921,10 @@ p
     background-repeat: no-repeat
     background-size: cover
     padding: 50px 0px
+    @media screen and ( min-width: 600px)
+        padding: 70px 0px
+    @media screen and ( min-width: 1200px)
+        padding: 120px 0px
     .kroky4_header_box
         display: flex
         align-items: center
@@ -984,7 +988,7 @@ p
         background: $pink
         .slider_number
             color: $black
-    #pdf_button
+    .pdf_button
         background: transparent
         color: $black
         margin-top: 30px
@@ -995,9 +999,12 @@ p
         display: none
         @media screen and ( min-width: 600px)
             display: flex
-            background: red
             justify-content: space-between
-            width: 490px
+            width: 370px
+            margin-left: calc( 50% - 195px )
+            margin-top: 30px
+            .pdf_button
+                margin-top: 0px
     .A_Z
         font-weight: 700
         text-align: center
