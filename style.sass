@@ -864,6 +864,7 @@ p
         list-style-image: url('img/li.svg')
         li
             padding: 7.5px 0px
+            line-height: 22px
     .sekce_ul
         margin: 20px 0px 30px 0px
         @media screen and ( min-width: 600px)
@@ -915,6 +916,86 @@ p
         display: flex
         flex-direction: column
         justify-content: space-between
+
+// 4  kroky for general use
+.kroky4_header_box
+    display: flex
+    align-items: center
+    padding: 36px
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+    @media screen and ( min-width: 1200px)
+        padding-left: 85px
+        padding-right: 85px
+    h3
+        line-height: 1.375rem
+        @media screen and ( min-width: 1200px)
+            font-size: 1.3rem
+            line-height: 2rem
+    .kroky4
+        font-size: 1.25rem
+        font-weight: 400
+        letter-spacing: 0.33px
+        @media screen and ( min-width: 600px)
+            font-size: 1.75rem
+        @media screen and ( min-width: 1200px)
+            font-size: 2.25rem
+.kroky4_text_box_cont
+    width: 100%
+    display: flex
+    flex-direction: column
+    @media screen and ( min-width: 600px)
+        flex-direction: column-reverse
+        width: calc( 50% + 5px )
+    @media screen and ( min-width: 1200px)
+        // background: red
+        width: calc( 50% + 10px )
+.kroky4_text_box
+    padding: 36px 20px
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+    @media screen and ( min-width: 1200px)
+        padding: 36px
+// kroky slider
+.kroky_slider_box
+    width: 100%
+    height: 67px
+    display: flex
+    justify-content: space-between
+    @media screen and ( min-width: 600px)
+        width: 314px
+        align-self: flex-end
+.kroky_slider
+    width: calc( 25% - 0.75px ) //for 6 (16.6% - 0.83px)
+    height: 100%
+    border: 1px $pink solid
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .slider_number
+        font-family: Lora
+        font-size: 1.875rem
+        font-weight: 500
+        color: $pink
+.kroky_slider_selected
+    background: $pink
+    .slider_number
+        color: $black
+.pdf_button
+    background: transparent
+    color: $black
+    margin-top: 30px
+    &:hover
+        background: $black
+        color: $white
+.button_box
+    display: none
+    @media screen and ( min-width: 600px)
+        display: flex
+        justify-content: space-between
+        width: 370px
+        margin-left: calc( 50% - 195px )
+        margin-top: 30px
+        .pdf_button
+            margin-top: 0px
 .hypo_part3
     background-image: url('img/bg3.jpg')
     background-position: center
@@ -926,85 +1007,8 @@ p
     @media screen and ( min-width: 1200px)
         padding: 120px 0px
     .kroky4_header_box
-        display: flex
-        align-items: center
-        padding: 36px
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
         @media screen and ( min-width: 600px)
             margin-top: 67px
-        @media screen and ( min-width: 1200px)
-            padding-left: 85px
-            padding-right: 85px
-        h3
-            line-height: 1.375rem
-            @media screen and ( min-width: 1200px)
-                font-size: 1.5rem
-                line-height: 2rem
-        .kroky4
-            font-size: 1.25rem
-            font-weight: 400
-            letter-spacing: 0.33px
-            @media screen and ( min-width: 600px)
-                font-size: 1.75rem
-            @media screen and ( min-width: 1200px)
-                font-size: 2.25rem
-    .kroky4_text_box_cont
-        width: 100%
-        display: flex
-        flex-direction: column
-        @media screen and ( min-width: 600px)
-            flex-direction: column-reverse
-            width: calc( 50% + 5px )
-        @media screen and ( min-width: 1200px)
-            // background: red
-            width: calc( 50% + 10px )
-    .kroky4_text_box
-        padding: 36px 20px
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
-        @media screen and ( min-width: 1200px)
-            padding: 36px
-    // kroky slider
-    .kroky_slider_box
-        width: 100%
-        height: 67px
-        display: flex
-        justify-content: space-between
-        @media screen and ( min-width: 600px)
-            width: 314px
-            align-self: flex-end
-    .kroky_slider
-        width: calc( 25% - 0.75px ) //for 6 (16.6% - 0.83px)
-        height: 100%
-        border: 1px $pink solid
-        display: flex
-        justify-content: space-around
-        align-items: center
-        .slider_number
-            font-family: Lora
-            font-size: 1.875rem
-            font-weight: 500
-            color: $pink
-    .kroky_slider_selected
-        background: $pink
-        .slider_number
-            color: $black
-    .pdf_button
-        background: transparent
-        color: $black
-        margin-top: 30px
-        &:hover
-            background: $black
-            color: $white
-    .button_box
-        display: none
-        @media screen and ( min-width: 600px)
-            display: flex
-            justify-content: space-between
-            width: 370px
-            margin-left: calc( 50% - 195px )
-            margin-top: 30px
-            .pdf_button
-                margin-top: 0px
     .A_Z
         font-weight: 700
         text-align: center
@@ -1014,6 +1018,80 @@ p
             margin-left: calc( 50% + 30px)
         @media screen and ( min-width: 1200px)
             text-align: left
+
+
+// hypo part 4 -  caste otazky
+.hypo_part4
+    .align_fl_end
+        align-items: flex-end
+    .hypo_otazky_box
+        width: 100%
+        background: $pink
+        height: 130px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        margin-bottom: 20px
+        h3
+            color: $white
+            font-weight: 300 !important
+            padding-bottom: 20px
+            @media screen and ( min-width: 600px)
+                padding-bottom: 25px
+            @media screen and ( min-width: 1200px)
+                padding-bottom: 37px
+        @media screen and ( min-width: 600px)
+            height: 150px
+        @media screen and ( min-width: 1200px)
+            height: 185px
+    .hypo_otazky_bg1
+        background-image: url('img/bg_otazky_1.jpg')
+    .hypo_otazky_bg2
+        background-image: url('img/bg_otazky_2.jpg')
+    .hypo_otazky_bg3
+        background-image: url('img/bg_otazky_3.jpg')
+    .sekce_ul
+        margin: 0px
+    .hypo_odpoved_container
+        padding: 10px 0px 50px 0px
+        @media screen and ( min-width: 1200px)
+            padding: 30px 0px 90px 0px
+        p
+            padding: 0px 20px
+            @media screen and ( min-width: 600px)
+                padding: 0px 30px
+            @media screen and ( min-width: 1200px)
+                padding: 0px 80px
+    .box_7rad
+        margin-bottom: 20px
+        p, li
+            font-weight: 200 !important
+        
+    .bold
+        font-weight: 600
+    .bg_rada
+        background-size: 76px
+        background-repeat: no-repeat
+        background-position: 95% 101%
+        @media screen and ( min-width: 600px)
+            background-size: 155px
+    .bg_rada1
+        background-image: url('img/rada1.png')
+    .bg_rada2
+        background-image: url('img/rada2.png')
+    .bg_rada3
+        background-image: url('img/rada3.png')
+    .bg_rada4
+        background-image: url('img/rada4.png')
+    .bg_rada5
+        background-image: url('img/rada5.png')
+    .bg_rada6
+        background-image: url('img/rada6.png')
+    .bg_rada7
+        background-image: url('img/rada7.png')
+    
+
+
 
 
     
