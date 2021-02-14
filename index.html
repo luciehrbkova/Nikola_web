@@ -117,26 +117,25 @@
         <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <h2>Služby</h2>
+                <h2 class="aniSluzby">Služby</h2>
                 <div class="services_container">
-                    <a href="hypoteky.html"><div class="box_services bg_pink">
-                       
+                    <a href="hypoteky.html"><div class="box_services bg_pink" id="servisOne">
                         <div class="services_box_bg s_bg1"></div>
                         <div class="services_number">01</div>
                         <h3 class="services_header">Financování bydlení</h3>
                         <!-- <h3 class="services_header">Hypotéky</h3> -->
                     </a></div>
-                    <a href="pojisteni.html"><div class="box_services bg_lightgreen"> 
+                    <a href="pojisteni.html"><div class="box_services bg_lightgreen" id="servisTwo"> 
                         <div class="services_box_bg s_bg4"></div>
                         <div class="services_number">02</div>
                         <h3 class="services_header">Zajištění příjmu & majetku</h3>
                     </a></div>
-                    <a href="investice.html"><div class="box_services bg_darkgreen"> 
+                    <a href="investice.html"><div class="box_services bg_darkgreen" id="servisThree"> 
                         <div class="services_box_bg s_bg3"></div>
                         <div class="services_number whiteNumber">03</div>
                         <h3 class="services_header white">Rezervy a Soukromá renta</h3>
                     </a></div>
-                    <a href="pujcky.html"><div class="box_services bg_pink"> 
+                    <a href="pujcky.html"><div class="box_services bg_pink" id="servisFour"> 
                         <div class="services_box_bg s_bg2"></div>
                         <div class="services_number">04</div>
 
@@ -154,12 +153,12 @@
         <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <h2 class="text_right mobile_only_bl">O Mně</h2>
+                <h2 class="text_right mobile_only_bl aniAbout">O Mně</h2>
                 <div class="row_from_tablet">
                     <div class="portrait "><img src="img/portrait.jpg" alt="" class="pc_mob_only_bl"><img src="img/portrait_tab.jpg" alt="" class="tab_only_bl"></div>
                     <div class="textabout">
-                        <h2 class="pc_tab_only_bl duo_header"><span class="white_duo_part">O</span> Mně</h2>
-                        <p>
+                        <h2 class="pc_tab_only_bl duo_header aniAbout"><span class="white_duo_part">O</span> Mně</h2>
+                        <p class="aniAboutText">
                             Baví mě dávat smysluplné kousky dohromady v jeden silný celek a finanční plánování je pro mě na míru ušitý koncept, 
                             jak se seberealizovat a zároveň tak pomáhat svým klientům ke svým cílům.
                             <br><br>
@@ -168,7 +167,7 @@
                             Starám se o více než 130 domácností, zprostředkovala jsem v hypotečních úvěrech více jak 200 000 000 Kč a 
                             ráda bych se s Vámi podělila o své pečlivě nasbírané zkušenosti.
                         </p>
-                        <div class="button_div pc_only_bl ">
+                        <div class="button_div pc_only_bl">
                             <button class="green_button margin_left_0">Napište mi</button>
                         </div>
 
@@ -176,28 +175,28 @@
                 </div>
 
                 <div class="uspechy_cont row_from_tablet">
-                    <div class="uspechy_box row">
+                    <div class="uspechy_box row" id="uspechOne">
                         <div class="usp_img"><img src="img/usp1.svg" alt=""></div>
                         <div class="usp_text_box">
                             <span class="usp_header">213 567 000 Kč</span>
                             <span class="usp_text"><p>v hypotékách</p></span>
                         </div>
                     </div>
-                    <div class="uspechy_box row">
+                    <div class="uspechy_box row" id="uspechTwo">
                         <div class="usp_img"><img src="img/usp2.svg" alt=""></div>
                         <div class="usp_text_box">
                             <span class="usp_header">14 387 000 Kč</span>
                             <span class="usp_text"><p>v investicích</p></span>
                         </div>
                     </div>
-                    <div class="uspechy_box row">
+                    <div class="uspechy_box row" id="uspechThree">
                         <div class="usp_img"><img src="img/usp3.svg" alt=""></div>
                         <div class="usp_text_box">
                             <span class="usp_header">100+</span>
                             <span class="usp_text"><p>spokojených klientů</p></span>
                         </div>
                     </div>
-                    <div class="uspechy_box row">
+                    <div class="uspechy_box row" id="uspechFour">
                         <div class="usp_img"><img src="img/usp4.svg" alt=""></div>
                         <div class="usp_text_box">
                             <span class="usp_header">8</span>
@@ -220,19 +219,41 @@
         <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <h2 class="h2_sp">Moji Spojenci</h2>
+                <h2 class="h2_sp aniSpojenci">Moji Spojenci</h2>
                 <div class="services_container">
-                    <div class="box_spojenci">
-                        <img src="img/spojenec1.jpg" alt=""> 
+                    <!-- Laura -->
+                    <div class="box_spojenci spojenci_bg1" id="spojenecOne">
+                        <!-- <img src="img/spojenec1.jpg" alt="">  -->
+                        <p><span class="bold">Laura Krafferová</span><br>
+                            Osobní Asistentka<br><br>
+                            <span class="italic"> Laura je má odborná asistentka, která zařizuje veškerou administrativu pro mé klienty, proto je mým nezbytným článkem a velkou podporou pro moje podnikání.</span>
+
+                        </p>
                     </div>
-                    <div class="box_spojenci">
-                        <img src="img/spojenec1.jpg" alt=""> 
+                    <!-- Pavla -->
+                    <div class="box_spojenci spojenci_bg2" id="spojenecTwo">
+                        <p><span class="bold">Mgr. Pavla Marešová</span><br>
+                            Advokát <br><br>
+                            <span class="italic"> Paní Marešová mi pomáhá zdokonalovat mé znalosti v oblasti realitního práva a kontroluje v rámci mé služby pro mé klienty kupní smlouvy a připravuje tak veškerou právní administrativu.</span>
+
+                        </p>
+                        
                     </div>
-                    <div class="box_spojenci">
-                        <img src="img/spojenec1.jpg" alt=""> 
+                    <!-- Petra -->
+                    <div class="box_spojenci spojenci_bg3" id="spojenecThree">
+                        <p><span class="bold">Mgr. Petra Krůčková</span><br>
+                            Realitní makléř<br><br>
+                            <span class="italic"> Petra je kvalitní realitní makléřka, která pomáhá mým klientům prodat nemovitost včetně veškerého servisu od kvalitního „homestagingu“ přes prohlídky, až po samotnou koupi.</span>
+
+                        </p>
                     </div>
-                    <div class="box_spojenci">
-                        <img src="img/spojenec1.jpg" alt=""> 
+                   <!-- Josef -->
+                    <div class="box_spojenci spojenci_bg4" id="spojenecFour">
+                        <p><span class="bold">Ing. Josef Šilhán</span><br>
+                            Odhadce <br><br>
+                            <span class="italic"> Když mi zavolá klient, že našel tu správnou nemovitost, mám na telefonu odborníka, který se mnou nemovitost zkonzultuje a potvrdí mi, zda cena kupní bude akceptovatelná většinou bank.</span>
+
+                        </p>
                     </div>
 
                 </div>
@@ -248,7 +269,7 @@
         <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <h2 class="h2_rf">Reference</h2>
+                <h2 class="h2_rf aniReference">Reference</h2>
                 <div class="ref_cont row_from_tablet">
                     <div class="ref_img_box mobile_hide">
                         <div class="ref_img_niki"><img src="img/nikiref.jpg" alt=""></div>
@@ -283,11 +304,11 @@
    
     <!--*********************** CONTACT *************************-->
     <section class="contact" id="contact">
-        <div class="container bg_pink">
+        <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <h2 class="top_layer">Kontakt</h2>
-                <div class="bg_white cont_cont row_from_tablet">
+                <h2 class="top_layer aniKontakt">Kontakt</h2>
+                <div class="bg_white cont_cont row_from_tablet aniContactBg">
                     <div class="contact_container aniContact">
                         <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
                             <label for="jmeno">Jméno</label><br>
@@ -391,6 +412,95 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script>
+
+    gsap.registerPlugin(ScrollTrigger);
+            // EASI IN FUNCTION UP
+            var easeUpItem, valueStripe;
+            function generalEaseIn(easeUpItem){
+                gsap.from(easeUpItem, {
+                scrollTrigger: {
+                    trigger: easeUpItem,
+                    toggleActions: "play none none none",
+                    start: "top 70%",
+                    duration: 0.7,
+                    // markers: true,
+                },
+                opacity: 0,
+                y: 60, 
+                // stagger: 0.4
+                });
+            };
+            // SLUZBY
+            generalEaseIn('.aniSluzby')
+            // ABOUT
+            generalEaseIn('.portrait');
+            generalEaseIn('.aniAboutText');
+            generalEaseIn('.aniAbout');
+            // SPOJENCI
+            generalEaseIn('.aniSpojenci')
+            // REFERENCE
+            generalEaseIn('.aniReference')
+            generalEaseIn('.ref_img_niki')
+            generalEaseIn('.ref_text_box')
+            // KONTAKT
+            generalEaseIn('.aniKontakt')
+            generalEaseIn('.aniContactBg')
+            generalEaseIn('.aniContact')
+
+
+
+            // EASI IN FUNCTION VALUES
+            function valueStripeMotion(valueStripe){
+                gsap.from(valueStripe, {
+                scrollTrigger: {
+                    trigger: valueStripe,
+                    toggleActions: "play none none none",
+                    start: "top 100%",
+                    duration: 0.5,
+                    scrub: true,
+                    // markers: true,
+                },
+                x: -200, 
+                // stagger: 0.4
+                });
+            };
+            valueStripeMotion('.values');
+
+            // Animace pro 4 po sobe jdouci objekty
+            var itemOne, itemTwo, itemThree, itemFour, quaterTrigger;
+            function quaterAni(itemOne, itemTwo, itemThree, itemFour, quaterTrigger){
+                var quaterTimeline = gsap.timeline();
+                quaterTimeline.from(itemOne, {duration: 0.5, y: 20, opacity: 0})
+                            .from(itemTwo, {duration: 0.3, y: 20, opacity: 0})
+                            .from(itemThree, {duration: 0.3, y: 20, opacity: 0})
+                            .from(itemFour, {duration: 0.3, y: 20, opacity: 0});
+                ScrollTrigger.create({
+                    trigger: quaterTrigger,
+                    animation: quaterTimeline,
+                    start: "top 90%",
+                    // markers: true
+                });
+            };
+            quaterAni('#servisOne', '#servisTwo', '#servisThree', '#servisFour', '#servisOne');
+            quaterAni('#uspechOne', '#uspechTwo', '#uspechThree', '#uspechFour', '.uspechy_cont');
+            quaterAni('#spojenecOne', '#spojenecTwo', '#spojenecThree', '#spojenecFour', '#spojenecOne');
+
+            // spojenci
+            CSSPlugin.defaultTransformPerspective = 400; 
+            gsap.from("#spojenecThree", {
+                scrollTrigger: {
+                    trigger:'#spojenecThree',
+                    toggleActions: "play none none none",
+                    start: "top 80%",
+                    // scrub: 1,
+                },
+                opacity:0,
+                duration: 0.3, 
+                rotationX: 180,
+                stagger: 0.25,
+            });
+
+            
     </script>
 
 </body>

@@ -169,14 +169,14 @@
 
     </section>
    
-   
+    
     <!--*********************** CONTACT *************************-->
     <section class="contact" id="contact">
-        <div class="container bg_pink">
+        <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <h2 class="top_layer">Kontakt</h2>
-                <div class="bg_white cont_cont row_from_tablet">
+                <h2 class="top_layer aniKontakt">Kontakt</h2>
+                <div class="bg_white cont_cont row_from_tablet aniContactBg">
                     <div class="contact_container aniContact">
                         <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
                             <label for="jmeno">Jméno</label><br>
@@ -280,6 +280,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script>
+        gsap.registerPlugin(ScrollTrigger);
+            // EASI IN FUNCTION UP
+            var easeUpItem, valueStripe;
+            function generalEaseIn(easeUpItem){
+                gsap.from(easeUpItem, {
+                scrollTrigger: {
+                    trigger: easeUpItem,
+                    toggleActions: "play none none none",
+                    start: "top 70%",
+                    duration: 0.7,
+                    // markers: true,
+                },
+                opacity: 0,
+                y: 60, 
+                // stagger: 0.4
+                });
+            };
+            // KONTAKT
+            generalEaseIn('.aniKontakt')
+            generalEaseIn('.aniContactBg')
+            generalEaseIn('.aniContact')
     </script>
 
 </body>
