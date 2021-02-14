@@ -73,6 +73,10 @@ h2
         font-size: 6.25rem
     @media screen and ( min-width: 1200px)
         font-size: 9.375rem
+    @media screen and ( min-width: 1900px)
+        font-size: 11rem
+        -webkit-text-stroke: 3px $black
+        margin: 100px 0px 60px 0px
 h3
     margin: 0
     padding: 0
@@ -301,6 +305,8 @@ p
         @media screen and ( min-width: 1200px)
             padding-top: 0px
             padding-left: 0px
+        @media screen and ( min-width: 1900px)
+            font-size: 2rem
     .okrok
         font-size: 0.8rem
         font-weight: 300
@@ -311,6 +317,9 @@ p
             padding: 5px 0px 50px 20px
         @media screen and ( min-width: 1200px)
             padding: 10px 0px 50px 0px
+        @media screen and ( min-width: 1900px)
+            font-size: 1.5rem
+            padding: 50px 0px 100px 0px
     .signature
         width: 270px
         height: 74px
@@ -371,6 +380,7 @@ p
     background-position: center
     background-repeat: no-repeat
     background-size: cover
+    background-attachment: fixed
     @media screen and ( min-width: 600px)
         height: 60vh
     @media screen and ( min-width: 1200px)
@@ -417,6 +427,9 @@ p
         @media screen and ( min-width: 1200px)
             font-size: 1.875rem
             height: 110px
+        @media screen and ( min-width: 1900px)
+            font-size: 2.2rem
+            height: 200px
     .services_number
         font-family: Lora
         color: $black
@@ -450,12 +463,17 @@ p
     margin-left: -114px
     @media screen and ( min-width: 1200px)
         margin: 20px 0px 60px -160px
+    @media screen and ( min-width: 1900px)
+        margin: 20px 0px 60px -200px
 .white_duo_part
     font-size: 6.25rem
     -webkit-text-stroke: 2px $white
     -webkit-text-fill-color: transparent
     @media screen and ( min-width: 1200px)
         font-size: 9.375rem
+    @media screen and ( min-width: 1900px)
+        font-size: 11rem
+        -webkit-text-stroke: 3px $white
 .textabout
     width: 100%
     padding: 50px 0px
@@ -475,8 +493,8 @@ p
         padding-bottom: 0px
     @media screen and ( min-width: 1900px)
         p
-            font-size: 1.5rem
-            line-height: 3rem
+            font-size: 1.3rem
+            line-height: 2.5rem
 .uspechy_cont
     flex-wrap: wrap
     margin: 0px 0px 50px 0px
@@ -507,6 +525,8 @@ p
 .usp_text
     p
         font-size: 0.95rem
+        @media screen and ( min-width: 1900px)
+            font-size: 1.3rem
 .values
     background: $lightgreen
     width: 155%
@@ -522,7 +542,7 @@ p
     @media screen and ( min-width: 1200px)
         width: 120%
         height: 58px
-        margin-top: 0px
+        margin: 0px 0px 120px 0px
 // *************** SPOJENCI *************
 #spojenci
     height: 110vh 
@@ -530,6 +550,7 @@ p
     background-position: center
     background-repeat: no-repeat
     background-size: cover
+    background-attachment: fixed
     @media screen and ( min-width: 600px)
         height: 60vh
     @media screen and ( min-width: 1200px)
@@ -549,7 +570,7 @@ p
     @media screen and ( min-width: 1200px)
         min-height: 400px
     @media screen and ( min-width: 1900px)
-        min-height: 500px
+        min-height: 600px
     p
         padding: 15px
         @media screen and ( max-width: 320px)
@@ -569,7 +590,7 @@ p
             line-height: 1.8rem
         @media screen and ( min-width: 1900px)
             font-size: 1.4rem
-            line-height: 2.5rem
+            line-height: 2.3rem
     &::before
         content: ""
         visibility: visible
@@ -636,6 +657,8 @@ p
     @media screen and ( min-width: 1200px)
         width: 70%
         padding: 70px 105px
+    @media screen and ( min-width: 1900px)
+        padding: 100px 150px
     p
         font-size: 0.6875rem
         // line-height: 1.2rem
@@ -649,8 +672,8 @@ p
             line-height: 1rem
         @media screen and ( min-width: 1900px)
             height: 500px
-            font-size: 1rem
-            line-height: 3rem
+            font-size: 1.2rem
+            line-height: 2.5rem
 
 .ref_undertext
     justify-content: center
@@ -673,6 +696,8 @@ p
 .lada_name
     font-size: 0.875rem
     font-weight: 600   
+    @media screen and ( min-width: 1900px)
+        font-size: 1rem
 .img_slider
     width: 110px
     height: 6px
@@ -701,6 +726,7 @@ p
     background-position: center
     background-repeat: no-repeat
     background-size: cover
+    background-attachment: fixed
 //     @media screen and ( min-width: 1200px)
        
 .contact
@@ -720,6 +746,8 @@ p
         @media screen and ( min-width: 1200px )
             margin-top: -105px
             margin-bottom: 120px
+        @media screen and ( min-width: 1900px )
+            margin-top: -135px
     .map_contactdata
         @media screen and ( min-width: 600px )
             width: 50%
@@ -749,6 +777,8 @@ p
             -o-appearance: none
             appearance: none
             border-radius: 0px !important
+            @media screen and ( min-width: 1900px)
+                font-size: 1.2rem
             &::-webkit-outer-spin-button
                 -webkit-appearance: none
                 -moz-appearance: none
@@ -772,7 +802,7 @@ p
         .submit
             color: $white
             background: $black
-            border: 1px solid $black
+            border: 2px solid $black
             padding: 18px 0
             font-weight: 300
             font-size: 1rem
@@ -783,6 +813,9 @@ p
             transition: 0.5s
             @media screen and ( min-width: 1200px )
                 margin-left: 0px
+            &:hover
+                background: $white
+                color: $black
     .contact_data
         padding: 10%
         @media screen and ( min-width: 600px )
@@ -813,6 +846,9 @@ p
         p
             font-size: 0.875rem
             line-height: 1.5rem
+            @media screen and ( min-width: 1900px)
+                font-size: 1.2rem
+                line-height: 2.5rem
         // padding-top: 20px
         // @media screen and ( min-width: 600px )
         //     padding-top: 0
@@ -871,9 +907,13 @@ p
     li
         list-style: none
         padding: 5px 0
+        @media screen and ( min-width: 1900px)
+            padding: 10px 0
         a 
             font-size: 0.875rem
             letter-spacing: 0.1px
+            @media screen and ( min-width: 1900px)
+                font-size: 1.2rem
     a
         color: $white
         &:hover

@@ -82,6 +82,14 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1900px) {
+  h2 {
+    font-size: 11rem;
+    -webkit-text-stroke: 3px #000000;
+    margin: 100px 0px 60px 0px;
+  }
+}
+
 h3 {
   margin: 0;
   padding: 0;
@@ -513,6 +521,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1900px) {
+  #hero .topkonzul {
+    font-size: 2rem;
+  }
+}
+
 #hero .okrok {
   font-size: 0.8rem;
   font-weight: 300;
@@ -530,6 +544,13 @@ p {
 @media screen and (min-width: 1200px) {
   #hero .okrok {
     padding: 10px 0px 50px 0px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  #hero .okrok {
+    font-size: 1.5rem;
+    padding: 50px 0px 100px 0px;
   }
 }
 
@@ -626,6 +647,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 @media screen and (min-width: 600px) {
@@ -728,6 +750,13 @@ p {
   }
 }
 
+@media screen and (min-width: 1900px) {
+  .box_services .services_header {
+    font-size: 2.2rem;
+    height: 200px;
+  }
+}
+
 .box_services .services_number {
   font-family: Lora;
   color: #000000;
@@ -776,6 +805,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1900px) {
+  .duo_header {
+    margin: 20px 0px 60px -200px;
+  }
+}
+
 .white_duo_part {
   font-size: 6.25rem;
   -webkit-text-stroke: 2px #ffffff;
@@ -785,6 +820,13 @@ p {
 @media screen and (min-width: 1200px) {
   .white_duo_part {
     font-size: 9.375rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .white_duo_part {
+    font-size: 11rem;
+    -webkit-text-stroke: 3px #ffffff;
   }
 }
 
@@ -822,8 +864,8 @@ p {
 
 @media screen and (min-width: 1900px) {
   .textabout p {
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -889,6 +931,12 @@ p {
   font-size: 0.95rem;
 }
 
+@media screen and (min-width: 1900px) {
+  .usp_text p {
+    font-size: 1.3rem;
+  }
+}
+
 .values {
   background: #B8BAAD;
   width: 155%;
@@ -911,7 +959,7 @@ p {
   .values {
     width: 120%;
     height: 58px;
-    margin-top: 0px;
+    margin: 0px 0px 120px 0px;
   }
 }
 
@@ -921,6 +969,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 @media screen and (min-width: 600px) {
@@ -967,7 +1016,7 @@ p {
 
 @media screen and (min-width: 1900px) {
   .box_spojenci {
-    min-height: 500px;
+    min-height: 600px;
   }
 }
 
@@ -1015,7 +1064,7 @@ p {
 @media screen and (min-width: 1900px) {
   .box_spojenci p, .box_spojenci .bold, .box_spojenci .italic {
     font-size: 1.4rem;
-    line-height: 2.5rem;
+    line-height: 2.3rem;
   }
 }
 
@@ -1134,6 +1183,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1900px) {
+  .ref_text_box {
+    padding: 100px 150px;
+  }
+}
+
 .ref_text_box p {
   font-size: 0.6875rem;
   height: 370px;
@@ -1156,8 +1211,8 @@ p {
 @media screen and (min-width: 1900px) {
   .ref_text_box p {
     height: 500px;
-    font-size: 1rem;
-    line-height: 3rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1213,6 +1268,12 @@ p {
   font-weight: 600;
 }
 
+@media screen and (min-width: 1900px) {
+  .lada_name {
+    font-size: 1rem;
+  }
+}
+
 .img_slider {
   width: 110px;
   height: 6px;
@@ -1258,6 +1319,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .contact .top_layer {
@@ -1281,6 +1343,12 @@ p {
   .contact .cont_cont {
     margin-top: -105px;
     margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .contact .cont_cont {
+    margin-top: -135px;
   }
 }
 
@@ -1333,6 +1401,12 @@ p {
   border-radius: 0px !important;
 }
 
+@media screen and (min-width: 1900px) {
+  .contact .contact_container input, .contact .contact_container textarea {
+    font-size: 1.2rem;
+  }
+}
+
 .contact .contact_container input::-webkit-outer-spin-button, .contact .contact_container textarea::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1363,7 +1437,7 @@ p {
 .contact .contact_container .submit {
   color: #ffffff;
   background: #000000;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   padding: 18px 0;
   font-weight: 300;
   font-size: 1rem;
@@ -1379,6 +1453,11 @@ p {
   .contact .contact_container .submit {
     margin-left: 0px;
   }
+}
+
+.contact .contact_container .submit:hover {
+  background: #ffffff;
+  color: #000000;
 }
 
 .contact .contact_data {
@@ -1440,6 +1519,13 @@ p {
 .contact .email_box p {
   font-size: 0.875rem;
   line-height: 1.5rem;
+}
+
+@media screen and (min-width: 1900px) {
+  .contact .email_box p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
 }
 
 .contact .email_item {
@@ -1508,9 +1594,21 @@ p {
   padding: 5px 0;
 }
 
+@media screen and (min-width: 1900px) {
+  .footer_box li {
+    padding: 10px 0;
+  }
+}
+
 .footer_box li a {
   font-size: 0.875rem;
   letter-spacing: 0.1px;
+}
+
+@media screen and (min-width: 1900px) {
+  .footer_box li a {
+    font-size: 1.2rem;
+  }
 }
 
 .footer_box a {
