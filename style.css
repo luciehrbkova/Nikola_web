@@ -1075,7 +1075,7 @@ p {
   top: 0px;
   height: 100%;
   width: 100%;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: 0.1s;
@@ -1189,15 +1189,29 @@ p {
   }
 }
 
+.ref_text_box .ref_text_wrap {
+  height: 370px;
+}
+
+@media screen and (min-width: 600px) {
+  .ref_text_box .ref_text_wrap {
+    height: 270px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .ref_text_box .ref_text_wrap {
+    height: 500px;
+  }
+}
+
 .ref_text_box p {
   font-size: 0.6875rem;
-  height: 370px;
   letter-spacing: 0.55px;
 }
 
 @media screen and (min-width: 600px) {
   .ref_text_box p {
-    height: 270px;
     font-size: 0.75rem;
   }
 }
@@ -1210,7 +1224,6 @@ p {
 
 @media screen and (min-width: 1900px) {
   .ref_text_box p {
-    height: 500px;
     font-size: 1.2rem;
     line-height: 2.5rem;
   }
@@ -1280,7 +1293,6 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background: blue;
 }
 
 .arrow_box {
@@ -1312,6 +1324,10 @@ p {
     height: auto;
     margin-left: 1px;
   }
+}
+
+#testimonial2, #testimonial3, #testimonial4 {
+  display: none;
 }
 
 #contact {
@@ -2542,5 +2558,9 @@ p {
 
 .poj_part4_bg .part4_button {
   margin-top: 30px;
+}
+
+.gdpr .bold {
+  margin: 15px 0px;
 }
 /*# sourceMappingURL=style.css.map */

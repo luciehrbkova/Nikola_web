@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- or jquery online version -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 
 </head>
@@ -274,27 +276,77 @@
                     <div class="ref_img_box mobile_hide">
                         <div class="ref_img_niki"><img src="img/nikiref.jpg" alt=""></div>
                         <div class="arrow_box row">
-                            <img src="img/arrowl.png" alt="">
-                            <img src="img/arrowr.png" alt="">
+                            <img src="img/arrowl.png" alt="" onclick="previousReference()">
+                            <img src="img/arrowr.png" alt="" onclick="nextReference()">
                         </div>
                     </div>
                     <div class="ref_text_box">
-                       <p>Předem upozorňuji, že nepatřím mezi šetřivé lidi, vyloženě co vidím, to koupím. Asi to je pozůstatek ze socialismu, kdy jsem vše hezké viděla jen v časopisech ze zahraničí. Takže vlastně za to nemůžu.
-                            Často jsem dostávala nabídky ohledně investic nebo ohledně toho, že mi někdo poradí jak se svými penězi nakládat. Neměla jsem nikdy chuť se někomu cizímu  svěřovat ohledně financí. S Nikolou mě seznámil můj přítel a po osobní schůzce, kde mi hned svým jednáním padla do oka spolu spolupracujeme.
-                            Vysvětlila jsem jí, co a jak si představuji a ona mi dala nabídku přímo na tělo. Nikola se chová velice profesionálně, ale to na mě tolik neplatilo. To umí dnes hodně lidí. Ale platí na mě lidský, empatický přístup, smysl pro humor a to vše jsem u Nikoly našla.
-                            </p>
-                        <div class="ref_undertext row_from_tablet">
-                            <div class="lada_box">
-                                <img src="img/lada1.png" alt="" class="lada_img">
-                                <span class="lada_name">Lada Kuruczová</span>
+                        <div id="testimonial1">
+                            <div class="ref_text_wrap">
+                                <p id="reference_text1">Předem upozorňuji, že nepatřím mezi šetřivé lidi, vyloženě co vidím, to koupím. Asi to je pozůstatek ze socialismu, kdy jsem vše hezké viděla jen v časopisech ze zahraničí. Takže vlastně za to nemůžu.
+                                        Často jsem dostávala nabídky ohledně investic nebo ohledně toho, že mi někdo poradí jak se svými penězi nakládat. Neměla jsem nikdy chuť se někomu cizímu  svěřovat ohledně financí. S Nikolou mě seznámil můj přítel a po osobní schůzce, kde mi hned svým jednáním padla do oka spolu spolupracujeme.
+                                        Vysvětlila jsem jí, co a jak si představuji a ona mi dala nabídku přímo na tělo. Nikola se chová velice profesionálně, ale to na mě tolik neplatilo. To umí dnes hodně lidí. Ale platí na mě lidský, empatický přístup, smysl pro humor a to vše jsem u Nikoly našla.
+                                        </p>
                             </div>
-                            <img src="img/slider1.jpg" alt="" class="img_slider">
-                            <!-- <div class="img_slider"><img src="img/slider1.jpg" alt=""></div> -->
+                            <div class="ref_undertext row_from_tablet">
+                                <div class="lada_box">
+                                    <img src="img/lada1.png" alt="" class="lada_img" id="reference_img1">
+                                    <span class="lada_name" id="reference_name1">Lada Kuruczová</span>
+                                </div>
+                                <img src="img/slider1.jpg" alt="" class="img_slider" id="reference_slider1">
+                                <!-- <div class="img_slider"><img src="img/slider1.jpg" alt=""></div> -->
+                            </div>
+                        </div>
+                        <div id="testimonial2">
+                            <div class="ref_text_wrap">
+                                <p id="reference_text2">Již 8 let je Nikola Bartoníčková mojí finanční poradkyní. Když jsem potřeboval zařídit hypotéku, pojistku nebo investici, tak vždy bylo vše vyřízeno velmi rychle,
+                                    kvalitně a s velmi dobrou informovaností. Také během roku dostávám informace o změnách na trhu 
+                                    a nových nabídkách.  S Nikolou Bartoníčkovou jsem velmi spokojen a můžu jen a jen doporučit.      
+                                    </p>
+                            </div>
+                            <div class="ref_undertext row_from_tablet">
+                                <div class="lada_box">
+                                    <img src="img/lada2.png" alt="" class="lada_img" id="reference_img2">
+                                    <span class="lada_name" id="reference_name2">Jiří Vrba</span>
+                                </div>
+                                <img src="img/slider2.jpg" alt="" class="img_slider" id="reference_slider2">
+                                <!-- <div class="img_slider"><img src="img/slider1.jpg" alt=""></div> -->
+                            </div>
+                        </div>
+                        <div id="testimonial3">
+                            <div class="ref_text_wrap">
+                                <p id="reference_text3">S Nikolou se známe již od jejích profesních začátků a mohu posoudit, jak moc ve svém oboru vyrostla a stále se rozvíjí. Na každou schůzku je vždy perfektně připravená, vše mi srozumitelně a podrobně vysvětlí. Plně jí důvěřuji,
+                                    náš vztah za dobu, po kterou spolupracujeme, přerostl v přátelství
+                                    </p>
+                            </div>
+                            <div class="ref_undertext row_from_tablet">
+                                <div class="lada_box">
+                                    <img src="img/lada3.png" alt="" class="lada_img" id="reference_img3">
+                                    <span class="lada_name" id="reference_name3">Zdenka</span>
+                                </div>
+                                <img src="img/slider3.jpg" alt="" class="img_slider" id="reference_slider3">
+                                <!-- <div class="img_slider"><img src="img/slider1.jpg" alt=""></div> -->
+                            </div>
+                        </div>
+                        <div id="testimonial4">
+                            <div class="ref_text_wrap">
+                                <p id="reference_text4">Se slečnou Nikolou Bartoníčkovou mě pojí finance. Myslím, že jsem se slečnou Nikolou navrcholu, jako na přiložené fotce, vždy pomůže vyřešit finanční problémy, pojistné události aj. Spolupráce prostě super! 
+                                    </p>
+
+                            </div>
+                            <div class="ref_undertext row_from_tablet">
+                                <div class="lada_box">
+                                    <img src="img/lada4.png" alt="" class="lada_img" id="reference_img4">
+                                    <span class="lada_name" id="reference_name4">Ivana Varhulíková</span>
+                                </div>
+                                <img src="img/slider4.jpg" alt="" class="img_slider" id="reference_slider4">
+                                <!-- <div class="img_slider"><img src="img/slider1.jpg" alt=""></div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="arrow_box row mobile_only_bl">
-                        <img src="img/arrowl.png" alt="">
-                        <img src="img/arrowr.png" alt="">
+                        <img src="img/arrowl.png" alt="" onclick="previousReference()">
+                        <img src="img/arrowr.png" alt="" onclick="nextReference()">
                     </div>
 
                 </div>
@@ -399,8 +451,6 @@
     </section>
     <!-- js -->
     <script src="myScript.js"></script>
-    <!-- or jquery online version -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
@@ -485,20 +535,107 @@
             quaterAni('#uspechOne', '#uspechTwo', '#uspechThree', '#uspechFour', '.uspechy_cont');
             quaterAni('#spojenecOne', '#spojenecTwo', '#spojenecThree', '#spojenecFour', '#spojenecOne');
 
+        // REFERENCE FUNCTION______________________
+            var reference1, reference2Show, reference3, reference4;
+            var actualReference = 1;
+            function generalReference(reference2Show, reference1, reference3, reference4){
+                $(reference2Show).delay(250).fadeIn(250);
+                $(reference1).fadeOut(250);
+                $(reference3).fadeOut(250);
+                $(reference4).fadeOut(250);
+            };
+
+            function nextReference(){
+                if (actualReference == 1){
+                    generalReference('#testimonial2', '#testimonial1','#testimonial3', '#testimonial4');
+                    // actual
+                    actualReference = 2;
+                } else if (actualReference == 2){
+                    generalReference('#testimonial3', '#testimonial1','#testimonial2', '#testimonial4');
+                    // actual
+                    actualReference = 3;
+                } else if (actualReference == 3){
+                    generalReference('#testimonial4', '#testimonial1','#testimonial2', '#testimonial3');
+                    // actual
+                    actualReference = 4;
+                } else if (actualReference == 4){
+                    generalReference('#testimonial1', '#testimonial4','#testimonial2', '#testimonial3');
+                    // actual
+                    actualReference = 1;
+                };
+            };
+
+            function previousReference(){
+                if (actualReference == 1){
+                    generalReference('#testimonial4', '#testimonial1','#testimonial3', '#testimonial2');
+                    // actual
+                    actualReference = 4;
+                } else if (actualReference == 4){
+                    generalReference('#testimonial3', '#testimonial1','#testimonial2', '#testimonial4');
+                    // actual
+                    actualReference = 3;
+                } else if (actualReference == 3){
+                    generalReference('#testimonial2', '#testimonial1','#testimonial4', '#testimonial3');
+                    // actual
+                    actualReference = 2;
+                } else if (actualReference == 2){
+                    generalReference('#testimonial1', '#testimonial4','#testimonial2', '#testimonial3');
+                    // actual
+                    actualReference = 1;
+                };
+            };
+      
+
+        
+
+
+        // final function______________________________________________________________
+        // function displayNextRef(referenceButton)
+        // {
+        //     $(referenceButton).click(function () 
+        //     {
+        //         if (actualReference == "first")
+        //         {
+        //             animateRefElements("80px","0px","160px","0");
+        //             swopRefCards("#reference_card_1","#reference_card_2");
+        //             changeSliderBackground(" url('images/sl_2.png')");
+        //             actualReference = "second";
+
+        //         }
+        //         else if (actualReference == "second")
+        //         {
+        //             animateRefElements("0px","160px","80px","180");
+        //             swopRefCards("#reference_card_2","#reference_card_3");
+        //             changeSliderBackground(" url('images/sl_3.png')");
+        //             actualReference = "third";
+
+        //         }
+        //         else
+        //         {
+        //             animateRefElements("160px","80px","0px","180");
+        //             swopRefCards("#reference_card_3","#reference_card_1");
+        //             changeSliderBackground(" url('images/sl_1.png')");
+        //             actualReference = "first";
+
+        //         }
+        //     })
+        // }
             // spojenci
-            CSSPlugin.defaultTransformPerspective = 400; 
-            gsap.from("#spojenecThree", {
-                scrollTrigger: {
-                    trigger:'#spojenecThree',
-                    toggleActions: "play none none none",
-                    start: "top 80%",
-                    // scrub: 1,
-                },
-                opacity:0,
-                duration: 0.3, 
-                rotationX: 180,
-                stagger: 0.25,
-            });
+            // CSSPlugin.defaultTransformPerspective = 400; 
+            // gsap.from("#spojenecThree", {
+            //     scrollTrigger: {
+            //         trigger:'#spojenecThree',
+            //         toggleActions: "play none none none",
+            //         start: "top 80%",
+            //         // scrub: 1,
+            //     },
+            //     opacity:0,
+            //     duration: 0.3, 
+            //     rotationX: 180,
+            //     stagger: 0.25,
+            // });
+
+
 
             
     </script>
