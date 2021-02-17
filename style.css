@@ -1691,6 +1691,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 @media screen and (min-width: 600px) {
@@ -2015,6 +2016,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
@@ -2039,6 +2041,18 @@ p {
           align-items: center;
 }
 
+.kroky_slider:hover {
+  background-color: rgba(227, 197, 183, 0.4);
+}
+
+.kroky_slider:hover .slider_number {
+  color: #000000;
+}
+
+.kroky_slider:hover .kroky_slider_selected {
+  background-color: #E3C5B7;
+}
+
 .kroky_slider .slider_number {
   font-family: Lora;
   font-size: 1.875rem;
@@ -2052,6 +2066,29 @@ p {
 
 .kroky_slider_selected .slider_number {
   color: #000000;
+}
+
+.krok_height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 250px;
+}
+
+@media screen and (min-width: 600px) {
+  .krok_height {
+    height: 200px;
+  }
+}
+
+#krok_hypo4, #krok_hypo2, #krok_hypo3 {
+  display: none;
 }
 
 .pdf_button {
@@ -2091,6 +2128,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 50px 0px;
 }
 
@@ -2291,6 +2329,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding-bottom: 106px;
 }
 
@@ -2339,6 +2378,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding-bottom: 106px;
 }
 
@@ -2430,6 +2470,7 @@ p {
 
 .poj_part2_bg {
   background-image: url("img/bg6.jpg");
+  background-attachment: fixed;
 }
 
 @media screen and (min-width: 600px) {
