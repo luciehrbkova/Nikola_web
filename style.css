@@ -2143,7 +2143,7 @@ p {
 
 .hypo_part4 .hypo_otazky_box {
   width: 100%;
-  background: #E3C5B7;
+  cursor: pointer;
   height: 130px;
   background-position: center;
   background-repeat: no-repeat;
@@ -2199,6 +2199,8 @@ p {
 
 .hypo_part4 .hypo_odpoved_container {
   padding: 10px 0px 50px 0px;
+  display: none;
+  width: 100% !important;
 }
 
 @media screen and (min-width: 1200px) {
@@ -2277,6 +2279,11 @@ p {
 
 .bg_rada7 {
   background-image: url("img/rada7.png");
+}
+
+#odpoved3 {
+  display: none;
+  width: 100% !important;
 }
 
 #pujcky {

@@ -1168,7 +1168,8 @@ p
         align-items: flex-end
     .hypo_otazky_box
         width: 100%
-        background: $pink
+        // background: $pink
+        cursor: pointer
         height: 130px
         background-position: center
         background-repeat: no-repeat
@@ -1194,8 +1195,12 @@ p
         background-image: url('img/bg_otazky_3.jpg')
     .sekce_ul
         margin: 0px
+        // background-color: pink
     .hypo_odpoved_container
         padding: 10px 0px 50px 0px
+        // toggle function
+        display: none
+        width: 100% !important
         @media screen and ( min-width: 1200px)
             padding: 30px 0px 90px 0px
         p
@@ -1204,6 +1209,7 @@ p
                 padding: 0px 30px
             @media screen and ( min-width: 1200px)
                 padding: 0px 80px
+        
 // rada
 .box_7rad
     margin-bottom: 20px
@@ -1234,6 +1240,10 @@ p
     background-image: url('img/rada6.png')
 .bg_rada7
     background-image: url('img/rada7.png')
+#odpoved3
+    // toggle function
+    display: none
+    width: 100% !important
 
 // pujcky
 #pujcky

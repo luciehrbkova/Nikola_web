@@ -209,11 +209,33 @@
             <h2 class="h2_sp">Časté Otázky</h2>
     
                 <!-- 1 otazka *********************************************************-->
-                <div class="sekce_header_box align_fl_end hypo_otazky_box hypo_otazky_bg1">
+                <div class="sekce_header_box align_fl_end hypo_otazky_box hypo_otazky_bg1 question">
                     <h3>Které příjmy jsou pro banky akceptovatelné?</h3>
                 </div>
                 <!-- 1 ODPOVED -->
                 <div class="row_from_tablet hypo_odpoved_container" id="odpoved1">
+                    <ul class="sekce_ul">
+                        <li>Příjem ze zaměstnání – nesmíte být ve výpovědní nebo zkušební době a je potřeba bance předložit 3 měsíční výpisy s došlou mzdou</li>
+                        <li>Dohoda o provedení práce</li>
+                        <li>Dohoda o pracovní činnosti</li>
+                        <li>Daňové přiznání – fyzická osoba - OSVČ  - vypočítá se v interním kalkulátoru konkrétní zvolené banky, podle toho, zda vedete účetnictví, paušál či daňovou evidenci</li>
+                        <li>Daňové přiznání – právnická osoba – S.R.O.</li>
+                        <li>Příjem z pronájmu, který není ještě uveden v daňovém přiznání – banky umí započíst až 70% z čistého nájmu</li>
+                        <li>Budoucí příjem z pronájmu</li>
+                        <li>Rodičovský příspěvek</li>
+                        <li>Přídavky na děti</li>
+                        <li>Starobní důchod</li>
+                        <li>Invalidní důchod I., II., III. stupně</li>
+                        <li>Sirotčí důchod</li>
+                        <li>Vdovský důchod</li>
+                        <li>Výsluhový příspěvek</li>
+                        <li>Odměna pěstouna</li>
+                        <li>Výživné/Alimenty</li>
+                        <li>Diety</li>
+                    </ul>
+
+                </div>
+                <!-- <div class="row_from_tablet hypo_odpoved_container" id="odpoved1">
                     <ul class="sekce_ul sekce_from_tablet_half">
                         <li>Příjem ze zaměstnání – nesmíte být ve výpovědní nebo zkušební době a je potřeba bance předložit 3 měsíční výpisy s došlou mzdou</li>
                         <li>Dohoda o provedení práce</li>
@@ -237,11 +259,11 @@
                         <li>Diety</li>
                     </ul>
 
-                </div>
+                </div> -->
 
 
                 <!-- 2 otazka *********************************************************-->
-                <div class="sekce_header_box align_fl_end hypo_otazky_box hypo_otazky_bg2">
+                <div class="sekce_header_box align_fl_end hypo_otazky_box hypo_otazky_bg2 question">
                     <h3>Umí banky hypotéku bez dokládání příjmů?</h3>
                 </div>
                 <!-- 2 ODPOVED -->
@@ -260,7 +282,7 @@
 
 
                 <!-- 3 otazka *********************************************************-->
-                <div class="sekce_header_box align_fl_end hypo_otazky_box hypo_otazky_bg3">
+                <div class="sekce_header_box align_fl_end hypo_otazky_box hypo_otazky_bg3 question">
                     <h3>7 rad, které je dobré znát!</h3>
                 </div>
                 
@@ -543,6 +565,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script>
 
+        // caste otazky
+        $(document).ready(function()
+        {
+            $(".question").click(function()
+            {
+                $(this).next().toggle("slow");
+            });
+        });
+
+
         gsap.registerPlugin(ScrollTrigger);
             // EASI IN FUNCTION UP
             var easeUpItem, valueStripe;
@@ -564,6 +596,9 @@
             generalEaseIn('.aniKontakt')
             generalEaseIn('.aniContactBg')
             generalEaseIn('.aniContact')
+
+
+
     </script>
 
 </body>
