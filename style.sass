@@ -1338,6 +1338,10 @@ p
 .poj_part2_bg
     background-image: url('img/bg6.jpg')
     background-attachment: fixed
+    .krok_height
+        height: 280px
+        @media screen and ( max-width: 320px)
+            height: 350px
     .kroky4_header_box
         @media screen and ( min-width: 600px)
             margin-top: 53px
@@ -1356,6 +1360,12 @@ p
         width: calc( 16% - 0.7px ) //for 6 (16.6% - 0.83px)
         height: 100%
         border: 1px $lightgreen solid
+        &:hover
+            background-color: rgba(184, 186, 173, 0.4)
+            .slider_number
+                color: $black
+            .kroky_slider_selected
+                background-color: $lightgreen
         .slider_number
             color: $lightgreen
             font-size: 1.375rem
@@ -1365,6 +1375,8 @@ p
         background: $lightgreen
         .slider_number
             color: $black
+    #krok_poj2, #krok_poj3, #krok_poj4, #krok_poj5, #krok_poj6
+        display: none
     .part2_button
         margin-top: 30px
 // part 3 - pojisteni
@@ -1397,10 +1409,22 @@ p
 // part 4 - pojisteni
 .poj_part4_bg
     background-image: url('img/bg7.jpg')
+    .krok_height
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        // background-color: red
+        height: 300px
+        @media screen and ( max-width: 320px)
+            height: 380px
     .kroky_slider
         border: 1px $darkgreen solid
         .slider_number
             color: $darkgreen
+        &:hover
+            background-color: rgba(88, 104, 99, 0.4)
+            .slider_number
+                color: $black
     .kroky_slider_selected
         background: $darkgreen
         .slider_number
