@@ -72,13 +72,13 @@
                 </div>
                 <!-- end logo -->
 
-                <h2 class="h2_poj text_right">Zajištění Příjmu</h2>
+                <h2 class="h2_poj text_right aniHeader">Zajištění Příjmu</h2>
                 
 
                 <div class="row_from_tablet tb_pc_reverse_row pad_bot">
                     <!-- left box -->
                     <div class="sekce_from_tablet_half">
-                        <div class="hypo_img_1">
+                        <div class="hypo_img_1 aniHeroImg">
                             <img src="img/poj_img1.jpg" alt="" class="pc_mob_only_bl">
                             <img src="img/poj_img1_t.jpg" alt="" class="tab_only_bl">
                         </div>
@@ -86,7 +86,7 @@
                     <!-- right part -->
                     <div class="sekce_from_tablet_half aligncont_sp_around">
                         <!-- <div class="aligncont_sp_around"> -->
-                            <p class="part2_text">
+                            <p class="part2_text aniHypoList">
                                 Zajištění příjmu je především nástroj, který by nás měl ochránit při nenadálých událostech a to zejména 
                                 při dlouhodobé nemoci nebo úrazu, při kterých dochází k výraznému poklesu či dokonce úplnému výpadku příjmu.
                                 <br><br>
@@ -121,7 +121,7 @@
             <div class="container">
                 <div class="fringe"></div>
                 <div class="main">
-                    <div class="row_from_tablet">
+                    <div class="row_from_tablet aniKroky6">
                         <!-- left box -->    
                         <div class="sekce_from_tablet_half bg_lightgreen kroky4_header_box">
                             <h3><span class="kroky4">6 ZÁSADNÍCH KROKŮ</span><br>
@@ -176,7 +176,7 @@
     
                     </div>
                     
-                    <div class="button_div part2_button">
+                    <div class="button_div part2_button aniButtonPartKroky6">
                         <button class="green_button">Napište mi</button>
                     </div>
                     
@@ -193,11 +193,11 @@
         <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <h2 class="h2_poj">Zajištění Majetku a odpovědnost</h2>
+                <h2 class="h2_poj_odpov aniHeaderOdpov">Zajištění Majetku a Odpovědnost</h2>
 
                 <div class="row_from_tablet">
                     <!-- left box -->
-                    <div class="sekce_from_tablet_half aligncont_spbetw">
+                    <div class="sekce_from_tablet_half aligncont_spbetw aniLeftOdpov">
                         <div class=" sekce_header_box hypo_green_box bg_darkgreen">
                             <h3 class="white">2 základní pojištění domu nebo bytu</h3>
                         </div>
@@ -210,7 +210,7 @@
                             </p>
                     </div>
                     <!-- right part -->
-                    <div class="sekce_from_tablet_half  aligncont_spbetw tb_pc_reverse_column">
+                    <div class="sekce_from_tablet_half  aligncont_spbetw tb_pc_reverse_column aniRightOdpov">
                         <div class="hypo_img_1">
                             <img src="img/poj_img2.jpg" alt="">
                         </div>
@@ -231,7 +231,7 @@
         <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <div class="row_from_tablet">
+                <div class="row_from_tablet aniKroky4">
                     <!-- left box -->    
                     <div class="sekce_from_tablet_half bg_darkgreen kroky4_header_box">
                         <h3 class="white"><span class="kroky4">4 TYPY POJIŠTĚNÍ ODPOVĚDNOSTI</span><br>
@@ -280,7 +280,7 @@
                   
 
                 </div>
-                <div class="button_div part4_button">
+                <div class="button_div part4_button aniButtonPartKroky4">
                     <button class="green_button">Napište mi</button>
                 </div>
                 
@@ -496,10 +496,32 @@
                 // stagger: 0.4
                 });
             };
+             // pojisteni HERO
+            var heroTimeline = gsap.timeline();
+            heroTimeline.from('.aniHeader', {duration: 0.7, y: 60, ease: "power1", opacity: 0})
+                        .from('.aniHeroImg', {duration: 0.5, y: 60, ease: "power4",  opacity: 0})
+                        .from('.aniHypoList', {duration: 0.5, y: 60, ease: "power1", opacity: 0})
             // KONTAKT
             generalEaseIn('.aniKontakt')
             generalEaseIn('.aniContactBg')
             generalEaseIn('.aniContact')
+            // HYPO Part 2 - 6 KROKU
+            generalEaseIn('.aniKroky6');
+            generalEaseIn('.aniButtonPartKroky6');
+            // ODPOVEDNOST
+            var odpovednostTimeline = gsap.timeline();
+            odpovednostTimeline.from('.aniHeaderOdpov', {duration: 0.7, y: 60, ease: "power1", opacity: 0})
+                        .from('.aniLeftOdpov', {duration: 0.5, y: 60, ease: "power4",  opacity: 0})
+                        .from('.aniRightOdpov', {duration: 0.5, y: 60, ease: "power1", opacity: 0})
+                ScrollTrigger.create({
+                    trigger: '.aniHeaderOdpov',
+                    animation: odpovednostTimeline,
+                    start: "top 90%",
+                    // markers: true
+                });
+            // HYPO Part 4 - 4 KROKY
+            generalEaseIn('.aniKroky4');
+            generalEaseIn('.aniButtonPartKroky4');
     </script>
 
 </body>

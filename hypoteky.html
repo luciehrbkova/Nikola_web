@@ -78,7 +78,7 @@
                         <h3>Jaké účely mohu
                             hypotékou zafinancovat?</h3>
                     </div>
-                    <ul class="sekce_ul sekce_from_tablet_half aniHypo">
+                    <ul class="sekce_ul sekce_from_tablet_half aniHypoList">
                         <li>koupě bytu / pozemku / rekreačního objektu</li>
                         <li>nákup družstevního podílu</li>
                         <li>nákup investičního bydlení</li>
@@ -115,27 +115,27 @@
                 <div class="row_from_tablet">
                     <!-- left box -->
                     <div class="sekce_from_tablet_half aligncont_spbetw">
-                        <div class="sekce_from_tablet_half sekce_header_box hypo_green_box bg_darkgreen">
+                        <div class="sekce_from_tablet_half sekce_header_box hypo_green_box bg_darkgreen aniHeader2">
                             <h3 class="white">Pořízení vlastního 
                                 bydlení</h3>
                         </div>
-                            <p class="part2_text">Pořízení vlastního bydlení patří mezi významný a důležitý krok každého z nás, 
+                            <p class="part2_text aniTextPart2">Pořízení vlastního bydlení patří mezi významný a důležitý krok každého z nás, 
                                 proto je velmi důležité si se svým finančním poradcem nastavit hypotéku tak, aby byla každému 
                                 z Vás ušita přesně na míru, nemluvím jen o nízkém úroku, splatnosti, nebo zvolené fixaci, 
                                 ale aby její celkové nastavení ladilo s Vašimi budoucími plány.
                             </p>
-                            <a href=""><p class="A_Z pc_only_bl">Provedu Vás procesem od A-Z!</p></a>
+                            <a href=""><p class="A_Z pc_only_bl aniAz">Provedu Vás procesem od A-Z!</p></a>
                     </div>
                     <!-- right part -->
                     <div class="sekce_from_tablet_half  aligncont_spbetw">
-                        <div class="hypo_img_1">
+                        <div class="hypo_img_1 aniImgPart2">
                             <img src="img/hypo1.jpg" alt="">
                         </div>
                         <p class="A_Z pc_hide">Provedu Vás procesem od A-Z!</p>
                     </div>
 
                 </div>
-                <div class="button_div part2_button">
+                <div class="button_div part2_button aniButtonPart2">
                     <button class="green_button">Napište mi</button>
                 </div>
                 
@@ -194,10 +194,10 @@
 
                 </div>
                 <!-- button only mobile -->
-                <div class="button_div part2_button mobile_only_bl">
+                <div class="button_div part2_button mobile_only_bl aniButtonPart3">
                     <button class="green_button pdf_button">STÁHNOUT ZDARMA</button>
                 </div>
-                <div class="button_box">
+                <div class="button_box aniButtonPart3">
                     <div class="button_div">
                         <button class="green_button">STÁHNOUT ZDARMA</button>
                     </div>
@@ -206,7 +206,7 @@
                     </div>
 
                 </div>
-                <p class="A_Z">Proces koupě v PDF</p>
+                <p class="A_Z aniPdf">Proces koupě v PDF</p>
                 
 
             </div>
@@ -250,31 +250,7 @@
                     </ul>
 
                 </div>
-                <!-- <div class="row_from_tablet hypo_odpoved_container" id="odpoved1">
-                    <ul class="sekce_ul sekce_from_tablet_half">
-                        <li>Příjem ze zaměstnání – nesmíte být ve výpovědní nebo zkušební době a je potřeba bance předložit 3 měsíční výpisy s došlou mzdou</li>
-                        <li>Dohoda o provedení práce</li>
-                        <li>Dohoda o pracovní činnosti</li>
-                        <li>Daňové přiznání – fyzická osoba - OSVČ  - vypočítá se v interním kalkulátoru konkrétní zvolené banky, podle toho, zda vedete účetnictví, paušál či daňovou evidenci</li>
-                        <li>Daňové přiznání – právnická osoba – S.R.O.</li>
-                        <li>Příjem z pronájmu, který není ještě uveden v daňovém přiznání – banky umí započíst až 70% z čistého nájmu</li>
-                        <li class="pc_only_bl">Budoucí příjem z pronájmu</li>
-                    </ul>
-                    <ul class="sekce_ul sekce_from_tablet_half">
-                        <li class="pc_hide">Budoucí příjem z pronájmu</li>
-                        <li>Rodičovský příspěvek</li>
-                        <li>Přídavky na děti</li>
-                        <li>Starobní důchod</li>
-                        <li>Invalidní důchod I., II., III. stupně</li>
-                        <li>Sirotčí důchod</li>
-                        <li>Vdovský důchod</li>
-                        <li>Výsluhový příspěvek</li>
-                        <li>Odměna pěstouna</li>
-                        <li>Výživné/Alimenty</li>
-                        <li>Diety</li>
-                    </ul>
-
-                </div> -->
+ 
 
 
                 <!-- 2 otazka *********************************************************-->
@@ -618,11 +594,10 @@
                 $(this).next().toggle("slow");
             });
         });
-ƒ
 
         gsap.registerPlugin(ScrollTrigger);
             // EASI IN FUNCTION UP
-            var easeUpItem, valueStripe;
+            var easeUpItem;
             function generalEaseIn(easeUpItem){
                 gsap.from(easeUpItem, {
                 scrollTrigger: {
@@ -630,6 +605,7 @@
                     toggleActions: "play none none none",
                     start: "top 70%",
                     duration: 0.7,
+                    ease: "power1"
                     // markers: true,
                 },
                 opacity: 0,
@@ -638,20 +614,30 @@
                 });
             };
             // HYPO HERO
-            generalEaseIn('.aniHeader')
-            generalEaseIn('.aniHypo')
-            // HYPO KROKY
-            generalEaseIn('.aniKroky')
+            var heroTimeline = gsap.timeline();
+            heroTimeline.from('.aniHeader', {duration: 0.7, y: 60, ease: "power1", opacity: 0})
+                        .from('.aniHypo', {duration: 0.5, y: 60, ease: "power4",  opacity: 0})
+                        .from('.aniHypoList', {duration: 0.5, y: 60, ease: "power1", opacity: 0})
+            // HYPO PART 2
+            generalEaseIn('.aniHeader2');
+            generalEaseIn('.aniTextPart2');
+            generalEaseIn('.aniImgPart2');
+            generalEaseIn('.aniAz');
+            generalEaseIn('.aniButtonPart2');
+            // HYPO Part 3 - KROKY
+            generalEaseIn('.aniKroky');
+            generalEaseIn('.aniButtonPart3');
+            generalEaseIn('.aniPdf');
             // HYPO OTAZKY
-            generalEaseIn('.aniOtazkaHeader')
-            generalEaseIn('.aniOtazka1')
-            generalEaseIn('.aniOtazka2')
-            generalEaseIn('.aniOtazka3')
+            generalEaseIn('.aniOtazkaHeader');
+            generalEaseIn('.aniOtazka1');
+            generalEaseIn('.aniOtazka2');
+            generalEaseIn('.aniOtazka3');
 
             // KONTAKT
-            generalEaseIn('.aniKontakt')
-            generalEaseIn('.aniContactBg')
-            generalEaseIn('.aniContact')
+            generalEaseIn('.aniKontakt');
+            generalEaseIn('.aniContactBg');
+            generalEaseIn('.aniContact');
 
 
 

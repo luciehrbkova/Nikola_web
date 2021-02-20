@@ -67,12 +67,16 @@
     <section class="cookies" id="cookies">
         <div class="container">
             <div class="fringe">
-                <div class="menu_div home_align margin_bottom">
-                    <a href="index.html"><img src="img/home_icon.png" alt="" class="home_icon"></a>
-                </div>
             </div>
             <div class="main top_magin_gdpr">
-                <h2>Cookies</h2>
+                <!-- logo -->
+                <div class="hero_top">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- end logo -->
+                <h2 class="aniHeader">Cookies</h2>
                 <br>
                 <p>Cookies, což jsou malá množství dat, která naše servery posílají vašemu počítači a která umožňují lepší využití našich serverů a přizpůsobení jejich obsahu vašim potřebám.</p>
             <br><br>
@@ -87,11 +91,16 @@
             <p>Existují dočasné cookies a trvalé cookies. Dočasné jsou uloženy ve vašem počítači jen do ukončení prohlížeče. Dočasné cookies umožňují uchovávání informací při přecházení z jedné webové stránky na druhou a odstraňují potřebu opakovaného zadávání některých údajů. Trvalé cookies pomáhají identifikovat váš počítač, jestliže znovu navštívíte náš web, ale neumožňují jakkoliv identifikovat vás osobně. Trvalé cookies umožňují přizpůsobovat naše stránky vašim zájmům, ale nemůžeme jakkoliv identifikovat vás osobně a příslušná data ukládáme zcela anonymizovaně a nespojujeme je s jakýmikoliv jinými daty..Cookies nevyužíváme k jiným než čistě technickým účelům, nespojujeme údaje získané díky nim s jakýmikoliv jinými údaji a pracujeme s cookies tak, že neumožňují identifikovat konkrétní osoby.</p>
             <br><br><br><br>
             </div>
-            <div class="fringe">
-                <div class="menu_div">
-                    <span onclick="openNav()"><img src="img/hmb_db.png" alt="" class="hmb_icon"></span>
+            <div class="fringe"></div>
+            <!-- menu -->
+            <div class="pink_cover">
+                <div class="hmbg">
+                    <span onclick="openNav()">
+                        <img src="img/hmbg.svg" alt="">
+                    </span>
                 </div>
             </div>
+            <!-- end menu -->
         </div>
     </section>
 
@@ -142,7 +151,41 @@
         </div>
 
     </section>
-    <script>
+     <!-- js -->
+     <script src="myScript.js"></script>
+     <!-- or jquery online version -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- greensock -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EaselPlugin.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/PixiPlugin.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+     <script>
+        gsap.registerPlugin(ScrollTrigger);
+            // EASI IN FUNCTION UP
+            var easeUpItem, valueStripe;
+            function generalEaseIn(easeUpItem){
+                gsap.from(easeUpItem, {
+                scrollTrigger: {
+                    trigger: easeUpItem,
+                    toggleActions: "play none none none",
+                    start: "top 70%",
+                    duration: 0.7,
+                    // markers: true,
+                },
+                opacity: 0,
+                y: 60, 
+                // stagger: 0.4
+                });
+            };
+           
+            generalEaseIn('.aniHeader');
+ 
     </script>
 
 </body>

@@ -72,20 +72,20 @@
                 </div>
                 <!-- end logo -->
 
-                <h2 class="h2_rez">Tvorba rezerv</h2>
+                <h2 class="h2_rez aniHeader">Tvorba rezerv</h2>
                 
 
                 <div class="row_from_tablet tb_pc_reverse_row pad_bot">
                     <!-- left box -->
                     <div class="sekce_from_tablet_half">
-                        <div class="hypo_img_1">
+                        <div class="hypo_img_1 aniHeroImg">
                             <img src="img/rezervy1.jpg" alt="" >
                         </div>
                     </div>
                     <!-- right part -->
                     <div class="sekce_from_tablet_half aligncont_sp_around">
                         <!-- <div class="aligncont_sp_around"> -->
-                            <p class="part2_text">
+                            <p class="part2_text aniHypoList">
                                 Než se pustíte do konkrétních spořících nebo investičních nástrojů, 
                                 nadefinujte si tři základní pilíře a rozprostřete své rezervy tak, 
                                 abyste znali jejich faktický účel.
@@ -95,7 +95,7 @@
                 </div>
 
                  <!-- 1* ****************** -->
-                 <div class="row_from_tablet box_7rad">
+                 <div class="row_from_tablet box_7rad aniOtazka1">
                     <div class="sekce_from_tablet_half bg_pink kroky4_header_box bg_rada bg_rada1">
                         <h3><span class="kroky4">KRÁTKODOBÁ (OPERATIVNÍ) <br>REZERVA</span></h3>
                     </div>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <!-- 2******************* -->
-                <div class="row_from_tablet box_7rad">
+                <div class="row_from_tablet box_7rad aniOtazka2">
                     <div class="sekce_from_tablet_half bg_darkgreen kroky4_header_box bg_rada bg_rada2">
                         <h3 class="white"><span class="kroky4">STŘEDNĚDOBÁ REZERVA</span></h3>
                     </div>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <!-- 3******************* -->
-                <div class="row_from_tablet box_7rad">
+                <div class="row_from_tablet box_7rad aniOtazka3">
                     <div class="sekce_from_tablet_half bg_lightgreen kroky4_header_box bg_rada bg_rada3">
                         <h3><span class="kroky4">DLOUHODOBÁ REZERVA</span></h3>
                     </div>
@@ -297,6 +297,15 @@
                 // stagger: 0.4
                 });
             };
+             // INVESTICE HERO
+             var heroTimeline = gsap.timeline();
+            heroTimeline.from('.aniHeader', {duration: 0.7, y: 60, ease: "power1", opacity: 0})
+                        .from('.aniHeroImg', {duration: 0.5, y: 60, ease: "power4",  opacity: 0})
+                        .from('.aniHypoList', {duration: 0.5, y: 60, ease: "power1", opacity: 0})
+            // INVESTICE OTAZKY
+            generalEaseIn('.aniOtazka1');
+            generalEaseIn('.aniOtazka2');
+            generalEaseIn('.aniOtazka3');
             // KONTAKT
             generalEaseIn('.aniKontakt')
             generalEaseIn('.aniContactBg')

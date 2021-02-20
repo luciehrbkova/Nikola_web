@@ -72,19 +72,19 @@
                 </div>
                 <!-- end logo -->
 
-                <h2 class="h2_puj">Půjčky & Konsolidace</h2>
+                <h2 class="h2_puj aniHeader">Půjčky & Konsolidace</h2>
                 
                 <div class="row_from_tablet pc_reverse_row">
                     <!-- left box -->
                     <div class="sekce_from_tablet_half">
-                        <div class="hypo_img_1">
+                        <div class="hypo_img_1 aniHeroImg">
                             <img src="img/pujcky1.jpg" alt="" class="pc_mob_only_bl">
                             <img src="img/pujcky1_t.jpg" alt="" class="tab_only_bl">
                         </div>
                     </div>
                     <!-- right part -->
                     <div class="sekce_from_tablet_half">
-                        <p class="part2_text">
+                        <p class="part2_text aniHypoList">
                             Spotřebitelské úvěry jsou typické tím, že se jedná o půjčku/ky pro jednotlivce při maximálním
                              horizontu splatnosti 120 měsíců za účelem nákupu (spotřebního zboží, automobilu, vybavení
                               domácnosti a podobně; pro nemovitosti nebo kapitál na podnikání se většinou používají jiné, 
@@ -120,7 +120,7 @@
         <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <div class="row_from_tablet">
+                <div class="row_from_tablet aniKalkul">
                     <!-- left box -->    
                     <div class="sekce_from_tablet_half bg_pink kroky4_header_box">
                         <h3><span class="kroky4">KALKULACKA</span><br>
@@ -139,7 +139,7 @@
                   
 
                 </div>
-                <div class="button_div part2_button">
+                <div class="button_div part2_button aniButtonKalkul">
                     <button class="green_button">SPOCITEJ</button>
                 </div>
                 
@@ -280,6 +280,14 @@
                 // stagger: 0.4
                 });
             };
+            // PUJCKY HERO
+            var heroTimeline = gsap.timeline();
+            heroTimeline.from('.aniHeader', {duration: 0.7, y: 60, ease: "power1", opacity: 0})
+                        .from('.aniHeroImg', {duration: 0.5, y: 60, ease: "power4",  opacity: 0})
+                        .from('.aniHypoList', {duration: 0.5, y: 60, ease: "power1", opacity: 0})
+            // PUJCKY KALKULACKA
+            generalEaseIn('.aniKalkul');
+            generalEaseIn('.aniButtonKalkul');
             // KONTAKT
             generalEaseIn('.aniKontakt')
             generalEaseIn('.aniContactBg')
