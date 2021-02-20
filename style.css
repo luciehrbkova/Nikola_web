@@ -2433,6 +2433,101 @@ p {
   }
 }
 
+.splatkomer .placeholder {
+  width: 15px;
+  text-align: left;
+  position: relative;
+  z-index: 3;
+  left: 85%;
+}
+
+.splatkomer .popisky {
+  padding: 0px;
+}
+
+.splatkomer input {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: -24px;
+  font-family: Montserrat;
+  font-weight: 300;
+}
+
+.splatkomer input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.splatkomer .result {
+  position: relative;
+  z-index: 5;
+  display: none;
+  height: 100px;
+}
+
+#splatkomer .kroky4_header_box {
+  margin-top: 0px;
+}
+
+#splatkomer .kroky4_text_box_cont .kroky4_text_box {
+  padding: 36px;
+  height: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  #splatkomer .kroky4_text_box_cont .kroky4_text_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+#splatkomer .kroky4_text_box_cont .kroky4_text_box .result_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#splatkomer .kroky4_text_box_cont .kroky4_text_box .result_box h4 {
+  text-align: center;
+}
+
+#splatkomer .kroky4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.33px;
+}
+
+@media screen and (min-width: 600px) {
+  #splatkomer .kroky4 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #splatkomer .kroky4 {
+    font-size: 2.25rem;
+  }
+}
+
+#splatkomer .part2_button {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  #splatkomer .part2_button {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
 .h2_poj {
   font-size: 2.5rem;
   line-height: 3rem;

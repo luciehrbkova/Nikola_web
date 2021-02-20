@@ -441,6 +441,63 @@
     </div>
 
     </section>
+
+         <!--*********************** part 5 - kalkulacka *************************-->
+         <section class="sekce hypo_part3">
+            <div class="container">
+                <div class="fringe"></div>
+                <div class="main" id="splatkomer">
+                    <div class="row_from_tablet aniKalkul">
+                        <!-- left box -->    
+                        <div class="sekce_from_tablet_half bg_lightgreen kroky4_header_box">
+                            <div>
+                                <h3><span class="kroky4">HYPOTEČNÍ KALKULACKA</span><br><br></h3>
+                                <div class="splatkomer">
+                                    <p class="popisky">HYPOTEČNÍ PŮJČKA</p>
+                                    <p class="placeholder">Kč</p>
+                                    <input type="number" id="castka" class="input">
+                                    <p class="popisky">ROČNÍ ÚROK</p>
+                                    <p class="placeholder">%</p>
+                                    <input type="number" id="urok" class="input">
+                                    <p class="popisky">DOBA SPLÁCENÍ</p>
+                                    <p class="placeholder">let</p>
+                                    <input type="number" id="doba" class="input">
+                                </div> 
+                            </div>
+
+                                
+                        </div>
+                        <!-- right part -->
+                        <div class="kroky4_text_box_cont">
+                            <div class=" kroky4_text_box bg_white">
+                                <div class="button_div part2_button aniButtonKalkul">
+                                    <button class="green_button" onclick="splatkomer()" >SPOCITEJ</button>
+                                </div>
+                                <!-- <h3><span class="kroky4">HYPOTEČNÍ KALKULACKA</span><br><br></h3> -->
+
+                                    
+                                <div class="result_box">
+                                    <div class="result" id="result" >
+                                        <p id="kolik"></p> <br>
+                                        <h4 id="kolik6"></h4>
+                                    </div>
+                                </div>
+                                
+                              
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="button_div part2_button pc_only_bl aniButtonKalkul ">
+                        <button class="green_button" onclick="splatkomer()" >SPOCITEJ</button>
+                    </div> -->
+                    
+    
+                </div>
+                <div class="fringe"></div>
+            </div>
+    
+        </section>
    
    
     <!--*********************** CONTACT *************************-->
@@ -633,6 +690,8 @@
             generalEaseIn('.aniOtazka1');
             generalEaseIn('.aniOtazka2');
             generalEaseIn('.aniOtazka3');
+             // HYPO KALKUL
+             generalEaseIn('.aniKalkul');
 
             // KONTAKT
             generalEaseIn('.aniKontakt');
