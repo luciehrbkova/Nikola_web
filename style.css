@@ -278,6 +278,28 @@ p {
   }
 }
 
+.row_from_pc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .row_from_pc {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .pc_reverse_row {
     -webkit-box-orient: horizontal;
@@ -2526,6 +2548,64 @@ p {
     margin-bottom: 20px;
     margin-top: 20px;
   }
+}
+
+.konsolidomer .placeholder {
+  width: 15px;
+  text-align: left;
+  position: relative;
+  z-index: 3;
+  left: 85%;
+}
+
+.konsolidomer .popisky {
+  padding: 0px;
+}
+
+.konsolidomer .input_div + .input_div {
+  position: relative;
+  margin-top: -20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .konsolidomer .input_div + .input_div {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .konsolidomer .input_div {
+    width: 48%;
+  }
+}
+
+.konsolidomer input {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: -24px;
+}
+
+.konsolidomer .pujcka_header {
+  margin: 5px 0px;
+}
+
+.konsolidomer .plus_icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  margin-left: calc( 100% - 35px);
+}
+
+.konsolidomer .line_navic {
+  border-top: 1px solid #000000;
+  padding-top: 20px;
+}
+
+#pujcka_2, #pujcka_3, #pujcka_4, #pujcka_5 {
+  display: none;
 }
 
 .h2_poj {

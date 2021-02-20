@@ -193,6 +193,12 @@ p
     @media screen and ( min-width: 600px)
         flex-direction: row
         justify-content: space-between
+.row_from_pc
+    display: flex
+    flex-direction: column
+    @media screen and ( min-width: 1200px)
+        flex-direction: row
+        justify-content: space-between
 .pc_reverse_row
     @media screen and ( min-width: 1200px)
         flex-direction: row-reverse
@@ -1317,8 +1323,9 @@ p
         font-size: 9.375rem
     @media screen and ( max-width: 320px)
         font-size: 2.4rem
-// Kalkulacka
 
+// Kalkulacky_________________________________
+    // HYPOKALKULACKA
 .splatkomer
     .placeholder
         width: 15px
@@ -1358,7 +1365,6 @@ p
                 justify-content: space-around
                 h4
                     text-align: center
-
     .kroky4
         font-size: 1.5rem
         line-height: 2rem
@@ -1373,6 +1379,45 @@ p
         @media screen and ( min-width: 600px)
             margin-bottom: 20px
             margin-top: 20px
+    // KONSOLIDATOR
+.konsolidomer
+    .placeholder
+        width: 15px
+        text-align: left
+        position: relative
+        z-index: 3
+        // top: 25px
+        left: 85%
+    .popisky
+        padding: 0px
+    .input_div + .input_div
+        position: relative
+        margin-top: - 20px
+        @media screen and ( min-width: 1200px)
+            margin-top: 0px
+    .input_div
+        @media screen and ( min-width: 1200px)
+            width: 48%
+    input
+        width: 100%
+        text-align: center
+        position: relative
+        top: -24px
+    .pujcka_header
+        margin: 5px 0px
+    .plus_icon
+        width: 20px
+        height: 20px
+        position: relative
+        margin-top: -15px
+        margin-bottom: 20px
+        margin-left: calc( 100% - 35px )
+    .line_navic
+        border-top: 1px solid $black
+        padding-top: 20px
+#pujcka_2, #pujcka_3, #pujcka_4, #pujcka_5
+    display: none
+
 
 
 // pojisteni

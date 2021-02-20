@@ -119,15 +119,153 @@
      <section class="sekce hypo_part2">
         <div class="container">
             <div class="fringe"></div>
-            <div class="main">
-                <div class="row_from_tablet aniKalkul">
+                <div class="main" id="splatkomer">
+                    <div class="row_from_tablet aniKalkul">
+                        <!-- left box -->    
+                        <div class="sekce_from_tablet_half bg_lightgreen kroky4_header_box">
+                            <div>
+                                <h3><span class="kroky4">KONSOLIDAČNÍ KALKULAČKA</span><br><br></h3>
+                                <!-- 1 pujcka -->
+                                <div class="splatkomer konsolidomer" id="pujcka_1">
+                                    <h4 class="pujcka_header">1. PŮJČKA</h4>
+                                    <div class="row_from_pc">
+                                        <div class="input_div">
+                                            <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="urok" class="input">
+                                        </div>
+                                        <div class="input_div">
+                                            <p class="popisky">VYSE SPLATKY</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="doba" class="input">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="plus_icon">
+                                        <img src="img/plus.png" alt="">
+                                    </div>
+                                </div> 
+                                <!-- 2 pujcka -->
+                                <div class="splatkomer konsolidomer" id="pujcka_2">
+                                    <h4 class="pujcka_header">2. PŮJČKA</h4>
+                                    <div class="row_from_pc">
+                                        <div class="input_div">
+                                            <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="urok" class="input">
+                                        </div>
+                                        <div class="input_div">
+                                            <p class="popisky">VYSE SPLATKY</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="doba" class="input">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="plus_icon">
+                                        <img src="img/plus.png" alt="">
+                                    </div>
+                                </div> 
+                                <!-- 3 pujcka -->
+                                <div class="splatkomer konsolidomer" id="pujcka_3">
+                                    <h4 class="pujcka_header">3. PŮJČKA</h4>
+                                    <div class="row_from_pc">
+                                        <div class="input_div">
+                                            <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="urok" class="input">
+                                        </div>
+                                        <div class="input_div">
+                                            <p class="popisky">VYSE SPLATKY</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="doba" class="input">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="plus_icon">
+                                        <img src="img/plus.png" alt="">
+                                    </div>
+                                </div> 
+                                <!-- 4 pujcka -->
+                                <div class="splatkomer konsolidomer" id="pujcka_4">
+                                    <h4 class="pujcka_header">4. PŮJČKA</h4>
+                                    <div class="row_from_pc">
+                                        <div class="input_div">
+                                            <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="urok" class="input">
+                                        </div>
+                                        <div class="input_div">
+                                            <p class="popisky">VYSE SPLATKY</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="doba" class="input">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="plus_icon">
+                                        <img src="img/plus.png" alt="">
+                                    </div>
+                                </div> 
+                                  <!-- 5 pujcka -->
+                                  <div class="splatkomer konsolidomer" id="pujcka_5">
+                                    <h4 class="pujcka_header">1. PŮJČKA</h4>
+                                    <div class="row_from_pc">
+                                        <div class="input_div">
+                                            <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="urok" class="input">
+                                        </div>
+                                        <div class="input_div">
+                                            <p class="popisky">VYSE SPLATKY</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="doba" class="input">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="plus_icon">
+                                        <img src="img/plus.png" alt="">
+                                    </div>
+                                </div> 
+                                
+                                
+                                <div class="splatkomer konsolidomer">
+                                    <p class="popisky line_navic">PŮJČIT PENIZE NAVIC</p>
+                                    <p class="placeholder">Kč</p>
+                                    <input type="number" id="castka" class="input">
+                                </div>
+                            </div>
+
+                                
+                        </div>
+                        <!-- right part -->
+                        <div class="kroky4_text_box_cont">
+                            <div class=" kroky4_text_box bg_white">
+                                <div class="button_div part2_button aniButtonKalkul">
+                                    <button class="green_button" onclick="splatkomer()" >SPOCITEJ</button>
+                                </div>
+                                <!-- <h3><span class="kroky4">HYPOTEČNÍ KALKULACKA</span><br><br></h3> -->
+
+                                    
+                                <div class="result_box">
+                                    <div class="result" id="result" >
+                                        <p id="kolik"></p> <br>
+                                        <h4 id="kolik6"></h4>
+                                    </div>
+                                </div>
+                                
+                              
+                            
+                            </div>
+                        </div>
+                    </div>
+                
+                <!-- <div class="row_from_tablet aniKalkul"> -->
                     <!-- left box -->    
-                    <div class="sekce_from_tablet_half bg_pink kroky4_header_box">
+                    <!-- <div class="sekce_from_tablet_half bg_pink kroky4_header_box">
                         <h3><span class="kroky4">KALKULACKA</span><br>
                             K projití před koupí nemovitosti pomocí hypotéky</h3>
-                    </div>
+                    </div> -->
                     <!-- right part -->
-                    <div class="kroky4_text_box_cont">
+                    <!-- <div class="kroky4_text_box_cont">
                         <div class=" kroky4_text_box bg_white">
                             <br><br>
                             <p>Hledejte intenzivně svou nemovitost a konzultujte se svým poradcem: <br><br></p>
@@ -141,10 +279,7 @@
                 </div>
                 <div class="button_div part2_button aniButtonKalkul">
                     <button class="green_button">SPOCITEJ</button>
-                </div>
-                
-
-            </div>
+                </div> -->
             <div class="fringe"></div>
         </div>
 
@@ -292,6 +427,24 @@
             generalEaseIn('.aniKontakt')
             generalEaseIn('.aniContactBg')
             generalEaseIn('.aniContact')
+
+            // konsolidator
+            var actualPujcka,
+            actualPujcka = 1;
+
+            
+            
+            function pridatPujcku(){
+                if (actualPujcka == 1){
+
+                } else if (actualPujcka == 2){
+
+                } else if (actualPujcka == 3){
+
+                } else if (actualPujcka == 4){
+
+                };
+            }
     </script>
 
 </body>
