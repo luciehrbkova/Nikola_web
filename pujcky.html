@@ -142,7 +142,8 @@
                                     </div>
                                     
                                     <div class="plus_icon">
-                                        <img src="img/plus.png" alt="">
+                                        <img src="img/plus.png" alt="" id="plus_1" onclick="generalPridatPujcku(1)">
+                                        <img src="img/minus.png" alt="" id="minus_1" onclick="generalOdstranitPujcku(1)">
                                     </div>
                                 </div> 
                                 <!-- 2 pujcka -->
@@ -162,7 +163,8 @@
                                     </div>
                                     
                                     <div class="plus_icon">
-                                        <img src="img/plus.png" alt="">
+                                        <img src="img/plus.png" alt="" id="plus_2" onclick="generalPridatPujcku(2)">
+                                        <img src="img/minus.png" alt="" id="minus_2" onclick="generalOdstranitPujcku(2)">
                                     </div>
                                 </div> 
                                 <!-- 3 pujcka -->
@@ -182,7 +184,8 @@
                                     </div>
                                     
                                     <div class="plus_icon">
-                                        <img src="img/plus.png" alt="">
+                                        <img src="img/plus.png" alt="" id="plus_3" onclick="generalPridatPujcku(3)">
+                                        <img src="img/minus.png" alt="" id="minus_3" onclick="generalOdstranitPujcku(3)">
                                     </div>
                                 </div> 
                                 <!-- 4 pujcka -->
@@ -202,12 +205,13 @@
                                     </div>
                                     
                                     <div class="plus_icon">
-                                        <img src="img/plus.png" alt="">
+                                        <img src="img/plus.png" alt="" id="plus_4" onclick="generalPridatPujcku(4)">
+                                        <img src="img/minus.png" alt="" id="minus_4" onclick="generalOdstranitPujcku(4)">
                                     </div>
                                 </div> 
                                   <!-- 5 pujcka -->
                                   <div class="splatkomer konsolidomer" id="pujcka_5">
-                                    <h4 class="pujcka_header">1. PŮJČKA</h4>
+                                    <h4 class="pujcka_header">5. PŮJČKA</h4>
                                     <div class="row_from_pc">
                                         <div class="input_div">
                                             <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
@@ -222,16 +226,17 @@
                                     </div>
                                     
                                     <div class="plus_icon">
-                                        <img src="img/plus.png" alt="">
+                                        <!-- <img src="img/plus.png" alt="" id="plus_5" onclick="generalPridatPujcku(5)"> -->
+                                        <img src="img/minus.png" alt="" id="minus_5" onclick="generalOdstranitPujcku(5)">
                                     </div>
                                 </div> 
                                 
-                                
+<!--                                 
                                 <div class="splatkomer konsolidomer">
                                     <p class="popisky line_navic">PŮJČIT PENIZE NAVIC</p>
                                     <p class="placeholder">Kč</p>
                                     <input type="number" id="castka" class="input">
-                                </div>
+                                </div> -->
                             </div>
 
                                 
@@ -429,21 +434,47 @@
             generalEaseIn('.aniContact')
 
             // konsolidator
-            var actualPujcka,
+            var actualPujcka, newPujcka, tatoPujcka, plusIcon, minusIcon
             actualPujcka = 1;
 
+            function pridatPujcku(newPujcka, plusIcon, minusIcon){
+                $(newPujcka).fadeIn(250);
+                $(plusIcon).hide();
+                $(minusIcon).show();
+            };
+            function odstranitPujcku(tatoPujcka, plusIcon, minusIcon){
+                $(tatoPujcka).hide();
+                $(plusIcon).show();
+                $(minusIcon).hide();
+            }
+            // pridatPujcku('#pujcka_2');
+
             
-            
-            function pridatPujcku(){
+
+            function generalPridatPujcku(actualPujcka){
                 if (actualPujcka == 1){
-
+                    pridatPujcku('#pujcka_2', '#plus_1', '#minus_1');
                 } else if (actualPujcka == 2){
-
+                    pridatPujcku('#pujcka_3', '#plus_2', '#minus_2');
                 } else if (actualPujcka == 3){
-
+                    pridatPujcku('#pujcka_4', '#plus_3', '#minus_3');
                 } else if (actualPujcka == 4){
-
+                    pridatPujcku('#pujcka_5', '#plus_4', '#minus_4');
                 };
+            }
+
+            function generalOdstranitPujcku(actualPujcka){
+                if (actualPujcka == 1){
+                    odstranitPujcku('#pujcka_1', '#plus_1', '#minus_1');
+                } else if (actualPujcka == 2){
+                    odstranitPujcku('#pujcka_2', '#plus_2', '#minus_2');
+                } else if (actualPujcka == 3){
+                    odstranitPujcku('#pujcka_3', '#plus_3', '#minus_3');
+                } else if (actualPujcka == 4){
+                    odstranitPujcku('#pujcka_4', '#plus_4', '#minus_4');
+                } else if (actualPujcka == 5){
+                    odstranitPujcku('#pujcka_5', '#plus_5', '#minus_5');
+                }
             }
     </script>
 

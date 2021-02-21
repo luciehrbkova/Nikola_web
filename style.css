@@ -2608,6 +2608,10 @@ p {
   display: none;
 }
 
+#minus_1, #minus_2, #minus_3, #minus_4 {
+  display: none;
+}
+
 .h2_poj {
   font-size: 2.5rem;
   line-height: 3rem;
