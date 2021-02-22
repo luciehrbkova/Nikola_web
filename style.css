@@ -797,7 +797,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .box_services .services_header {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     height: 90px;
   }
 }
@@ -2683,49 +2683,38 @@ p {
   margin-top: -20px;
 }
 
-@media screen and (min-width: 1200px) {
-  .konsolidomer .input_div + .input_div {
-    margin-top: 0px;
-  }
+.konsolidomer .input_div {
+  width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-  .konsolidomer .input_div {
-    width: 48%;
-  }
-}
-
-.konsolidomer input {
+.konsolidomer .input {
   width: 100%;
   text-align: center;
   position: relative;
   top: -24px;
 }
 
+.konsolidomer .checkbox_box {
+  position: relative;
+  top: -10px;
+}
+
+.konsolidomer .checkbox_box label {
+  font-weight: 200;
+  font-size: 0.875rem;
+}
+
+.konsolidomer .checkbox {
+  width: 25px;
+  position: relative;
+  top: 2px;
+  margin: 0px;
+  margin-right: 10px;
+  padding: 0px;
+}
+
 .konsolidomer .pujcka_header {
   margin: 5px 0px;
-}
-
-.konsolidomer .plus_icon {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  margin-top: -15px;
-  margin-bottom: 20px;
-  margin-left: calc( 100% - 35px);
-}
-
-.konsolidomer .line_navic {
-  border-top: 1px solid #000000;
-  padding-top: 20px;
-}
-
-#pujcka_2, #pujcka_3, #pujcka_4, #pujcka_5 {
-  display: none;
-}
-
-#minus_1, #minus_2, #minus_3, #minus_4 {
-  display: none;
 }
 
 .h2_poj {

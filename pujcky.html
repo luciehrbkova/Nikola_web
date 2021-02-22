@@ -127,133 +127,44 @@
                                 <h3><span class="kroky4">KONSOLIDAČNÍ KALKULAČKA</span><br><br></h3>
                                 <!-- 1 pujcka -->
                                 <div class="splatkomer konsolidomer" id="pujcka_1">
-                                    <h4 class="pujcka_header">1. PŮJČKA</h4>
-                                    <div class="row_from_pc">
+                                    <form action="">
+                                    <!-- <h4 class="pujcka_header">1. PŮJČKA</h4> -->
                                         <div class="input_div">
                                             <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
                                             <p class="placeholder">Kč</p>
-                                            <input type="number" id="urok" class="input">
+                                            <input type="number" id="konsol_jistina" class="input" required>
                                         </div>
                                         <div class="input_div">
-                                            <p class="popisky">VYSE SPLATKY</p>
-                                            <p class="placeholder">Kč</p>
-                                            <input type="number" id="doba" class="input">
+                                            <p class="popisky">EMAIL</p>
+                                            <p class="placeholder white">.</p>
+                                            <input type="email" id="konsol_email" class="input" required>
                                         </div>
-                                    </div>
-                                    
-                                    <div class="plus_icon">
-                                        <img src="img/plus.png" alt="" id="plus_1" onclick="generalPridatPujcku(1)">
-                                        <img src="img/minus.png" alt="" id="minus_1" onclick="generalOdstranitPujcku(1)">
-                                    </div>
+                                        <div class="input_div">
+                                            <p class="popisky">MOBIL</p>
+                                            <p class="placeholder white">.</p>
+                                            <input type="number" id="konsol_mobil" class="input" required>
+                                        </div>
+                                        <div class="row checkbox_box">
+                                            <input type="checkbox" id="konsol_souhlas" class="checkbox" required>
+                                            <label for="konsol_souhlas">Souhlasim s podmínek a ucely marketingu, odkaz zde. a neno treba tady</label>
+                                        </div>
                                 </div> 
-                                <!-- 2 pujcka -->
-                                <div class="splatkomer konsolidomer" id="pujcka_2">
-                                    <h4 class="pujcka_header">2. PŮJČKA</h4>
-                                    <div class="row_from_pc">
-                                        <div class="input_div">
-                                            <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
-                                            <p class="placeholder">Kč</p>
-                                            <input type="number" id="urok" class="input">
-                                        </div>
-                                        <div class="input_div">
-                                            <p class="popisky">VYSE SPLATKY</p>
-                                            <p class="placeholder">Kč</p>
-                                            <input type="number" id="doba" class="input">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="plus_icon">
-                                        <img src="img/plus.png" alt="" id="plus_2" onclick="generalPridatPujcku(2)">
-                                        <img src="img/minus.png" alt="" id="minus_2" onclick="generalOdstranitPujcku(2)">
-                                    </div>
-                                </div> 
-                                <!-- 3 pujcka -->
-                                <div class="splatkomer konsolidomer" id="pujcka_3">
-                                    <h4 class="pujcka_header">3. PŮJČKA</h4>
-                                    <div class="row_from_pc">
-                                        <div class="input_div">
-                                            <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
-                                            <p class="placeholder">Kč</p>
-                                            <input type="number" id="urok" class="input">
-                                        </div>
-                                        <div class="input_div">
-                                            <p class="popisky">VYSE SPLATKY</p>
-                                            <p class="placeholder">Kč</p>
-                                            <input type="number" id="doba" class="input">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="plus_icon">
-                                        <img src="img/plus.png" alt="" id="plus_3" onclick="generalPridatPujcku(3)">
-                                        <img src="img/minus.png" alt="" id="minus_3" onclick="generalOdstranitPujcku(3)">
-                                    </div>
-                                </div> 
-                                <!-- 4 pujcka -->
-                                <div class="splatkomer konsolidomer" id="pujcka_4">
-                                    <h4 class="pujcka_header">4. PŮJČKA</h4>
-                                    <div class="row_from_pc">
-                                        <div class="input_div">
-                                            <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
-                                            <p class="placeholder">Kč</p>
-                                            <input type="number" id="urok" class="input">
-                                        </div>
-                                        <div class="input_div">
-                                            <p class="popisky">VYSE SPLATKY</p>
-                                            <p class="placeholder">Kč</p>
-                                            <input type="number" id="doba" class="input">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="plus_icon">
-                                        <img src="img/plus.png" alt="" id="plus_4" onclick="generalPridatPujcku(4)">
-                                        <img src="img/minus.png" alt="" id="minus_4" onclick="generalOdstranitPujcku(4)">
-                                    </div>
-                                </div> 
-                                  <!-- 5 pujcka -->
-                                  <div class="splatkomer konsolidomer" id="pujcka_5">
-                                    <h4 class="pujcka_header">5. PŮJČKA</h4>
-                                    <div class="row_from_pc">
-                                        <div class="input_div">
-                                            <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
-                                            <p class="placeholder">Kč</p>
-                                            <input type="number" id="urok" class="input">
-                                        </div>
-                                        <div class="input_div">
-                                            <p class="popisky">VYSE SPLATKY</p>
-                                            <p class="placeholder">Kč</p>
-                                            <input type="number" id="doba" class="input">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="plus_icon">
-                                        <!-- <img src="img/plus.png" alt="" id="plus_5" onclick="generalPridatPujcku(5)"> -->
-                                        <img src="img/minus.png" alt="" id="minus_5" onclick="generalOdstranitPujcku(5)">
-                                    </div>
-                                </div> 
-                                
-<!--                                 
-                                <div class="splatkomer konsolidomer">
-                                    <p class="popisky line_navic">PŮJČIT PENIZE NAVIC</p>
-                                    <p class="placeholder">Kč</p>
-                                    <input type="number" id="castka" class="input">
-                                </div> -->
-                            </div>
-
-                                
+                            </div>     
                         </div>
                         <!-- right part -->
                         <div class="kroky4_text_box_cont">
                             <div class=" kroky4_text_box bg_white">
-                                <div class="button_div part2_button aniButtonKalkul">
-                                    <button class="green_button" onclick="splatkomer()" >SPOCITEJ</button>
+                                <div class="button_div part2_button ">
+                                    <button class="green_button" onclick="konsolidomer()" >SPOCITEJ</button>
                                 </div>
+                                </form>
                                 <!-- <h3><span class="kroky4">HYPOTEČNÍ KALKULACKA</span><br><br></h3> -->
 
                                     
                                 <div class="result_box">
-                                    <div class="result" id="result" >
+                                    <div class="konsul_result" id="result" >
                                         <p id="kolik"></p> <br>
-                                        <h4 id="kolik6"></h4>
+                                        <h4 id="konsul_splatka"></h4>
                                     </div>
                                 </div>
                                 
@@ -262,6 +173,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 
                 <!-- <div class="row_from_tablet aniKalkul"> -->
                     <!-- left box -->    
