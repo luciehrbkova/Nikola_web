@@ -72,19 +72,19 @@
                 </div>
                 <!-- end logo -->
 
-                <h2 class="h2_puj">Půjčky & Konsolidace</h2>
+                <h2 class="h2_puj aniHeader">Půjčky & Konsolidace</h2>
                 
                 <div class="row_from_tablet pc_reverse_row">
                     <!-- left box -->
                     <div class="sekce_from_tablet_half">
-                        <div class="hypo_img_1">
+                        <div class="hypo_img_1 aniHeroImg">
                             <img src="img/pujcky1.jpg" alt="" class="pc_mob_only_bl">
                             <img src="img/pujcky1_t.jpg" alt="" class="tab_only_bl">
                         </div>
                     </div>
                     <!-- right part -->
                     <div class="sekce_from_tablet_half">
-                        <p class="part2_text">
+                        <p class="part2_text aniHypoList">
                             Spotřebitelské úvěry jsou typické tím, že se jedná o půjčku/ky pro jednotlivce při maximálním
                              horizontu splatnosti 120 měsíců za účelem nákupu (spotřebního zboží, automobilu, vybavení
                               domácnosti a podobně; pro nemovitosti nebo kapitál na podnikání se většinou používají jiné, 
@@ -119,15 +119,70 @@
      <section class="sekce hypo_part2">
         <div class="container">
             <div class="fringe"></div>
-            <div class="main">
-                <div class="row_from_tablet">
+                <div class="main" id="splatkomer">
+                    <div class="row_from_tablet aniKalkul">
+                        <!-- left box -->    
+                        <div class="sekce_from_tablet_half bg_lightgreen kroky4_header_box">
+                            <div>
+                                <h3><span class="kroky4">KONSOLIDAČNÍ KALKULAČKA</span><br><br></h3>
+                                <!-- 1 pujcka -->
+                                <div class="splatkomer konsolidomer" id="pujcka_1">
+                                    <form action="">
+                                    <!-- <h4 class="pujcka_header">1. PŮJČKA</h4> -->
+                                        <div class="input_div">
+                                            <p class="popisky">KOLIK ZBYVA DOPLATIT</p>
+                                            <p class="placeholder">Kč</p>
+                                            <input type="number" id="konsol_jistina" class="input" required>
+                                        </div>
+                                        <div class="input_div">
+                                            <p class="popisky">EMAIL</p>
+                                            <p class="placeholder white">.</p>
+                                            <input type="email" id="konsol_email" class="input" required>
+                                        </div>
+                                        <div class="input_div">
+                                            <p class="popisky">MOBIL</p>
+                                            <p class="placeholder white">.</p>
+                                            <input type="number" id="konsol_mobil" class="input" required>
+                                        </div>
+                                        <div class="row checkbox_box">
+                                            <input type="checkbox" id="konsol_souhlas" class="checkbox" required>
+                                            <label for="konsol_souhlas">Souhlasim s podmínek a ucely marketingu, odkaz zde. a neno treba tady</label>
+                                        </div>
+                                </div> 
+                            </div>     
+                        </div>
+                        <!-- right part -->
+                        <div class="kroky4_text_box_cont">
+                            <div class=" kroky4_text_box bg_white">
+                                <div class="button_div part2_button ">
+                                    <button class="green_button" onclick="konsolidomer()" >SPOCITEJ</button>
+                                </div>
+                                </form>
+                                <!-- <h3><span class="kroky4">HYPOTEČNÍ KALKULACKA</span><br><br></h3> -->
+
+                                    
+                                <div class="result_box">
+                                    <div class="konsul_result" id="result" >
+                                        <p id="kolik"></p> <br>
+                                        <h4 id="konsul_splatka"></h4>
+                                    </div>
+                                </div>
+                                
+                              
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="row_from_tablet aniKalkul"> -->
                     <!-- left box -->    
-                    <div class="sekce_from_tablet_half bg_pink kroky4_header_box">
+                    <!-- <div class="sekce_from_tablet_half bg_pink kroky4_header_box">
                         <h3><span class="kroky4">KALKULACKA</span><br>
                             K projití před koupí nemovitosti pomocí hypotéky</h3>
-                    </div>
+                    </div> -->
                     <!-- right part -->
-                    <div class="kroky4_text_box_cont">
+                    <!-- <div class="kroky4_text_box_cont">
                         <div class=" kroky4_text_box bg_white">
                             <br><br>
                             <p>Hledejte intenzivně svou nemovitost a konzultujte se svým poradcem: <br><br></p>
@@ -139,12 +194,9 @@
                   
 
                 </div>
-                <div class="button_div part2_button">
+                <div class="button_div part2_button aniButtonKalkul">
                     <button class="green_button">SPOCITEJ</button>
-                </div>
-                
-
-            </div>
+                </div> -->
             <div class="fringe"></div>
         </div>
 
@@ -280,10 +332,62 @@
                 // stagger: 0.4
                 });
             };
+            // PUJCKY HERO
+            var heroTimeline = gsap.timeline();
+            heroTimeline.from('.aniHeader', {duration: 0.7, y: 60, ease: "power1", opacity: 0})
+                        .from('.aniHeroImg', {duration: 0.5, y: 60, ease: "power4",  opacity: 0})
+                        .from('.aniHypoList', {duration: 0.5, y: 60, ease: "power1", opacity: 0})
+            // PUJCKY KALKULACKA
+            generalEaseIn('.aniKalkul');
+            generalEaseIn('.aniButtonKalkul');
             // KONTAKT
             generalEaseIn('.aniKontakt')
             generalEaseIn('.aniContactBg')
             generalEaseIn('.aniContact')
+
+            // konsolidator
+            var actualPujcka, newPujcka, tatoPujcka, plusIcon, minusIcon
+            actualPujcka = 1;
+
+            function pridatPujcku(newPujcka, plusIcon, minusIcon){
+                $(newPujcka).fadeIn(250);
+                $(plusIcon).hide();
+                $(minusIcon).show();
+            };
+            function odstranitPujcku(tatoPujcka, plusIcon, minusIcon){
+                $(tatoPujcka).hide();
+                $(plusIcon).show();
+                $(minusIcon).hide();
+            }
+            // pridatPujcku('#pujcka_2');
+
+            
+
+            function generalPridatPujcku(actualPujcka){
+                if (actualPujcka == 1){
+                    pridatPujcku('#pujcka_2', '#plus_1', '#minus_1');
+                } else if (actualPujcka == 2){
+                    pridatPujcku('#pujcka_3', '#plus_2', '#minus_2');
+                } else if (actualPujcka == 3){
+                    pridatPujcku('#pujcka_4', '#plus_3', '#minus_3');
+                } else if (actualPujcka == 4){
+                    pridatPujcku('#pujcka_5', '#plus_4', '#minus_4');
+                };
+            }
+
+            function generalOdstranitPujcku(actualPujcka){
+                if (actualPujcka == 1){
+                    odstranitPujcku('#pujcka_1', '#plus_1', '#minus_1');
+                } else if (actualPujcka == 2){
+                    odstranitPujcku('#pujcka_2', '#plus_2', '#minus_2');
+                } else if (actualPujcka == 3){
+                    odstranitPujcku('#pujcka_3', '#plus_3', '#minus_3');
+                } else if (actualPujcka == 4){
+                    odstranitPujcku('#pujcka_4', '#plus_4', '#minus_4');
+                } else if (actualPujcka == 5){
+                    odstranitPujcku('#pujcka_5', '#plus_5', '#minus_5');
+                }
+            }
     </script>
 
 </body>

@@ -80,7 +80,7 @@
                 
                     <span class="okrok">“Se mnou jste vždy o krok napřed”</span>
               
-                    <div class="button_div ">
+                    <div class="button_div hero_button">
                         <button class="green_button margin_left_0">Napište mi</button>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                 
                     <span class="okrok">“Se mnou jste vždy o krok napřed”</span>
               
-                    <div class="button_div ">
+                    <div class="button_div hero_button">
                         <button class="green_button">Napište mi</button>
                     </div>
                 </div>
@@ -535,6 +535,17 @@
             quaterAni('#servisOne', '#servisTwo', '#servisThree', '#servisFour', '#servisOne');
             quaterAni('#uspechOne', '#uspechTwo', '#uspechThree', '#uspechFour', '.uspechy_cont');
             quaterAni('#spojenecOne', '#spojenecTwo', '#spojenecThree', '#spojenecFour', '#spojenecOne');
+
+            // Animace pro hero page
+            var heroTimeline = gsap.timeline();
+            heroTimeline.from('.hero_img', {duration: 0.7, y: 50, ease: "power1", opacity: 0})
+                        .from('.pink_cover', {duration: 0.1, x: 30, ease: "power4",  opacity: 0})
+                        .from('.logo', {duration: 0.2, ease: "power3",  opacity: 0})
+                        .from('.topkonzul', {duration: 0.2, x: 30, ease: "power1", opacity: 0})
+                        .from('.okrok', {duration: 0.2, x: 30, ease: "power3", opacity: 0})
+                        .from('.hero_button', {duration: 0.2, x: 30, ease: "power1",  opacity: 0})
+                        .from('.signature', {duration: 0.4, ease: "power3", opacity: 0});
+   
 
         // REFERENCE FUNCTION______________________
             var reference1, reference2Show, reference3, reference4;

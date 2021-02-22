@@ -72,13 +72,13 @@
                 </div>
                 <!-- end logo -->
 
-                <h2 class="h2_poj text_right">Zajištění Příjmu</h2>
+                <h2 class="h2_poj aniHeader">Zajištění Příjmu</h2>
                 
 
                 <div class="row_from_tablet tb_pc_reverse_row pad_bot">
                     <!-- left box -->
                     <div class="sekce_from_tablet_half">
-                        <div class="hypo_img_1">
+                        <div class="hypo_img_1 aniHeroImg">
                             <img src="img/poj_img1.jpg" alt="" class="pc_mob_only_bl">
                             <img src="img/poj_img1_t.jpg" alt="" class="tab_only_bl">
                         </div>
@@ -86,7 +86,7 @@
                     <!-- right part -->
                     <div class="sekce_from_tablet_half aligncont_sp_around">
                         <!-- <div class="aligncont_sp_around"> -->
-                            <p class="part2_text">
+                            <p class="part2_text aniHypoList">
                                 Zajištění příjmu je především nástroj, který by nás měl ochránit při nenadálých událostech a to zejména 
                                 při dlouhodobé nemoci nebo úrazu, při kterých dochází k výraznému poklesu či dokonce úplnému výpadku příjmu.
                                 <br><br>
@@ -121,7 +121,7 @@
             <div class="container">
                 <div class="fringe"></div>
                 <div class="main">
-                    <div class="row_from_tablet">
+                    <div class="row_from_tablet aniKroky6">
                         <!-- left box -->    
                         <div class="sekce_from_tablet_half bg_lightgreen kroky4_header_box">
                             <h3><span class="kroky4">6 ZÁSADNÍCH KROKŮ</span><br>
@@ -130,26 +130,53 @@
                         <!-- right part -->
                         <div class="kroky4_text_box_cont">
                             <div class=" kroky4_text_box bg_white">
-                                <p><span class="bold">Nastavte správně krytí krátkodobých a dlouhodobých rizik, zohledněte svoje povolání a likvidní krátkodobé rezervy!</span> 
-                                    <br><br>
-                                    Neplaťte za předražené smlouvy, které absolutně neodpovídají pojistnému krytí, nastavte si se svým poradcem 
-                                    rizika tak, aby byly v souladu s Vaším majetkem a předpokládanému výpadku příjmu v konkrétním připojištění.</p>
-                                
+                                <div id="krok_poj1" class="krok_height">
+                                    <p><span class="bold">Změňte postoj ke slovu pojištění. Naučte se znát, co si platíte, proč a za jakou cenu!</span> 
+                                        <br><br>
+                                        Zkuste se na zajištění koukat z dlouhodobého hlediska jako na nástroj pro zachování životní úrovně při nenadálých událostech.</p>
+                                </div>
+                                <div id="krok_poj2" class="krok_height">
+                                    <p><span class="bold">Nastavte správně krytí krátkodobých a dlouhodobých rizik, zohledněte svoje povolání a likvidní krátkodobé rezervy!</span> 
+                                        <br><br>
+                                        Neplaťte za předražené smlouvy, které absolutně neodpovídají pojistnému krytí, nastavte si se svým poradcem 
+                                        rizika tak, aby byly v souladu s Vaším majetkem a předpokládanému výpadku příjmu v konkrétním připojištění.</p>
+                                </div>
+                                <div id="krok_poj3" class="krok_height">
+                                    <p><span class="bold">Pojistěte se jak pro případ nemoci tak i úrazu</span> 
+                                        <br><br>
+                                        Nedělejte si tzv. úrazovky, zajistěte se komplexně z jakýchkoliv příčin, nepodceňujte rizika z důvodu nemoci.</p>
+                                </div>
+                                <div id="krok_poj4" class="krok_height">
+                                    <p><span class="bold">Vyplňte se svým poradcem předběžně zdravotní dotazník a informujte ho o Vašem zdravotním stavu</span> 
+                                        <br><br>
+                                        Zdravotní dotazník vyplňujte vždy pravdivě, ať víte dopředu za jakých podmínek Vás pojišťovna přijímá, 
+                                        nebudete pak nemile překvapeni z případného krácení plnění.</p>
+                                </div>
+                                <div id="krok_poj5" class="krok_height">
+                                    <p><span class="bold">Vyberte se svým poradcem správnou pojišťovnu, mějte vždy na výběr a informujte se zásadních výlukách konkrétní pojišťovny</span> 
+                                        <br><br>
+                                        Mějte vždy možnost volby mezi více variantami, nenechte se odbýt jednou nabídkou, mějte srovnání, informujte se o výlukách.</p>
+                                </div>
+                                <div id="krok_poj6" class="krok_height">
+                                    <p><span class="bold">Informujte se o čekacích dobách dané pojišťovny</span> 
+                                        <br><br>
+                                        Informujte se o čekacích a karenční dobách a buďte důslední s výběrem kvalitní pojišťovny.</p>
+                                </div>
                             
                             </div>
                             <div class="kroky_slider_box">
-                                <div class="kroky_slider "><p><span class="slider_number">1</span></p></div>
-                                <div class="kroky_slider "><p><span class="slider_number">2</span></p></div>
-                                <div class="kroky_slider "><p><span class="slider_number">3</span></p></div>
-                                <div class="kroky_slider kroky_slider_selected"><p><span class="slider_number">4</span></p></div>
-                                <div class="kroky_slider "><p><span class="slider_number">5</span></p></div>
-                                <div class="kroky_slider "><p><span class="slider_number">6</span></p></div>
+                                <div class="kroky_slider kroky_slider_selected" onclick="displayStepPojSix(1)" id="slider1p"><p><span class="slider_number">1</span></p></div>
+                                <div class="kroky_slider " onclick="displayStepPojSix(2)" id="slider2p"><p><span class="slider_number">2</span></p></div>
+                                <div class="kroky_slider " onclick="displayStepPojSix(3)" id="slider3p"><p><span class="slider_number">3</span></p></div>
+                                <div class="kroky_slider " onclick="displayStepPojSix(4)" id="slider4p"><p><span class="slider_number">4</span></p></div>
+                                <div class="kroky_slider " onclick="displayStepPojSix(5)" id="slider5p"><p><span class="slider_number">5</span></p></div>
+                                <div class="kroky_slider " onclick="displayStepPojSix(6)" id="slider6p"><p><span class="slider_number">6</span></p></div>
                             </div>
                         </div>
     
                     </div>
                     
-                    <div class="button_div part2_button">
+                    <div class="button_div part2_button aniButtonPartKroky6">
                         <button class="green_button">Napište mi</button>
                     </div>
                     
@@ -166,11 +193,11 @@
         <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <h2 class="h2_poj">Zajištění Majetku a odpovědnost</h2>
+                <h2 class="h2_poj_odpov aniHeaderOdpov">Zajištění Majetku a Odpovědnost</h2>
 
                 <div class="row_from_tablet">
                     <!-- left box -->
-                    <div class="sekce_from_tablet_half aligncont_spbetw">
+                    <div class="sekce_from_tablet_half aligncont_spbetw aniLeftOdpov">
                         <div class=" sekce_header_box hypo_green_box bg_darkgreen">
                             <h3 class="white">2 základní pojištění domu nebo bytu</h3>
                         </div>
@@ -183,7 +210,7 @@
                             </p>
                     </div>
                     <!-- right part -->
-                    <div class="sekce_from_tablet_half  aligncont_spbetw tb_pc_reverse_column">
+                    <div class="sekce_from_tablet_half  aligncont_spbetw tb_pc_reverse_column aniRightOdpov">
                         <div class="hypo_img_1">
                             <img src="img/poj_img2.jpg" alt="">
                         </div>
@@ -204,7 +231,7 @@
         <div class="container">
             <div class="fringe"></div>
             <div class="main">
-                <div class="row_from_tablet">
+                <div class="row_from_tablet aniKroky4">
                     <!-- left box -->    
                     <div class="sekce_from_tablet_half bg_darkgreen kroky4_header_box">
                         <h3 class="white"><span class="kroky4">4 TYPY POJIŠTĚNÍ ODPOVĚDNOSTI</span><br>
@@ -213,26 +240,47 @@
                     <!-- right part -->
                     <div class="kroky4_text_box_cont">
                         <div class=" kroky4_text_box bg_white">
-                            <p><span class="bold">Odpovědnost vůči zaměstnavateli, tzv. ZAM ZAM</span><br><br>
-                                Tato odpovědnost chrání nás v případě, že způsobíme újmu zaměstnavateli, je omezena na maximální pojistnou 
-                                částku a to 4,5 násobek Vaší hrubé mzdy, většinou ji hradí zaměstnavatel v rámci benefitů formou strháváním 
-                                srážek ze mzdy, nebo si ji platíte po vlastní ose. Na každém zaměstnavateli záleží, zda je toto pojištění
-                                 pro zaměstnance povinné.
-                            </p>
+                            <div id="krok_hypo1" class="krok_height">
+                                <p><span class="bold">Odpovědnost z běžného občanského života</span><br><br>
+                                    Tato odpovědnost chrání nás i členy ve společné domácnosti včetně mazlíčků
+                                    v případě způsobení újmy na zdraví či majetku třetí osobě (mimo rodiny).
+                                </p>
+                            </div>
+                            <div id="krok_hypo2" class="krok_height">
+                                <p><span class="bold">Odpovědnost z vlastnictví nemovitosti</span><br><br>
+                                    Tato odpovědnost chrání nás i členy ve společné domácnosti v případě způsobení
+                                     újmy na zdraví či majetku naší nemovitostí.
+                                </p>
+                            </div>
+                            <div id="krok_hypo3" class="krok_height">
+                                <p><span class="bold">Odpovědnost vůči zaměstnavateli, tzv. ZAM ZAM</span><br><br>
+                                    Tato odpovědnost chrání nás v případě, že způsobíme újmu zaměstnavateli, je omezena na maximální pojistnou 
+                                    částku a to 4,5 násobek Vaší hrubé mzdy, většinou ji hradí zaměstnavatel v rámci benefitů formou strháváním 
+                                    srážek ze mzdy, nebo si ji platíte po vlastní ose. Na každém zaměstnavateli záleží, zda je toto pojištění
+                                    pro zaměstnance povinné.
+                                </p>
+                            </div>
+                            <div id="krok_hypo4" class="krok_height">
+                                <p><span class="bold">Podnikatelská odpovědnost</span><br><br>
+                                    Tato odpovědnost chrání naše řemeslo a možné způsobené újmy v rámci našeho podnikání na základě 
+                                    živnostenského oprávnění, může jít o špatně odvedenou práci zhotovitele, o přepravu zboží, 
+                                    půjčený inventář, zásoby, apod. 
+                                </p>
+                            </div>
                         
                         </div>
                         <div class="kroky_slider_box">
-                            <div class="kroky_slider "><p><span class="slider_number">1</span></p></div>
-                            <div class="kroky_slider "><p><span class="slider_number">2</span></p></div>
-                            <div class="kroky_slider "><p><span class="slider_number">3</span></p></div>
-                            <div class="kroky_slider kroky_slider_selected"><p><span class="slider_number">4</span></p></div>
+                            <div class="kroky_slider kroky_slider_selected" onclick="displayStep(1)" id="slider1"><p><span class="slider_number">1</span></p></div>
+                            <div class="kroky_slider " onclick="displayStep(2)" id="slider2"><p><span class="slider_number">2</span></p></div>
+                            <div class="kroky_slider " onclick="displayStep(3)" id="slider3"><p><span class="slider_number">3</span></p></div>
+                            <div class="kroky_slider " onclick="displayStep(4)" id="slider4"><p><span class="slider_number">4</span></p></div>
                         </div>
                     </div>
 
                   
 
                 </div>
-                <div class="button_div part4_button">
+                <div class="button_div part4_button aniButtonPartKroky4">
                     <button class="green_button">Napište mi</button>
                 </div>
                 
@@ -357,6 +405,80 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script>
+
+         // 4 KROKY FUNCTION______________________
+        var step1, step2, step3, step4, step5, step6, stepShow;
+        var slider1, slider2, slider3, slider4, slider5, slider6, selectedSlider;
+        var selectedStep;
+        // 4
+            function generalStep(stepShow, step2, step3, step4){
+                $(stepShow).css('display','flex');
+                $(step2).hide();
+                $(step3).hide();
+                $(step4).hide();
+            };
+            function generalSlider(selectedSlider, slider2, slider3, slider4){
+                $(selectedSlider).addClass('kroky_slider_selected');
+                $(slider2).removeClass('kroky_slider_selected');
+                $(slider3).removeClass('kroky_slider_selected');
+                $(slider4).removeClass('kroky_slider_selected');
+            }
+
+            function displayStep(selectedStep){
+                if (selectedStep == 1){
+                    generalStep('#krok_hypo1', '#krok_hypo2','#krok_hypo3', '#krok_hypo4');
+                    generalSlider('#slider1', '#slider2', '#slider3', '#slider4');
+                } else if (selectedStep == 2){
+                    generalStep('#krok_hypo2', '#krok_hypo1','#krok_hypo3', '#krok_hypo4');
+                    generalSlider('#slider2', '#slider1', '#slider3', '#slider4');
+                } else if (selectedStep == 3){
+                    generalStep('#krok_hypo3', '#krok_hypo2','#krok_hypo1', '#krok_hypo4');
+                    generalSlider('#slider3', '#slider2', '#slider1', '#slider4');
+                } else if (selectedStep == 4){
+                    generalStep('#krok_hypo4', '#krok_hypo2','#krok_hypo3', '#krok_hypo1');
+                    generalSlider('#slider4', '#slider2', '#slider3', '#slider1');
+                };
+            }; 
+        // 6
+            function generalStepSix(stepShow, step2, step3, step4, step5, step6){
+                    $(stepShow).css('display','flex');
+                    $(step2).hide();
+                    $(step3).hide();
+                    $(step4).hide();
+                    $(step5).hide();
+                    $(step6).hide();
+                };
+            function generalSliderSix(selectedSlider, slider2, slider3, slider4, slider5, slider6){
+                $(selectedSlider).addClass('kroky_slider_selected');
+                $(slider2).removeClass('kroky_slider_selected');
+                $(slider3).removeClass('kroky_slider_selected');
+                $(slider4).removeClass('kroky_slider_selected');
+                $(slider5).removeClass('kroky_slider_selected');
+                $(slider6).removeClass('kroky_slider_selected');
+            }
+            function displayStepPojSix(selectedStep){
+                if (selectedStep == 1){
+                    generalStepSix('#krok_poj1', '#krok_poj2','#krok_poj3', '#krok_poj4','#krok_poj5', '#krok_poj6');
+                    generalSliderSix('#slider1p', '#slider2p', '#slider3p', '#slider4p', '#slider5p', '#slider6p');
+                } else if (selectedStep == 2){
+                    generalStepSix('#krok_poj2', '#krok_poj1','#krok_poj3', '#krok_poj4','#krok_poj5', '#krok_poj6');
+                    generalSliderSix('#slider2p', '#slider1p', '#slider3p', '#slider4p', '#slider5p', '#slider6p');
+                } else if (selectedStep == 3){
+                    generalStepSix('#krok_poj3', '#krok_poj2','#krok_poj1', '#krok_poj4','#krok_poj5', '#krok_poj6');
+                    generalSliderSix('#slider3p', '#slider2p', '#slider1p', '#slider4p', '#slider5p', '#slider6p');
+                } else if (selectedStep == 4){
+                    generalStepSix('#krok_poj4', '#krok_poj2','#krok_poj3', '#krok_poj1','#krok_poj5', '#krok_poj6');
+                    generalSliderSix('#slider4p', '#slider2p', '#slider3p', '#slider1p', '#slider5p', '#slider6p');
+                } else if (selectedStep == 5){
+                    generalStepSix('#krok_poj5', '#krok_poj2','#krok_poj3', '#krok_poj4','#krok_poj1', '#krok_poj6');
+                    generalSliderSix('#slider5p', '#slider2p', '#slider3p', '#slider4p', '#slider1p', '#slider6p');
+                } else if (selectedStep == 6){
+                    generalStepSix('#krok_poj6', '#krok_poj2','#krok_poj3', '#krok_poj4','#krok_poj5', '#krok_poj1');
+                    generalSliderSix('#slider6p', '#slider2p', '#slider3p', '#slider4p', '#slider5p', '#slider1p');
+                }
+            }; 
+
+
         gsap.registerPlugin(ScrollTrigger);
             // EASI IN FUNCTION UP
             var easeUpItem, valueStripe;
@@ -374,10 +496,32 @@
                 // stagger: 0.4
                 });
             };
+             // pojisteni HERO
+            var heroTimeline = gsap.timeline();
+            heroTimeline.from('.aniHeader', {duration: 0.7, y: 60, ease: "power1", opacity: 0})
+                        .from('.aniHeroImg', {duration: 0.5, y: 60, ease: "power4",  opacity: 0})
+                        .from('.aniHypoList', {duration: 0.5, y: 60, ease: "power1", opacity: 0})
             // KONTAKT
             generalEaseIn('.aniKontakt')
             generalEaseIn('.aniContactBg')
             generalEaseIn('.aniContact')
+            // HYPO Part 2 - 6 KROKU
+            generalEaseIn('.aniKroky6');
+            generalEaseIn('.aniButtonPartKroky6');
+            // ODPOVEDNOST
+            var odpovednostTimeline = gsap.timeline();
+            odpovednostTimeline.from('.aniHeaderOdpov', {duration: 0.7, y: 60, ease: "power1", opacity: 0})
+                        .from('.aniLeftOdpov', {duration: 0.5, y: 60, ease: "power4",  opacity: 0})
+                        .from('.aniRightOdpov', {duration: 0.5, y: 60, ease: "power1", opacity: 0})
+                ScrollTrigger.create({
+                    trigger: '.aniHeaderOdpov',
+                    animation: odpovednostTimeline,
+                    start: "top 90%",
+                    // markers: true
+                });
+            // HYPO Part 4 - 4 KROKY
+            generalEaseIn('.aniKroky4');
+            generalEaseIn('.aniButtonPartKroky4');
     </script>
 
 </body>

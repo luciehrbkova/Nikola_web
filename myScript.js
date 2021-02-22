@@ -27,20 +27,14 @@ function splatkomer(){
 
     // vypocet procenta z uroku
     urok = urok/100;
-
     // mesicni urok
     urokPerMont = urok/12;
-
-
     // 1.05% z uroku  
     urokPerMontJedna = urokPerMont + 1;
-
     // pocet let * 12
     doba = doba*12;
-
     // nasledny urok 
     kumulUrok = urokPerMontJedna ** doba;   
-
     splatka = castka * urokPerMont * kumulUrok / (kumulUrok - 1);
     
     // zaokrouhleni na cela cisla
@@ -67,3 +61,29 @@ function splatkomer(){
         x.style.display = "none";
     }
 };
+
+function konsolidomer(){
+    var vrsek, spodek;
+    konsol_jistina = document.getElementById("konsol_jistina").value;
+    udaje_email = document.getElementById("konsol_email").value;
+    udaje_mobil = document.getElementById("konsol_mobil").value;
+    udaje_souhlas = document.getElementById("konsol_souhlas").value;
+    konsol_urok = 0.039;
+    konsol_doba = 12*10;
+
+    konsolUrokPerMonth = konsol_urok/12;
+    konsolurokPerMontJedna = konsolUrokPerMonth + 1;
+    konsolKumulUrok = konsolurokPerMontJedna ** konsol_doba;
+    konsol_splatka = konsol_jistina * konsolUrokPerMonth * konsolKumulUrok / (konsolKumulUrok - 1);
+    konsol_mesicni_splatka = Math.ceil(konsol_splatka);
+
+    if(konsol_jistina ==="" || udaje_email ==="" || udaje_mobil ==="" || udaje_souhlas === ""){
+        document.getElementById("kolik").innerHTML = "Vyplňte prosím požadované údaje.";
+    } else {
+        document.getElementById("konsul_splatka").innerHTML = konsol_mesicni_splatka + " Kč";
+        document.getElementById("kolik").innerHTML = "Odhadovaná měsíční splátka hypotéky při úroku <b>";
+    }
+    
+}
+
+//Splatka je orientacni pro uroku, splatnosti x a uspora je poci
