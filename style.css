@@ -2717,6 +2717,16 @@ p {
   margin: 5px 0px;
 }
 
+.konsol_box {
+  height: 150px;
+  padding-top: 15px;
+}
+
+.instrukce {
+  position: relative;
+  top: 0;
+}
+
 .h2_poj {
   font-size: 2.5rem;
   line-height: 3rem;
