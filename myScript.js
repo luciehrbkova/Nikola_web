@@ -68,6 +68,7 @@ function konsolidomer(){
     udaje_email = document.getElementById("konsol_email").value;
     udaje_mobil = document.getElementById("konsol_mobil").value;
     udaje_souhlas = document.getElementById("konsol_souhlas").value;
+    checkbox = document.getElementById("konsol_souhlas");
     konsol_urok = 0.039;
     konsol_doba = 12*10;
 
@@ -77,7 +78,7 @@ function konsolidomer(){
     konsol_splatka = konsol_jistina * konsolUrokPerMonth * konsolKumulUrok / (konsolKumulUrok - 1);
     konsol_mesicni_splatka = Math.ceil(konsol_splatka);
 
-    if(konsol_jistina ==="" || udaje_email ==="" || udaje_mobil ==="" || udaje_souhlas === ""){
+    if(konsol_jistina ==="" || udaje_email ==="" || udaje_mobil ==="" || udaje_souhlas === "" || checkbox.checked == false){
         document.getElementById("kolik").innerHTML = "Vyplňte prosím požadované údaje.";
     } else {
         document.getElementById("konsul_splatka").innerHTML = konsol_mesicni_splatka + " Kč";

@@ -596,7 +596,7 @@ p {
 
 #hero .signature {
   width: 270px;
-  height: 74px;
+  height: 130px;
   position: absolute;
   bottom: 130px;
   right: 45px;
@@ -2715,6 +2715,16 @@ p {
 
 .konsolidomer .pujcka_header {
   margin: 5px 0px;
+}
+
+.konsol_box {
+  height: 150px;
+  padding-top: 15px;
+}
+
+.instrukce {
+  position: relative;
+  top: 0;
 }
 
 .h2_poj {
