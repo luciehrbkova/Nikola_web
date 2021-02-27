@@ -875,6 +875,12 @@ p {
   }
 }
 
+@media screen and (min-width: 2440px) {
+  .duo_header {
+    margin: 20px 0px 60px -270px;
+  }
+}
+
 .white_duo_part {
   font-size: 6.25rem;
   -webkit-text-stroke: 2px #ffffff;
@@ -1102,7 +1108,7 @@ p {
 
 @media screen and (min-width: 1900px) {
   .box_spojenci {
-    min-height: 700px;
+    min-height: 550px;
   }
 }
 
@@ -1373,6 +1379,7 @@ p {
   .lada_box {
     -ms-flex-item-align: end;
         align-self: flex-end;
+    width: 220px;
   }
 }
 
@@ -1675,6 +1682,13 @@ p {
   height: auto;
   margin-top: 3px;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1900px) {
+  .contact .icon_phone {
+    width: 20px;
+    margin-top: 8px;
+  }
 }
 
 .footer {
@@ -2400,6 +2414,7 @@ p {
 
 .bold {
   font-weight: 600;
+  color: #586863;
 }
 
 .italic {
