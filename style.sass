@@ -52,6 +52,7 @@ img
 a
     text-decoration: none
     color: inherit
+    cursor: pointer
 
 h1
     margin: 0
@@ -115,6 +116,7 @@ p
     margin-left: calc( 50% - 120px )
     outline: none
     transition: 0.5s
+    cursor: pointer
     &:hover
         background: $white
         color: $black
@@ -492,6 +494,8 @@ p
         margin-bottom: 10px
     @media screen and ( min-width: 1900px)
         margin: 20px 0px 60px -200px
+    @media screen and ( min-width: 2440px)
+        margin: 20px 0px 60px -270px
 .white_duo_part
     font-size: 6.25rem
     -webkit-text-stroke: 2px $white
@@ -610,7 +614,7 @@ p
     @media screen and ( min-width: 1200px) and ( max-height: 700px)
         min-height: 300px
     @media screen and ( min-width: 1900px)
-        min-height: 700px
+        min-height: 550px
     p
         padding: 15px
         @media screen and ( max-width: 320px)
@@ -739,6 +743,7 @@ p
         margin: 0px
     @media screen and ( min-width: 1200px)
         align-self: flex-end
+        width: 220px
 .lada_img
     height: 49px
     width: 49px
@@ -913,6 +918,10 @@ p
         height: auto
         margin-top: 3px
         margin-right: 10px
+        @media screen and ( min-width: 1900px)
+            width: 20px
+            margin-top: 8px
+        
 
 
 // *************** FOOTER *************
@@ -1294,6 +1303,7 @@ p
     
 .bold
     font-weight: 600
+    color: $darkgreen
 .italic
     font-style: italic
 .bg_rada
