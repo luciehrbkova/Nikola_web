@@ -82,7 +82,7 @@ function konsolidomer(){
         document.getElementById("kolik").innerHTML = "Vyplňte prosím požadované údaje.";
     } else {
         document.getElementById("konsul_splatka").innerHTML = konsol_mesicni_splatka + " Kč";
-        document.getElementById("kolik").innerHTML = "Odhadovaná měsíční splátka hypotéky při úroku <b>";
+        document.getElementById("kolik").innerHTML = "Odhadovaná měsíční splátka po konsolidaci při úrokové sazbě 3,9 % p.a. a splatnosti 120 měsíců: <b>";
     }
     
 }
