@@ -2089,11 +2089,37 @@ p {
 }
 
 .pdf_form_box {
-  width: 100%;
-  height: 0px;
-  position: relative;
-  z-index: 5;
+  position: fixed;
+  z-index: 50;
+  top: 20%;
+  left: 30px;
   display: none;
+  width: calc( 100% - 60px);
+}
+
+@media screen and (min-width: 700px) {
+  .pdf_form_box {
+    left: 45px;
+    width: calc( 100% - 90px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pdf_form_box {
+    width: calc( 100% - 276px);
+    left: 138px;
+  }
+}
+
+.pdf_form_box .row-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.closePdf {
+  width: 15px;
+  height: 15px;
 }
 
 .pdf_form {
@@ -2152,6 +2178,12 @@ p {
 @media screen and (min-width: 1200px) {
   .pdf_form {
     padding: 80px 200px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .pdf_form {
+    padding: 80px 400px;
   }
 }
 

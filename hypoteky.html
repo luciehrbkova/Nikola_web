@@ -71,6 +71,24 @@
     <!--*********************** Hypoteky PAGE *************************-->
     <section id="hypoteky" class="sekce">
         <div class="container">
+            <div class="pdf_form_box" id="pdf_form_box">
+                <form action="" id="pdf_form" class="pdf_form"  method="POST" enctype="multipart/form-data" name="pdfForm">
+                    <div class="row row-right">
+                        <div class="closePdf" onclick="hidePdfForm()">
+                            <img src="img/cross.png" alt="zavřít" class="cross_icon">
+                        </div>
+                    </div>
+                    <label for="email" class="pdf_label">Email</label><br>
+                    <input type="email" class="pdf_input" id="pdf_adresa" name="email" required>
+                    <label for="mobil" class="pdf_label">Mobil</label><br>
+                    <input type="number" class="pdf_input" id="pdf_cislo" name="mobil"  required>
+                    <div class="row">
+                        <input type="checkbox" class="checkbox" required>
+                        <label for="konsol_souhlas" class="pdf_checkbox_label">Souhlasím s použitím osobních údajů pro <a href="gdpr.html" class="bold">marketingové účely</a></label>
+                    </div>
+                    <a href="img/procesKoupe.pdf" download="procesKoupe" target="blank"><input type="submit" value="ODESLAT" class="green_button" id="pdf_form_button"></a>
+                </form>
+            </div>
             <div class="fringe"></div>
             <div class="main">
                 <!-- logo -->
@@ -80,6 +98,7 @@
                     </div>
                 </div>
                 <!-- end logo -->
+                
 
                 <h2 class="h2_header aniHeader">Hypotéky</h2>
                 <div class="hypo_part1 row_from_tablet">
@@ -202,19 +221,7 @@
 
                 </div>
                 <!-- button only mobile -->
-                <div class="pdf_form_box" id="pdf_form_box">
-                    <form action="" id="pdf_form" class="pdf_form"  method="POST" enctype="multipart/form-data" name="pdfForm">
-                        <label for="email" class="pdf_label">Email</label><br>
-                        <input type="email" class="pdf_input" id="pdf_adresa" name="email" required>
-                        <label for="mobil" class="pdf_label">Mobil</label><br>
-                        <input type="number" class="pdf_input" id="pdf_cislo" name="mobil"  required>
-                        <div class="row">
-                            <input type="checkbox" class="checkbox" required>
-                            <label for="konsol_souhlas" class="pdf_checkbox_label">Souhlasím s použitím osobních údajů pro <a href="gdpr.html" class="bold">marketingové účely</a></label>
-                        </div>
-                        <a href="img/procesKoupe.pdf" download="procesKoupe" target="blank"><input type="submit" value="ODESLAT" class="green_button" id="pdf_form_button"></a>
-                    </form>
-                </div>
+               
                 <div class="button_div part2_button mobile_only_bl aniButtonPart3">
                     <button class="green_button pdf_button" onclick="showPdfForm()">STÁHNOUT ZDARMA</button>
                 </div>
@@ -676,6 +683,11 @@
         function showPdfForm()
         {
             $("#pdf_form_box").fadeIn();
+        }
+
+        function hidePdfForm()
+        {
+            $("#pdf_form_box").fadeOut();
         }
 
         gsap.registerPlugin(ScrollTrigger);
