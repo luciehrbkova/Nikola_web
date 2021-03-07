@@ -222,18 +222,10 @@
                 <h2 class="top_layer aniKontakt">Kontakt</h2>
                 <div class="bg_white cont_cont row_from_tablet aniContactBg">
                     <div class="contact_container aniContact">
-                        <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
-                            <label for="jmeno">Jméno</label><br>
-                            <input type="text" id="jmeno" name="name" placeholder="Jméno" required><div class="required"></div>
-                            <label for="cislo">Mobil</label><br>
-                            <input type="number" id="cislo" name="mobil" placeholder="Telefonní číslo" required><div class="required"></div>
-                            <label for="eadresa">Email</label><br>
-                            <input type="email" id="adresa"  name="mail" placeholder="E-mail" required><div class="required"></div>
-                            <label for="zprava">Text zprávy</label><br>
-                            <textarea name="zprava" id="" rows="10" placeholder="Text zprávy"></textarea>
-                            <br>
-                            <input type="submit" value="ODESLAT" class="submit">
-                        </form>
+                        <?php
+                            $url = "index.php#finalMessage";
+                            include'contact.php';
+                        ?>
                     </div>
                     <div class="map_contactdata aniContact">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.655259546002!2d14.
