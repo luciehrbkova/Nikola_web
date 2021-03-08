@@ -134,14 +134,14 @@
                                 <h3><span class="kroky4">KONSOLIDAČNÍ KALKULÁTOR</span><br><br></h3>
                                 <!-- 1 pujcka -->
                                 <div class="splatkomer konsolidomer" id="pujcka_1">
-                                    <form action="">
+                                    <!-- <form action=""> -->
                                     <!-- <h4 class="pujcka_header">1. PŮJČKA</h4> -->
                                         <div class="input_div">
                                             <p class="popisky">SOUČET ZŮSTATKŮ VŠECH ÚVĚRŮ</p>
                                             <p class="placeholder">Kč</p>
                                             <input type="number" id="konsol_jistina" class="input" required>
                                         </div>
-                                        <div class="input_div">
+                                        <!-- <div class="input_div">
                                             <p class="popisky">EMAIL</p>
                                             <p class="placeholder white">.</p>
                                             <input type="email" id="konsol_email" class="input" required>
@@ -154,7 +154,7 @@
                                         <div class="row checkbox_box">
                                             <input type="checkbox" id="konsol_souhlas" class="checkbox" required>
                                             <label for="konsol_souhlas">Souhlasím s použitím osobních údajů pro <a href="gdpr.php" class="bold">marketingové účely</a></label>
-                                        </div>
+                                        </div> -->
                                 </div> 
                             </div>     
                         </div>
@@ -165,16 +165,15 @@
                                 <div class="button_div part2_button ">
                                     <button class="green_button" onclick="konsolidomer()" >KONSOLIDUJ</button>
                                 </div>
-                                </form>
+                                <!-- </form> -->
                                 <!-- <p class="instrukce">PREPOCITEJ</p> -->
                                 
                                 <div class="result_box konsol_box">
                                     
-                                    <div class="konsul_result" id="result" >
-                                        <p id="kolik"></p> <br>
-                                        <h4 id="konsul_splatka"></h4>
+                                    <div class="konsol_result" id="konsol_result" >
+                                        <p id="konsol_kolik"></p> <br>
+                                        <h4 id="konsol_splatka"></h4>
                                         <br>
-                                        <a href="pujcky.php#splatkomer"><p id="prepocitat"></p></a>
                                     </div>
                                 </div>
                                 <!-- <p class="instrukce mobile_hide">Vyplňte jfdk khdlfjhdkf lah fkf flgkadljfd hfdl jhlakej lglkdjflakfkja</p> -->
