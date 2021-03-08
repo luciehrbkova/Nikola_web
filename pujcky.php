@@ -134,7 +134,7 @@
                                 <h3><span class="kroky4">KONSOLIDAČNÍ KALKULÁTOR</span><br><br></h3>
                                 <!-- 1 pujcka -->
                                 <div class="splatkomer konsolidomer" id="pujcka_1">
-                                    <!-- <form action=""> -->
+                                    <form action="">
                                     <!-- <h4 class="pujcka_header">1. PŮJČKA</h4> -->
                                         <div class="input_div">
                                             <p class="popisky">SOUČET ZŮSTATKŮ VŠECH ÚVĚRŮ</p>
@@ -165,14 +165,16 @@
                                 <div class="button_div part2_button ">
                                     <button class="green_button" onclick="konsolidomer()" >KONSOLIDUJ</button>
                                 </div>
-                                <!-- </form> -->
-                                <!-- <h3><span class="kroky4">HYPOTEČNÍ KALKULACKA</span><br><br></h3> -->
+                                </form>
+                                <!-- <p class="instrukce">PREPOCITEJ</p> -->
                                 
                                 <div class="result_box konsol_box">
                                     
                                     <div class="konsul_result" id="result" >
                                         <p id="kolik"></p> <br>
                                         <h4 id="konsul_splatka"></h4>
+                                        <br>
+                                        <a href="pujcky.php#splatkomer"><p id="prepocitat"></p></a>
                                     </div>
                                 </div>
                                 <!-- <p class="instrukce mobile_hide">Vyplňte jfdk khdlfjhdkf lah fkf flgkadljfd hfdl jhlakej lglkdjflakfkja</p> -->
