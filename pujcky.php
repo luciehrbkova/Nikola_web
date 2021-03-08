@@ -112,8 +112,7 @@
                     <!-- right part -->
                     <div class="sekce_from_tablet_half">
                         <p class="part2_text aniHypoList">
-                            Spotřebitelské úvěry jsou typické tím, že se jedná o půjčku/ky pro jednotlivce při maximálním 
-                            horizontu splatnosti 120 měsíců za účelem nákupu (spotřebního zboží, automobilu, vybavení domácnosti atp. 
+                            Spotřebitelské úvěry jsou typické tím, že se jedná o půjčku/ky pro jednotlivce při maximálním horizontu splatnosti 120 měsíců za účelem nákupu spotřebního zboží, automobilu, vybavení domácnosti atp.
                             <br><br>
                             Setkávám se ale stále s tím, že si lidé tyto peníze půjčují zbytečně draze.
                              <br><br>

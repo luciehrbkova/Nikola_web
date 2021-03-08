@@ -14,5 +14,6 @@
         $from="From: $pdf_email<$pdf_email>\r\nReturn-path: $pdf_email";
         $pdf_subject="Pdf stahnuto ";
         mail("hrbkova.lucka@gmail.com", $pdf_subject, $pdf_message, $from);
+        mail("nikola.bartonickova@4fin.cz", $subject, $messageToMail, $from);
     }
 ?>

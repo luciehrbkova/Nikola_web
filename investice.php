@@ -112,8 +112,8 @@
                     <div class="kroky4_text_box_cont">
                         <div class=" kroky4_text_box bg_white">
                             <br>
-                            <p>Ihned dostupná rezerva, kterou držíme na co možno nejefektivnějším spořicím účtu, slouží 
-                                zejména pro nečekané výdaje domácnosti, jako jsou opravy a nečekaný výpadek příjmu domácnosti. </p>
+                            <p>Ihned dostupná rezerva, kterou držíme na co možno nejefektivnějším spořicím účtu, slouží zejména pro nečekané výdaje domácnosti, 
+                                jako jsou drobné opravy a nenadálé výpadky příjmu domácnosti.</p>
                             <br>
                         </div>
                     </div>
@@ -127,10 +127,10 @@
                     <div class="kroky4_text_box_cont">
                         <div class=" kroky4_text_box bg_white">
                             <br>
-                            <p>Střednědobou rezervou naplňujeme cíle ve střednědobém horizontu 5-15 let (individuálně dle finančního plánu každého z Vás).
+                            <p>Střednědobou rezervou naplňujeme cíle ve střednědobém horizontu, a to 5-15 let (individuálně dle finančního plánu každého z Vás).
                                 <br><br>
-                                Může se jednat o rezervu za účelem mimořádné splátky ve výročí fixace u Vaší hypotéky, příprava vlastních zdrojů na budoucí 
-                                nákup nemovitosti, rekonstrukce bytu, nebo jeho části, financování koupě automobilu nebo třeba i vysněnou dovolenou.
+                                Může se jednat o rezervu za účelem mimořádné splátky ve výročí fixace u Vaší hypotéky, přípravu vlastních zdrojů na budoucí nákup nemovitosti, 
+                                rekonstrukci bytu, financování koupě automobilu nebo třeba i vysněnou dovolenou.
                         </div>
                     </div>
                 </div>
@@ -144,9 +144,9 @@
                         <div class=" kroky4_text_box bg_white">
                             <br>
                             <p>Dlouhodobou rezervou řešíme uspokojení své soukromé renty, kdy Vám finanční poradce na základě důkladné analýzy spočítá, 
-                                kolik byste si měli odkládat, tak aby výsledná částka včetně očekávaného zhodnocení uspokojila Vaši měsíční soukromou rentu. 
+                                kolik byste si měli odkládat tak, aby výsledná částka včetně očekávaného zhodnocení uspokojila Vaši měsíční soukromou rentu. 
                                 Pro přesný výpočet je potřeba zohlednit inflaci, čas, současné nástroje sloužící pro dlouhodobé odkládání peněz a jejich 
-                                výkonnost v čase a také Váš postoj ke starobnímu důchodu.</p>
+                                výkonnost a také Váš postoj ke starobnímu důchodu.</p>
                             <br>
                         </div>
                     </div>

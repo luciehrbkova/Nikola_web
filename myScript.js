@@ -47,7 +47,7 @@ function splatkomer(){
     }
     else
     {
-        document.getElementById("kolik").innerHTML = "Odhadovaná měsíční splátka hypotéky při úroku <b>" + urokZadani +" % </b>:";
+        document.getElementById("kolik").innerHTML = "Odhadovaná měsíční splátka hypotéky při úrokové sazbě <b>" + urokZadani +" % p.a. </b>:";
         document.getElementById("kolik6").innerHTML = splatka + " Kč";
     };   
 

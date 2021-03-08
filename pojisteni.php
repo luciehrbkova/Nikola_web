@@ -96,15 +96,15 @@
                     <div class="sekce_from_tablet_half aligncont_sp_around">
                         <!-- <div class="aligncont_sp_around"> -->
                             <p class="part2_text aniHypoList">
-                                Zajištění příjmu je především nástroj, který by nás měl ochránit při nenadálých událostech a to zejména 
+                                Zajištění příjmu je především nástroj, který by nás měl ochránit při nenadálých událostech, a to zejména
                                 při dlouhodobé nemoci nebo úrazu, při kterých dochází k výraznému poklesu či dokonce úplnému výpadku příjmu.
                                 <br><br>
                                 Zajištění příjmu vnímám jako jeden z nedůležitějších pilířů, na kterých byste měli se svým poradcem 
                                 postavit svůj finanční plán. 
                                 <br><br>
-                                Občas se setkávám s postojem klientů: „na co se pojišťovat“, „vždyť pojišťovny stejně neplní“, proto projděte
-                                 důslednou analýzou Vašich příjmů a výdajů a nechte si ukázat od odborníka, že i nástroj jako je pojištění může 
-                                 mít smysl dlouhodobé ochrany Vašich příjmů.
+                                Občas se setkávám s postojem klientů: „Na co se pojišťovat, vždyť pojišťovny stejně neplní“, proto 
+                                projděte důslednou analýzou Vašich příjmů a výdajů a nechte si ukázat od odborníka, že i nástroj 
+                                jako je pojištění může mít smysl dlouhodobé ochrany Vašich příjmů.
                             </p>
                         <!-- </div> -->
                     </div>
@@ -144,29 +144,29 @@
                                         Zkuste se na zajištění koukat z dlouhodobého hlediska jako na nástroj pro zachování životní úrovně při nenadálých událostech.</p>
                                 </div>
                                 <div id="krok_poj2" class="krok_height">
-                                    <p><span class="bold">Nastavte správně krytí krátkodobých a dlouhodobých rizik, zohledněte svoje povolání a likvidní krátkodobé rezervy!</span> 
+                                    <p><span class="bold">Nastavte správně krytí krátkodobých a dlouhodobých rizik, zohledněte své povolání a likvidní krátkodobé rezervy!</span> 
                                         <br><br>
-                                        Neplaťte za předražené smlouvy, které absolutně neodpovídají pojistnému krytí, nastavte si se svým poradcem 
-                                        rizika tak, aby byly v souladu s Vaším majetkem a předpokládanému výpadku příjmu v konkrétním připojištění.</p>
+                                        Neplaťte za předražené smlouvy, které absolutně neodpovídají pojistnému krytí. Nastavte si rizika tak, aby byla v souladu s Vaším majetkem 
+                                        a předpokládanému výpadku příjmu v konkrétním připojištění.</p>
                                 </div>
                                 <div id="krok_poj3" class="krok_height">
-                                    <p><span class="bold">Pojistěte se jak pro případ nemoci tak i úrazu</span> 
+                                    <p><span class="bold">Pojistěte se jak pro případ nemoci, tak i úrazu.</span> 
                                         <br><br>
-                                        Nedělejte si tzv. úrazovky, zajistěte se komplexně z jakýchkoliv příčin, nepodceňujte rizika z důvodu nemoci.</p>
+                                        Nedělejte si tzv. úrazovky, zajistěte se komplexně z jakýchkoliv příčin. Nepodceňujte rizika z důvodu nemoci.</p>
                                 </div>
                                 <div id="krok_poj4" class="krok_height">
-                                    <p><span class="bold">Vyplňte se svým poradcem předběžně zdravotní dotazník a informujte ho o Vašem zdravotním stavu</span> 
+                                    <p><span class="bold">Vyplňte se svým poradcem předběžně zdravotní dotazník a informujte ho o Vašem zdravotním stavu.</span> 
                                         <br><br>
-                                        Zdravotní dotazník vyplňujte vždy pravdivě, ať víte dopředu za jakých podmínek Vás pojišťovna přijímá, 
-                                        nebudete pak nemile překvapeni z případného krácení plnění.</p>
+                                        Zdravotní dotazník vyplňujte vždy pravdivě, ať víte dopředu, za jakých podmínek Vás pojišťovna přijímá.
+                                        Nebudete pak nemile překvapeni z případného krácení plnění.</p>
                                 </div>
                                 <div id="krok_poj5" class="krok_height">
-                                    <p><span class="bold">Vyberte se svým poradcem správnou pojišťovnu, mějte vždy na výběr a informujte se zásadních výlukách konkrétní pojišťovny</span> 
+                                    <p><span class="bold">Vyberte se svým poradcem správnou pojišťovnu. Mějte vždy na výběr a informujte se o zásadních výlukách konkrétní pojišťovny.</span> 
                                         <br><br>
-                                        Mějte vždy možnost volby mezi více variantami, nenechte se odbýt jednou nabídkou, mějte srovnání, informujte se o výlukách.</p>
+                                        Mějte vždy možnost volby mezi více variantami. Nenechte se odbýt jednou nabídkou. Mějte srovnání a informujte se o výlukách.</p>
                                 </div>
                                 <div id="krok_poj6" class="krok_height">
-                                    <p><span class="bold">Informujte se o čekacích dobách dané pojišťovny</span> 
+                                    <p><span class="bold">Informujte se o čekacích dobách dané pojišťovny.</span> 
                                         <br><br>
                                         Informujte se o čekacích a karenčních dobách a buďte důslední s výběrem kvalitní pojišťovny.</p>
                                 </div>
@@ -213,8 +213,8 @@
                             <li>pojištění stavby včetně vedlejších objektů</li>
                             <li>pojištění domácnosti a movitého majetku</li>
                         </ul>
-                            <p class="part2_text">Svůj byt či dům pojistěte na doporučené částky dle výpočtu ve spolupráci s 
-                                finančním poradcem, dejte si pozor na podpojištění pojistných částek a pojistěte byt či dům vždy na cenu NOVOU.
+                            <p class="part2_text">Svůj byt či dům pojistěte na doporučené částky dle výpočtu ve spolupráci s finančním poradcem. 
+                                Dejte si pozor na podpojištění pojistných částek a pojistěte byt či dům vždy na cenu NOVOU.
                             </p>
                     </div>
                     <!-- right part -->
@@ -222,8 +222,8 @@
                         <div class="hypo_img_1">
                             <img src="img/poj_img2.jpg" alt="interiér">
                         </div>
-                        <p class="part2_text margin_top_special">Svůj majetek, odpovědnost nebo podnikání chráníme cestou neživotního pojištění a to,
-                             ať už jde o auto, dům, byt, běžnou odpovědnost, nebo Vaše podnikání.
+                        <p class="part2_text margin_top_special">Svůj majetek, odpovědnost nebo podnikání, chráníme cestou neživotního pojištění, 
+                            a to ať už jde o auto, dům, byt, běžnou odpovědnost nebo Vaše podnikání.
                         </p>
                     </div>
 
@@ -256,21 +256,20 @@
                             </div>
                             <div id="krok_hypo2" class="krok_height">
                                 <p><span class="bold">Odpovědnost z vlastnictví nemovitosti</span><br><br>
-                                    Tato odpovědnost chrání vlastníka nemovitosti při způsobení škody na zdraví či majetku naší nemovitostí.
+                                Tato odpovědnost chrání vlastníka nemovitosti při vzniku škody na majetku či újmě na zdraví způsobené třetí straně.
                                 </p>
                             </div>
                             <div id="krok_hypo3" class="krok_height">
                                 <p><span class="bold">Odpovědnost vůči zaměstnavateli, tzv. ZAM-ZAM</span><br><br>
-                                    Tato odpovědnost nás chrání v případě, že způsobíme újmu zaměstnavateli. Je omezena na maximální 
-                                    pojistnou částku a to 4,5 násobek Vaší hrubé mzdy. Většinou ji hradí zaměstnavatel v rámci benefitů 
-                                    formou strháváním srážek ze mzdy, nebo si ji platíte po vlastní ose. Na každém zaměstnavateli záleží, 
-                                    zda je toto pojištění pro zaměstnance povinné.
+                                Tato odpovědnost nás chrání v případě, že způsobíme újmu zaměstnavateli. Je omezena na maximální pojistnou částku, 
+                                a to 4,5 násobek Vaší hrubé mzdy. Většinou ji hradí zaměstnavatel v rámci benefitů formou strháváním srážek ze mzdy 
+                                nebo si ji platíte po vlastní ose. Na každém zaměstnavateli záleží, zda je toto pojištění pro zaměstnance povinné.
                                 </p>
                             </div>
                             <div id="krok_hypo4" class="krok_height">
                                 <p><span class="bold">Podnikatelská odpovědnost</span><br><br>
-                                    Tato odpovědnost chrání naše podnikání na základě živnostenského oprávnění při nechtěně způsobené újmě 
-                                    zákazníkům nebo dodavateli. Může jít o špatně odvedenou práci zhotovitele, o přepravu zboží, půjčený inventář, zásoby, apod.
+                                Tato odpovědnost chrání naše podnikání na základě živnostenského oprávnění při nechtěně způsobené újmě zákazníkům nebo 
+                                dodavatelům. Může jít o špatně odvedenou práci zhotovitele, o přepravu zboží, půjčený inventář, zásoby, apod.
                                 </p>
                             </div>
                         
