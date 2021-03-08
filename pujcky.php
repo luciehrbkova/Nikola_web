@@ -71,6 +71,24 @@
     <!--*********************** pujckyPAGE *************************-->
     <section id="pujcky" class="sekce">
         <div class="container">
+            <div class="pdf_form_box" id="pdf_form_box">
+                <form action="konsoldata.php" id="pdf_form" class="pdf_form bg_darkgreen"  method="POST" enctype="multipart/form-data" name="pdfForm">
+                    <div class="row row-right">
+                        <div class="closePdf" onclick="hidePdfForm()">
+                            <img src="img/cross.png" alt="zavřít" class="cross_icon">
+                        </div>
+                    </div>
+                    <label for="email" class="pdf_label">Email</label><br>
+                    <input type="email" class="pdf_input" id="pdf_adresa" name="pdf_email" required>
+                    <label for="mobil" class="pdf_label">Mobil</label><br>
+                    <input type="number" class="pdf_input" id="pdf_cislo" name="pdf_mobil"  required>
+                    <div class="row">
+                        <input type="checkbox" class="checkbox" required>
+                        <label for="konsol_souhlas" class="pdf_checkbox_label">Souhlasím s použitím osobních údajů pro <a href="gdpr.php" class="bold">marketingové účely</a></label>
+                    </div>
+                    <input type="submit" value="ODESLAT" class="green_button" id="pdf_form_button" onclick="hidePdfForm()">
+                </form>
+            </div>
             <div class="fringe"></div>
             <div class="main">
                 <!-- logo -->
@@ -163,7 +181,7 @@
                             <div class=" kroky4_text_box bg_white">
                                 
                                 <div class="button_div part2_button ">
-                                    <button class="green_button" onclick="konsolidomer()" >KONSOLIDUJ</button>
+                                    <button class="green_button" onclick="showPdfForm();konsolidomer()" >KONSOLIDUJ</button>
                                 </div>
                                 <!-- </form> -->
                                 <!-- <p class="instrukce">PREPOCITEJ</p> -->
@@ -317,6 +335,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script>
+
+        // pdf form
+        function showPdfForm()
+        {
+            $("#pdf_form_box").fadeIn();
+        }
+
+        function hidePdfForm()
+        {
+            $("#pdf_form_box").fadeOut();
+        }
+
+        
+
         gsap.registerPlugin(ScrollTrigger);
             // EASI IN FUNCTION UP
             var easeUpItem, valueStripe;

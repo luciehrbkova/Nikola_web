@@ -72,7 +72,7 @@
     <section id="hypoteky" class="sekce">
         <div class="container">
             <div class="pdf_form_box" id="pdf_form_box">
-                <form action="download.php" id="pdf_form" class="pdf_form"  method="POST" enctype="multipart/form-data" name="pdfForm">
+                <form action="download.php" id="pdf_form" class="pdf_form bg_lightgreen"  method="POST" enctype="multipart/form-data" name="pdfForm">
                     <div class="row row-right">
                         <div class="closePdf" onclick="hidePdfForm()">
                             <img src="img/cross.png" alt="zavřít" class="cross_icon">
