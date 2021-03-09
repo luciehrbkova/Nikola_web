@@ -47,7 +47,7 @@ function splatkomer(){
     }
     else
     {
-        document.getElementById("kolik").innerHTML = "Odhadovaná měsíční splátka hypotéky při úroku <b>" + urokZadani +" % </b>:";
+        document.getElementById("kolik").innerHTML = "Odhadovaná měsíční splátka hypotéky při úrokové sazbě <b>" + urokZadani +" % p.a. </b>:";
         document.getElementById("kolik6").innerHTML = splatka + " Kč";
     };   
 
@@ -65,10 +65,10 @@ function splatkomer(){
 function konsolidomer(){
     var vrsek, spodek;
     konsol_jistina = document.getElementById("konsol_jistina").value;
-    udaje_email = document.getElementById("konsol_email").value;
-    udaje_mobil = document.getElementById("konsol_mobil").value;
-    udaje_souhlas = document.getElementById("konsol_souhlas").value;
-    checkbox = document.getElementById("konsol_souhlas");
+    // udaje_email = document.getElementById("konsol_email").value;
+    // udaje_mobil = document.getElementById("konsol_mobil").value;
+    // udaje_souhlas = document.getElementById("konsol_souhlas").value;
+    // checkbox = document.getElementById("konsol_souhlas");
     konsol_urok = 0.039;
     konsol_doba = 12*10;
 
@@ -78,11 +78,11 @@ function konsolidomer(){
     konsol_splatka = konsol_jistina * konsolUrokPerMonth * konsolKumulUrok / (konsolKumulUrok - 1);
     konsol_mesicni_splatka = Math.ceil(konsol_splatka);
 
-    if(konsol_jistina ==="" || udaje_email ==="" || udaje_mobil ==="" || udaje_souhlas === "" || checkbox.checked == false){
-        document.getElementById("kolik").innerHTML = "Vyplňte prosím požadované údaje.";
+    if(konsol_jistina ===""){
+        document.getElementById("konsol_kolik").innerHTML = "Vyplňte prosím požadované údaje.";
     } else {
-        document.getElementById("konsul_splatka").innerHTML = konsol_mesicni_splatka + " Kč";
-        document.getElementById("kolik").innerHTML = "Odhadovaná měsíční splátka po konsolidaci při úrokové sazbě 3,9 % p.a. a splatnosti 120 měsíců: <b>";
+        document.getElementById("konsol_splatka").innerHTML = konsol_mesicni_splatka + " Kč";
+        document.getElementById("konsol_kolik").innerHTML = "Odhadovaná měsíční splátka po konsolidaci při úrokové sazbě 3,9 % p.a. a splatnosti 120 měsíců: <b>";
     }
     
 }

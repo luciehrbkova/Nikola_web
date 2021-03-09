@@ -72,21 +72,21 @@
     <section id="hypoteky" class="sekce">
         <div class="container">
             <div class="pdf_form_box" id="pdf_form_box">
-                <form action="" id="pdf_form" class="pdf_form"  method="POST" enctype="multipart/form-data" name="pdfForm">
+                <form action="download.php" id="pdf_form" class="pdf_form bg_lightgreen"  method="POST" enctype="multipart/form-data" name="pdfForm">
                     <div class="row row-right">
                         <div class="closePdf" onclick="hidePdfForm()">
                             <img src="img/cross.png" alt="zavřít" class="cross_icon">
                         </div>
                     </div>
                     <label for="email" class="pdf_label">Email</label><br>
-                    <input type="email" class="pdf_input" id="pdf_adresa" name="email" required>
+                    <input type="email" class="pdf_input" id="pdf_adresa" name="pdf_email" required>
                     <label for="mobil" class="pdf_label">Mobil</label><br>
-                    <input type="number" class="pdf_input" id="pdf_cislo" name="mobil"  required>
+                    <input type="number" class="pdf_input" id="pdf_cislo" name="pdf_mobil"  required>
                     <div class="row">
                         <input type="checkbox" class="checkbox" required>
                         <label for="konsol_souhlas" class="pdf_checkbox_label">Souhlasím s použitím osobních údajů pro <a href="gdpr.php" class="bold">marketingové účely</a></label>
                     </div>
-                    <a href="img/procesKoupe.pdf" download="procesKoupe" target="blank"><input type="submit" value="ODESLAT" class="green_button" id="pdf_form_button"></a>
+                    <input type="submit" value="ODESLAT" class="green_button" id="pdf_form_button" onclick="hidePdfForm()">
                 </form>
             </div>
             <div class="fringe"></div>
@@ -147,11 +147,11 @@
                             <h3 class="white">Pořízení vlastního 
                                 bydlení</h3>
                         </div>
-                            <p class="part2_text aniTextPart2">Pořízení vlastního bydlení patří mezi významný a důležitý krok každého z nás,
-                                proto je velmi důležité nastavit hypotéku tak, aby byla každému z Vás ušita přesně na míru, nemluvím jen 
-                                o nízkém úroku, splatnosti, nebo zvolené fixaci, ale aby její celkové nastavení ladilo s Vašimi budoucími plány.
+                            <p class="part2_text aniTextPart2">Pořízení vlastního bydlení patří mezi významný a důležitý krok každého z nás, 
+                                proto je velmi důležité nastavit hypotéku tak, aby byla každému z Vás ušita přesně na míru. Nemluvím jen o 
+                                nízkém úroku, splatnosti nebo zvolené fixaci, ale aby její celkové nastavení ladilo s Vašimi budoucími plány.
                             </p>
-                            <a href=""><p class="A_Z pc_only_bl aniAz">Provedu Vás procesem od A-Z!</p></a>
+                            <p class="A_Z pc_only_bl aniAz">Provedu Vás procesem od A-Z!</p>
                     </div>
                     <!-- right part -->
                     <div class="sekce_from_tablet_half  aligncont_spbetw">
@@ -188,9 +188,7 @@
                     <div class="kroky4_text_box_cont">
                         <div class=" kroky4_text_box bg_white">
                             <div id="krok_hypo1" class="krok_height">
-                                <p>Zrevidujte si svoje Cash Flow, projděte se svým poradcem analýzou pravidelných příjmů
-                                     a výdajů a zjistěte, zda Vaše prokazatelné příjmy jsou dostačující pro 
-                                     požadovanou výši investičního záměru.</p>
+                                <p>Zrevidujte si své Cash Flow a zjistěte, zda Vaše prokazatelné příjmy jsou dostačující pro požadovanou výši investičního záměru.</p>
                             </div>
                             <div id="krok_hypo2" class="krok_height">
                                 <p>Zbavte se drahých závazků, nebo je splácejte levněji!</p>
@@ -235,7 +233,6 @@
 
                 </div>
                 <p class="A_Z aniPdf">Proces koupě v PDF</p>
-                
 
             </div>
             <div class="fringe"></div>
@@ -287,8 +284,8 @@
                 </div>
                 <!-- 2 ODPOVED -->
                 <div class=" hypo_odpoved_container" id="odpoved2">
-                    <p>Ano, banky za určitých podmínek umí akceptovat příjem na základě čestného
-                         prohlášení a to za cenu vyšší participace vlastních zdrojů nebo vyšší úrokové sazby.
+                    <p>Ano, banky za určitých podmínek umí akceptovat příjem na základě čestného prohlášení, 
+                        a to za cenu vyšší participace vlastních zdrojů nebo vyšší úrokové sazby.
                         <br><br>
                         Také se lze důkladně připravit na předschválený limit cca s ½ ročním předstihem.
                         <br> <br><br>
@@ -316,13 +313,13 @@
                         <!-- right part -->
                         <div class="kroky4_text_box_cont">
                             <div class=" kroky4_text_box">
-                                <p>Banky poskytují v současné době klientům hypotéky max. do 90% LTV
+                                <p>Banky poskytují v současné době klientům hypotéky max. do 90% LTV.
                                     <br><br>
                                     <span class="bold">Co to vlastně pro mě znamená?</span>
                                     <br> 
-                                    „Čím méně si půjčím oproti tomu, co zastavuji, tím je atraktivnější úroková sazba“
+                                    „Čím méně si půjčím oproti tomu, co zastavuji, tím je atraktivnější úroková sazba.“
                                     <br><br>
-                                    Banky rozlišují 3 hlavní úvěrová pásma: 70%, 80% a 90% LTV</p>
+                                    Banky rozlišují 3 hlavní úvěrová pásma: 70%, 80% a 90% LTV.</p>
                             </div>
                         </div>
                     </div>
@@ -339,7 +336,7 @@
                                 <p><span class="bold">Co když nemám vlastní zdroje?</span></p>
                                 <br>
                                 <ul>
-                                    <li>Dá se vyřešit další zástavou, třeba rodičů a v čase po částečně zaplacené jistině nemovitost vyvázat</li>
+                                    <li>Dá se vyřešit další zástavou, třeba rodičů, a v čase po částečně zaplacené jistině nemovitost vyvázat</li>
                                     <li>Zafinancovat úvěrem ze stavebního spoření</li>
                                 </ul>
                                 <br>
@@ -349,14 +346,14 @@
                     <!-- 3rada******************* -->
                     <div class="row_from_tablet box_7rad">
                         <div class="sekce_from_tablet_half bg_lightgreen kroky4_header_box bg_rada bg_rada3">
-                            <h3 ><span class="kroky4">DSTI – DEBT SERVIS TO INCOME</span><br>
+                            <h3 ><span class="kroky4">DSTI – DEBT SERVICE TO INCOME</span><br>
                                 Kolik mohu z čistých měsíčních příjmů domácnosti splácet na závazky</h3>
                         </div>
                         <!-- right part -->
                         <div class="kroky4_text_box_cont">
                             <div class=" kroky4_text_box bg_white">
                                 <p>Většina bank se řídí dalším důležitým parametrem, mezi které právě patří ukazatel DSTI, říká nám, 
-                                    že z čistého měsíčního příjmu domácnosti na splácení může jít maximálně 50%<br><br>
+                                    že z čistého měsíčního příjmu domácnosti na splácení může jít maximálně 50 %.<br><br>
                                     <span class="bold">Modelový příklad:</span><br>
                                     Josef má čistý měsíční příjem: 	<br>	  <span class="bold">  25 000 Kč</span><br>
                                     Má leasing na auto, na kterém splácí měsíčně:  <br> <span class="bold">  4 000 Kč</span><br><br>
@@ -374,22 +371,22 @@
                         <!-- right part -->
                         <div class="kroky4_text_box_cont">
                             <div class=" kroky4_text_box bg_white">
-                                <p>Úroková sazba, za kterou peníze bance splácíme je důležitým faktorem pro každého z nás. 
-                                    Proto je potřeba pohlídat si, aby úrok, který nám banka z počátku prezentuje,
-                                     byl zcela transparentní a nebyly za ním schované žádné další nečekané poplatky.
+                                <p>Úroková sazba, za kterou peníze bance splácíme, je důležitým faktorem pro každého z nás. 
+                                    Proto je potřeba pohlídat si, aby úrok, který nám banka z počátku prezentuje, 
+                                    byl zcela transparentní a nebyly za ním schované žádné další nečekané poplatky.
                                     <br><br>
                                     <span class="bold">Jakou sazbu si mohu zvolit?</span></p>
                                 <br>
                                 <ul>
                                     <li>Pevnou sazbu, známo jako fixní, po zvolenou dobu FIXACE</li>
-                                    <li>Floatovou neboli variabilní sazbu, která se řídí tzv. PRIBOREM, který vyhlašuje ČNB</li>
+                                    <li>Floatovou, neboli variabilní sazbu, která se řídí tzv. PRIBOREM, který vyhlašuje ČNB</li>
                                     <li>Nebo si mohu zvolit offsetovou hypotéku, kde se Vám započítávají Vaše
-                                         úspory oproti zůstatku úvěru a tím snižujete zaplacené úroky na minimum.</li>
+                                         úspory oproti zůstatku úvěru a tím snižujete zaplacené úroky na minimum</li>
                                 </ul>
                                 <br>
                                 <p>
                                     <span class="bold">Mohu si zajistit hypotéku, aniž by neměl zástavu?</span><br>
-                                    Ano, banky dnes umí tzv. hypotéky „NARUBY“. Projdete standardním schvalovacím procesem až po 
+                                    Ano, banky dnes umí tzv. hypotéky „NARUBY“. Projdete standardním schvalovacím procesem, až po 
                                     podpis úvěrové smlouvy za dnešních podmínek a nemovitost můžete hledat třeba až tři roky.
                                 </p>
                             </div>
@@ -423,11 +420,10 @@
                         <div class="kroky4_text_box_cont">
                             <div class=" kroky4_text_box bg_white">
                                 <br>
-                                <p>Banky umí v současnosti nastavit splatnost na 30 – 40 let, standardně do 70 – 75 
-                                    let věku žadatele. Díky tomu, že můžete umořovat každý rok po 12 anuitních splátkách 
-                                    až 25 % z výše půjčených peněz může dávat větší smysl natáhnout horizont na co 
-                                    nejdelší splatnost a libovolně hypotéku umořovat (s ohledem na aktuální úrokovou sazbu) 
-                                    z vytvořených rezerv, potažmo z výnosů z investic připravených na předčasné splacení.</p>
+                                <p>Banky umí v současnosti nastavit splatnost na 30 – 40 let, standardně do 70 – 75 let věku žadatele. 
+                                    Díky tomu, že můžete umořovat každý rok po 12 ti anuitních splátkách až 25 % z výše půjčených peněz, 
+                                    může dávat větší smysl “natáhnout“ horizont na co nejdelší splatnost a libovolně hypotéku umořovat 
+                                    (s ohledem na aktuální úrokovou sazbu) z vytvořených rezerv, potažmo z výnosů z investic připravených na předčasné splacení.</p>
                                 <br>
                             </div>
                         </div>
@@ -441,10 +437,9 @@
                         <div class="kroky4_text_box_cont">
                             <div class=" kroky4_text_box bg_white">
                                 <br>
-                                <p>Za předčasné umoření hypotéky si dnes některé banky na základě doporučení ČNB mohou účtovat maximálně administrativní náklady. 
-                                    Stává se tak dnes, že některé banky si účtují náklady za předčasné splacení minimální, než 
-                                    ale takový <span class="bold">KROK</span> uděláte, je nutné vyplnit příslušný formulář 
-                                    konkrétní banky a být předem o výši poplatku informován.
+                                <p>Za předčasné umoření hypotéky si dnes některé banky, na základě doporučení ČNB, mohou účtovat maximálně administrativní náklady. 
+                                    Stává se tak dnes, že některé banky si účtují náklady za předčasné splacení minimální. Než ale takovýto <span class="bold">KROK</span> učiníte, 
+                                    je nutné vyplnit příslušný formulář konkrétní banky a být předem o výši poplatku informován.
                                     
                                     <br><br>
                                     Konzultujte se svým poradcem 2-3 roky před koncem fixace možnost rezervace úrokové sazby na další 
@@ -498,7 +493,7 @@
                         <div class="kroky4_text_box_cont">
                             <div class=" kroky4_text_box bg_white">
                                 <div class="button_div part2_button aniButtonKalkul">
-                                    <button class="green_button" onclick="splatkomer()" >SPOCITEJ</button>
+                                    <button class="green_button" onclick="splatkomer()" >SPOČÍTEJ</button>
                                 </div>
                                 <!-- <h3><span class="kroky4">HYPOTEČNÍ KALKULACKA</span><br><br></h3> -->
 
@@ -535,18 +530,10 @@
                 <h2 class="top_layer aniKontakt">Kontakt</h2>
                 <div class="bg_white cont_cont row_from_tablet aniContactBg">
                     <div class="contact_container aniContact">
-                        <form action="mailto:hrbkova.lucka@gmail.com" method="post" enctype="text/plain"  name="EmailTestForm">
-                            <label for="jmeno">Jméno</label><br>
-                            <input type="text" id="jmeno" name="name" placeholder="Jméno" required><div class="required"></div>
-                            <label for="cislo">Mobil</label><br>
-                            <input type="number" id="cislo" name="mobil" placeholder="Telefonní číslo" required><div class="required"></div>
-                            <label for="eadresa">Email</label><br>
-                            <input type="email" id="adresa"  name="mail" placeholder="E-mail" required><div class="required"></div>
-                            <label for="zprava">Text zprávy</label><br>
-                            <textarea name="zprava" id="" rows="10" placeholder="Text zprávy"></textarea>
-                            <br>
-                            <input type="submit" value="ODESLAT" class="submit">
-                        </form>
+                        <?php
+                            $url = "index.php#finalMessage";
+                            include'contact.php';
+                        ?>
                     </div>
                     <div class="map_contactdata aniContact">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.655259546002!2d14.

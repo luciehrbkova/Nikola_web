@@ -171,7 +171,7 @@
                         <h2 class="pc_tab_only_bl duo_header aniAbout"><span class="white_duo_part">O</span> Mně</h2>
                         <p class="aniAboutText">
                             Baví mě dávat smysluplné kousky dohromady v jeden silný celek a finanční plánování je pro mě na míru ušitý koncept, 
-                            jak se seberealizovat a zároveň tak pomáhat svým klientům ke svým cílům.
+                            jak se seberealizovat a zároveň tak pomáhat svým klientům k dosažení jejich cílů.
                             <br><br>
                             V poradenství působím již osmým rokem a za tu dobu jsem se naučila být odborníkem ve světě financí.
                             <br><br>
@@ -236,7 +236,7 @@
                     <div class="box_spojenci spojenci_bg1" id="spojenecOne">
                         <p><span class="bold">Laura Krafferová</span><br>
                             Osobní Asistentka<br><br>
-                            <span class="italic"> Laura je má odborná asistentka, která zařizuje veškerou administrativu pro mé klienty, proto je mým nezbytným článkem a velkou podporou pro moje podnikání.</span>
+                            <span class="italic">Laura je má odborná asistentka, která zařizuje veškerou administrativu pro mé klienty, proto je mým nezbytným článkem a velkou podporou pro mé podnikání.</span>
 
                         </p>
                     </div>
@@ -244,7 +244,7 @@
                     <div class="box_spojenci spojenci_bg2" id="spojenecTwo">
                         <p><span class="bold">Mgr. Pavla Marešová</span><br>
                             Advokát <br><br>
-                            <span class="italic"> Paní Marešová mi pomáhá zdokonalovat mé znalosti v oblasti realitního práva a kontroluje v rámci mé služby pro mé klienty kupní smlouvy a připravuje tak veškerou právní administrativu.</span>
+                            <span class="italic"> Paní Marešová mi pomáhá zdokonalovat znalosti v oblasti realitního práva a kontroluje v rámci mé služby pro klienty kupní smlouvy a připravuje tak veškerou právní administrativu.</span>
 
                         </p>
                         
@@ -253,7 +253,7 @@
                     <div class="box_spojenci spojenci_bg3" id="spojenecThree">
                         <p><span class="bold">Mgr. Petra Krůčková</span><br>
                             Realitní makléř<br><br>
-                            <span class="italic"> Petra je realitní makléřka, která pomáhá mým klientům prodat nemovitost včetně veškerého servisu od kvalitního „homestagingu“ přes prohlídky, až po samotnou koupi.</span>
+                            <span class="italic">Petra je realitní makléřka, která pomáhá mým klientům prodat nemovitost včetně veškerého servisu od kvalitního „home stagingu“ přes prohlídky, až po samotnou koupi.</span>
 
                         </p>
                     </div>
