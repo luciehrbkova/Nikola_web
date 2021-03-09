@@ -78,15 +78,16 @@
                             <img src="img/cross.png" alt="zavřít" class="cross_icon">
                         </div>
                     </div>
-                    <label for="email" class="pdf_label">Email</label><br>
+                    <h3 class="error_message"></h3>
+                    <label for="email" class="pdf_label white">Email</label><br>
                     <input type="email" class="pdf_input" id="pdf_adresa" name="pdf_email" required>
-                    <label for="mobil" class="pdf_label">Mobil</label><br>
+                    <label for="mobil" class="pdf_label white">Mobil</label><br>
                     <input type="number" class="pdf_input" id="pdf_cislo" name="pdf_mobil"  required>
                     <div class="row">
                         <input type="checkbox" class="checkbox" required>
-                        <label for="konsol_souhlas" class="pdf_checkbox_label">Souhlasím s použitím osobních údajů pro <a href="gdpr.php" class="bold">marketingové účely</a></label>
+                        <label for="konsol_souhlas" class="pdf_checkbox_label white">Souhlasím s použitím osobních údajů pro <a href="gdpr.php" class="bold">marketingové účely</a></label>
                     </div>
-                    <input type="submit" value="ODESLAT" class="green_button" id="pdf_form_button" onclick="hidePdfForm()">
+                    <input type="submit" value="ODESLAT" class="green_button" id="pdf_form_button" onclick="hidePdfForm();konsolidomer()">
                 </form>
             </div>
             <div class="fringe"></div>
@@ -180,7 +181,7 @@
                             <div class=" kroky4_text_box bg_white">
                                 
                                 <div class="button_div part2_button ">
-                                    <button class="green_button" onclick="showPdfForm();konsolidomer()" >KONSOLIDUJ</button>
+                                    <button class="green_button" onclick="showPdfForm()" >KONSOLIDUJ</button>
                                 </div>
                                 <!-- </form> -->
                                 <!-- <p class="instrukce">PREPOCITEJ</p> -->

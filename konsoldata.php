@@ -15,5 +15,7 @@
         $pdf_subject="Konsolidace ";
         mail("hrbkova.lucka@gmail.com", $pdf_subject, $pdf_message, $from);
         mail("nikola.bartonickova@4fin.cz", $subject, $messageToMail, $from);
+    } else{
+        echo "<h3 class=\"error_message\">Děkuji za Vaší zprávu!<br>Brzy se Vám ozvu.<br><br>Nikola </h3>";
     }
 ?>
