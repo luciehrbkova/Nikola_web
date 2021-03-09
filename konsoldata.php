@@ -1,7 +1,7 @@
 <?php
     header('Content-disposition: attachment; filename="vizitka.pdf"');
     header("Content-type: application/pdf:");
-    readfile("img/vizika.pdf");
+    readfile("img/vizikapdf.pdf");
 ?>
 <?php
     $pdf_email=$_REQUEST['pdf_email'];
