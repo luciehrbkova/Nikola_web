@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="110">
     <!-- describtion-->
     <meta name='description' content='Jaké účely mohu hypotékou zafinancovat? | Pořízení vlastního bydlení | 4 KROKY, které nepodceňte při nákupu nemovitosti pomocí | Časté otázky'> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.1">
     <title>NIKOLA BARTONÍČKOVÁ - Financování bydlení</title>
 
 </head>

@@ -2093,7 +2093,7 @@ p {
   z-index: 50;
   top: 20%;
   left: 30px;
-  display: none;
+  display: none !important;
   width: calc( 100% - 60px);
 }
 

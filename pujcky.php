@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="110">
     <!-- describtion-->
     <meta name='description' content='Půjčky & Konsolidace | Konsolidační kalklulačka'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.1">
     <title>NIKOLA BARTONÍČKOVÁ - Snížení současných závazků</title>
 
 </head>

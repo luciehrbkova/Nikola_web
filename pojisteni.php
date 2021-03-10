@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="110">
     <!-- describtion-->
     <meta name='description' content='6 zásadních kroků pro minimalizaci neplnění | Zajištění Majetku a Odpovědnost | 4 Typy pojištění odpovědnosti a jak se liší?'> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.1">
     <title>NIKOLA BARTONÍČKOVÁ - Zajištění příjmu a majetku</title>
 
 </head>
