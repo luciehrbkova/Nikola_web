@@ -234,7 +234,7 @@
                 </div>
                 <div class="button_box aniButtonPart3">
                     <div class="button_div">
-                        <a href="img/procesKoupe.pdf" download="procesKoupe" target="blank"><button class="green_button">CHCI PORADIT</button></a>
+                        <a href="#contact"><button class="green_button">CHCI PORADIT</button></a>
                     </div>
                     <div class="button_div">
                         <button class="green_button pdf_button" onclick="showPdfForm()">STÁHNOUT ZDARMA</button>
