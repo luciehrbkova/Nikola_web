@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="110">
     <!-- describtion-->
     <meta name="description" content='Financování bydlení | Zajištění příjmu a majetku | Snížení současných závazků - "Se mnou jste vždy o krok napřed."'> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.1">
     <!-- or jquery online version -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>NIKOLA BARTONÍČKOVÁ - Hypotéky |Tvorba rezerv |Zajištění příjmu</title>
