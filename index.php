@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHKCHCHJBZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FHKCHCHJBZ');
+    </script>
     <!-- favicon -->
     <link rel="icon" type="image/png" href="img/favicon1.png" />
     <!-- image for social media links -->
@@ -315,7 +324,7 @@
                             <div class="ref_undertext row_from_tablet">
                                 <div class="lada_box">
                                     <img src="img/lada2.png" alt="reference Hájkovi" class="lada_img" id="reference_img2">
-                                    <span class="lada_name" id="reference_name2">manželé Hájkovi</span>
+                                    <span class="lada_name" id="reference_name2">Manželé Hájkovi</span>
                                 </div>
                                 <img src="img/slider2.jpg" alt="druhá" class="img_slider" id="reference_slider2">
                             </div>

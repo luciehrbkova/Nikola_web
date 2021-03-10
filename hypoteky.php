@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHKCHCHJBZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FHKCHCHJBZ');
+    </script>
     <!-- favicon -->
     <link rel="icon" type="image/png" href="img/favicon1.png" />
     <!-- image for social media links -->
@@ -431,7 +440,7 @@
                     <!-- 7rada******************* -->
                     <div class="row_from_tablet box_7rad">
                         <div class="sekce_from_tablet_half bg_pink kroky4_header_box bg_rada bg_rada7">
-                            <h3 ><span class="kroky4">PŘEDČASNÉ SPLÁCENÍ HYPOTÉKY A REZERVACE ÚROKOVÉ SAZBY DOPŘEDU</span></h3>
+                            <h3 ><span class="kroky4">PŘEDČASNÉ SPLACENÍ HYPOTÉKY A REZERVACE ÚROKOVÉ SAZBY DOPŘEDU</span></h3>
                         </div>
                         <!-- right part -->
                         <div class="kroky4_text_box_cont">
