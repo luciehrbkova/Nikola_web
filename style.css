@@ -2711,6 +2711,43 @@ p {
   }
 }
 
+#drevostavby {
+  background-image: url("img/bg9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 106px;
+}
+
+@media screen and (min-width: 700px) {
+  #drevostavby {
+    padding-bottom: 132px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #drevostavby {
+    padding-bottom: 120px;
+  }
+}
+
+#drevostavby .pad_bot {
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  #drevostavby .pad_bot {
+    padding-bottom: 132px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #drevostavby .pad_bot {
+    padding-bottom: 120px;
+  }
+}
+
 .splatkomer .placeholder {
   width: 15px;
   text-align: left;
