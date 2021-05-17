@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="110">
     <!-- describtion-->
     <meta name='description' content='Krátkodobá, Střednědobá a Dlouhodobá rezerva | Nadefinujte si tři základní pilíře a rozprostřete své rezervy tak, abyste znali jejich faktický účel.'> 
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="stylesheet.css?v=1.1">
     <title>NIKOLA BARTONÍČKOVÁ - Dřevostavby</title>
 
 </head>
@@ -106,7 +106,7 @@
                             <p class="part2_text aniHypoList">
                             Výstavby moderních dřevostaveb, nízkoenergetických domů, případně i rekreačních objektů umí dnes banky financovat standardně, jako klasické rodinné domy, a to až do 90 % LTV. 
                             <br><br>
-                            Je třeba mít jasně stanovený plán na rozpočet stavebních materiálů a zařizovacích prvků, včetně projektové dokumentace a stavebního povolení, které si banka žádá jako podmínku čerpání.
+                            Je třeba mít jasně stanovený plán na rozpočet stavebních materiálů a zařizovacích prvků, včetně projektové dokumentace a stavebního povolení, což jsou jedny z podmínek, které banky požadují k čerpání finančních prostředků.
                             <br><br>
                             Přikláním se obecně u výstaveb k takovým bankám, které umí čerpat při jednotlivých tranších finanční prostředky nad aktuální hodnotu nemovitosti, což Vám zajistí včas nemovitost dovést ke kolaudaci.
                             <br><br>

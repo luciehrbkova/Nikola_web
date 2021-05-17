@@ -12,7 +12,7 @@
     <meta property="og:image:height" content="110">
     <!-- describtion-->
     <meta name='description' content='Podmínky ochrany osobních údajů'>
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="stylesheet.css?v=1.1">
     <!-- js -->
     <script src="myScript.js"></script>
     <!-- or jquery online version -->
