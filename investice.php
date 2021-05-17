@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="110">
     <!-- describtion-->
     <meta name='description' content='Krátkodobá, Střednědobá a Dlouhodobá rezerva | Nadefinujte si tři základní pilíře a rozprostřete své rezervy tak, abyste znali jejich faktický účel.'> 
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="stylesheet.css?v=1.1">
     <title>NIKOLA BARTONÍČKOVÁ - Rezervy a soukromá renta</title>
 
 </head>

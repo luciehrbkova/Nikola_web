@@ -12,7 +12,7 @@
     <meta property="og:image:height" content="110">
     <!-- describtion-->
     <meta name='description' content='Cookies, což jsou malá množství dat, která naše servery posílají vašemu počítači a která umožňují lepší využití našich serverů a přizpůsobení jejich obsahu vašim potřebám.'>
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="stylesheet.css?v=1.1">
     <!-- js -->
     <script src="myScript.js"></script>
     <!-- or jquery online version -->
