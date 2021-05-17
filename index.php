@@ -127,6 +127,10 @@
                         <img src="img/hmbg.svg" alt="menu">
                     </span>
                 </div>
+                <div class="sm_cont">
+                    <div class="sm_box"><a href="https://www.instagram.com/finance_nikola_b/"><img src="img/insta_icon.png" alt=""></a></div>
+                    <div class="sm_box"><a href="https://www.linkedin.com/in/nikola-barton%C3%AD%C4%8Dkov%C3%A1-8a0a43a6/?originalSubdomain=cz&fbclid=IwAR04VbnSBTHD0eF7HgnAlU86bM1fRv7yFYKhlhs77vckbhjdfAf-k9h3Pqs"><img src="img/li_icon.png" alt=""></a></div>
+                </div>
             </div>
         </div>
 
