@@ -20,7 +20,7 @@
     <meta property="og:image:width" content="200">
     <meta property="og:image:height" content="110">
     <!-- describtion-->
-    <meta name='description' content='Krátkodobá, Střednědobá a Dlouhodobá rezerva | Nadefinujte si tři základní pilíře a rozprostřete své rezervy tak, abyste znali jejich faktický účel.'> 
+    <meta name='description' content='Pohodlné financování výstavby moderních dřevostaveb, nízkoenergetických domů či rekreačních objektů.'> 
     <link rel="stylesheet" href="stylesheet.css?v=1.1">
     <title>NIKOLA BARTONÍČKOVÁ - Dřevostavby</title>
 
